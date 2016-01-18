@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+    <title>JasonRiddle.net ~ About</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+    <link href="css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link rel="icon" type="image/png" href="images/jr_2015_logo.svg"/>
+</head>
+<body id="about">
+    <!--navigation: header and side-nav-->
+    <nav class="white" role="navigation">
+        <div class="nav-wrapper site-header left z-depth-2">
+            <a id="logo-container" href="http://jasonriddle.net" class="brand-logo left"><img src="images/jr_2015_logo.svg" id="jr-logo">JasonRiddle.net</a>
+            <ul class="left hide-on-large-only">
+                <li><a href="#" data-activates="nav-mobile" class="button-collapse show-on-large"><i class="material-icons light-green-text">menu</i></a></li>
+            </ul>
+            <ul class="right hide-on-med-and-down">
+                <li><a href="index.html">Welcome</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li class="active"><a href="#">About</a></li>
+                <li><a href="#connect" class="modal-trigger">Connect</a></li>
+            </ul>
+            <ul id="nav-mobile" class="side-nav">
+                <li><a href="index.html"><i class="material-icons">room</i> Welcome</a></li>
+                <li><a href="portfolio.html"><i class="material-icons">work</i> Portfolio</a></li>
+                <li><a href="resume.html"><i class="material-icons">description</i> Resume</a></li>
+                <li class="active"><a href="about.html"><i class="material-icons">info</i> About</a></li>
+                <li><a href="#connect" class="modal-trigger" onclick="$('.button-collapse').sideNav('hide');"><i class="material-icons">contact_phone</i> Connect</a></li>
+            </ul>
+        </div>
+    </nav>
+     <!-- begin #connect modal structure -->
+    <div id="connect" class="modal blue white-text bottom-sheet">
+        <h4 class="white blue-text text-darken-2">
+                <i class="material-icons">contact_phone</i> Connect
+                <a href="#!" class="modal-action modal-close waves-effect waves-blue blue-text text-darken-2 btn-flat right">
+                    <i class="material-icons circle" style="margin-top:-10px;">close</i></a>
+            </h4>
+        <div class="row modal-content">
+            <div class="col s12 m12 l6" id="jrid">
+                <img src="images/JR.jpg" class="circle left">
+                 <h4 class="white-text">Jason Riddle</h4>
+                 <span class="title white-text">Senior User Experience | UI | Graphics</span>
+                 <h5 class="white-text"><i class="material-icons">call</i> 408.306.3734</h5>
+            </div>              
+            <div class="col s12 m12 l6">
+                <ul id="sociallist">
+                    <li class="blue darken-4" onclick="window.open('https://www.linkedin.com/in/jasonriddledotnet');" class="waves-effect">
+                        <div class="socicon center"><h3>j</h3></div>
+                      <h5 class="title center">LinkedIn</h5>
+                    </li>
+                    <li class="light-green" onclick="sendEmail();" class="waves-effect">
+                      <div class="socicon center"><h3>@</h3></div>
+                      <h5 class="title center">Email</5h>
+                    </li>
+                    <li class="grey darken-1" onclick="window.open('https://goo.gl/3fQDyr');" class="waves-effect">
+                      <div class="socicon center"><h3>c</h3></div>
+                      <h5 class="title center">Google+</h5>
+                    </li>
+                     <li class="blue lighten-2" onclick="skypeMe();" class="waves-effect">
+                      <div class="socicon center"><h3>g</h3></div>
+                      <h5 class="title center">Skype</h5>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- end #connect modal structure -->
+    
+    <!-- begin about me -->
+    <div class="section container about-me-content">
+        <div class="row">
+            <div class="col s12">
+                <img src="images/JR.jpg" class="circle left">
+                <h2 class="blue-text">About Me</h2>
+                <p class="title blue-text"> Artist | Musician | Designer | Geek</p>
+                <p class="flow-text">I'm originally from San Luis Obispo and later the Monterey and Santa Cruz areas of California. I've lived in the Silicon Valley now for about ten years. I have had a talent for and love of creating art and music from a very young age. This has expressed itself in many ways, from drawing and painting to sculpture to writing (made 'zines in high school and was published in a poetry book at the age of 21), and with music (drums mainly, and a bit of guitar. I'm a former <a href="http://goo.gl/eWw9yh" target="_blank">GSL</a> and <a href="http://subpop.com" target="_blank">SubPop</a> recording artist).</p>
+                <p class="flow-text">In my downtime I love spending time with family and friends and feel we live in the perfect part of San Jose, nestled in between Campbell and Los Gatos (in the Cambrian area) with good schools and close access to work. We regularly take short trips to Santa Cruz or Half Moon Bay when we need time at the beach, or short jaunts up to SF for all the City has to offer on the weekends.</p>
+                <p class="flow-text">In recent years I've developed a passion for collecting exotic succulent and cactus plants from around the world. I have an interest in plant identification and endeavor to memorize all the botanical names. Yes, it's nerdy, but I luckily have the good sense to not bore people talking about it, or at least when I can tell they aren't interested (haha)!</p>
+                <p class="flow-text">Thanks again for visiting my site. I hope you found it to be an enjoyable experience and liked what you saw. I'm ready to discover what new opportunities await on the horizon. <a href="#connect" class="modal-trigger">Let's talk</a>!
+                </p>
+            </div>
+        </div>
+        <div class="divider blue lighten-4"></div>
+     </div>
+    <!--about this site-->
+    <div class="section container about-site-content">
+        <div class="row">
+            <div class="col s12">
+                <img src="images/jr.net.png" class="circle right">
+                <h2 class="blue-text right">About This Site</h2>
+                <p class="flow-text">In recent years, when I wanted to build a new site, I would design and prototype it in HTML and then manually port it into a <a href="http://drupal.org" target="_blank">Drupal</a> or <a href="https://wordpress.org/" target="_blank">Wordpress</a> template. There's lot's of reasons and advantages for running a site on a CMS. There are tradeoffs though, and frequent maintenace and security updates must be applied.</p>
+                <p class="flow-text">So when I set out to build my new portfolio site in late 2015, I wanted to try a new approach. I have been studying and reading up on <a href="https://goo.gl/RlCfEf" target="_blank">Google's Material Design Specification</a>, and investigating <a href="https://goo.gl/rWF7fH" target="_blank">Polymer + Paper Elements</a>, and <a href="http://webcomponents.org/" target="_blank">Web Components</a> technology. In many ways I do believe Web Components are the future of the Web. However, there are still deep browser disparities with how certain Web Component technologies are handled (such as with <a href="https://goo.gl/QDTVFp" target="_blank">Firefox and HTML imports</a> support, not to utter a word about IE), but Polymer certainly seems to do a fine job at bridging that gap. I've experimented a bit with the .5 beta as well as the new version 1.0 release. So I initially thought I might take this approach, and use the chance to learn something new.</p>
+                <p class="flow-text">But then I stumbled upon a CSS framework called <a href="http://materializecss.com/" target="_blank">Materialize</a> which is based on the Material Design spec. Now generally, I'm not the hugest fan of CSS frameworks. For one, I can get hung up on the lack of good semantics. For another, I don't need them to display things exactly as I want them, I'm good with CSS 3. But, they are widely used with development teams and it makes a lot of sense to know them from that perspective. It defines a safe framework that non-experts can play in. It's a way to do what you need to do, maybe even elegantly, and quickly. Time to market matters (even with personal projects).</p>
+                <p class="flow-text">So, I decided to download it and give it a try. It was fun and easy to pickup. I realized that <a href="https://jquery.com/" target="_blank">jQuery</a> was integrated, so I got the chance to work with the newest version, it had been awhile. Materialize also leverages Web Fonts, which I was familiar with but hadn't actually worked with much before. Even though I love making my own icons, it was fun to learn a new, lightweight way to display icons (or glyphs, really). I then expanded the set with the <a href="http://www.socicon.com/" target="_blank">Socicon</a> web font. I found it enjoyable and easy to make my own styled social networking icons with it.</p>
+                <p class="flow-text">My site logo and favicon are an homage to <a href="https://www.adobe.com/products/cs6.html" target="_blank">Adobe Creative Suite</a>. Finally, I hand-coded the site using <a href="http://brackets.io" target="_blank">Brackets</a> editor from Adobe. I'm picky with my text-editors, but I like this quite a bit, after enabling a few add-on plugins. I've been developing locally running a <a href="https://www.apachefriends.org/index.html" target="_blank">XAMPP</a> server, and I plan to publish on Oct. 12, 2015. I hope you enjoy the site, and we get a chance to speak soon!</p>
+                <h5 class="center">~ Jason</h5>
+            </div>
+        </div>
+     </div>
+    
+    <!--begin footer-->
+    <footer class="page-footer grey darken-2">
+        <div class="container">
+            <div class="row">
+                <div class="col s12 l6">
+                <h5 class="white-text"><i class="material-icons">person_pin</i> Quick Bio</h5>
+                <p class="grey-text text-lighten-4">Senior User Experience and User Interface Design, Interaction Design, and Agile Development are my specialties; I'm ready to get to work building great experiences for your users</p>
+                </div>
+                <div class="col s12 l4">
+                    <h5 class="white-text"><i class="material-icons">contact_phone</i> Connect</h5>
+                    <ul id="footerConnect" class="white-text">
+                        <li class="blue darken-4 center" onclick="window.open('https://www.linkedin.com/in/jasonriddledotnet');" class="waves-effect">
+                        <div class="socicon"><h5>j</h5></div>
+                        </li>
+                        <li class="light-green center" onclick="sendEmail();" class="waves-effect">
+                          <div class="socicon"><h5>@</h5></div>
+                        </li>
+                        <li class="grey darken-1 center" onclick="window.open('https://goo.gl/3fQDyr');" class="waves-effect">
+                          <div class="socicon"><h5>c</h5></div>
+                        </li>
+                         <li class="blue lighten-2 center" onclick="skypeMe();"  class="waves-effect">
+                          <div class="socicon"><h5>g</h5></div>
+                        </li> 
+                    </ul>
+                </div>
+                <div class="col s12 l2">
+                    <h5 class="white-text"><i class="material-icons">menu</i> Menu</h5>
+                    <ul>
+                        <li><a class="white-text" href="index.html">Welcome</a></li>
+                        <li><a class="white-text" href="portfolio.html">Portfolio</a></li>
+                        <li><a class="white-text" href="resume.html">Resume</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright center">
+            <div class="container">
+                &copy; 2015 <a class="blue-text text-lighten-3" href="http://jasonriddle.net" alt="JasonRiddle.net">Jason Riddle</a>. Built with <a class="blue-text text-lighten-3" href="http://www.w3.org/TR/html5/" target="_blank" alt="HTML5">HTML5</a>, <a class="blue-text text-lighten-3" href="http://www.w3.org/TR/css3-roadmap/" target="_blank" alt="CSS3">CSS3</a>, <a class="blue-text text-lighten-3" href="http://materializecss.com" target="_blank" alt="Materialze">Materialize</a>, <a class="blue-text text-lighten-3" href="http://socicon.com" target="_blank" alt="Socicon">Socicon</a>, and <a class="blue-text text-lighten-3" href="http://brackets.io" target="_blank" alt="Brackets">Brackets</a>.
+            </div>
+        </div>
+    </footer>
+    <!--  Scripts-->
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="js/materialize.min.js"></script>
+    <script src="js/init.js"></script>
+    <!-- Google analytics -->
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-72486062-1', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+    </body>
+</html>

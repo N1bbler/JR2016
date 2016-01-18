@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+    <title>JasonRiddle.net ~ Portfolio 3</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+    <link href="css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link rel="icon" type="image/png" href="images/jr_2015_logo.svg"/>
+</head>
+<body>
+    <nav class="white" role="navigation">
+        <div class="nav-wrapper site-header left z-depth-2">
+            <a id="logo-container" href="http://jasonriddle.net" class="brand-logo left"><img src="images/jr_2015_logo.svg" id="jr-logo">JasonRiddle.net</a>
+             <ul class="left hide-on-large-only">
+                <li><a href="#" data-activates="nav-mobile" class="button-collapse show-on-large"><i class="material-icons light-green-text">menu</i></a></li>
+            </ul>
+            <ul class="right hide-on-med-and-down">
+                <li><a href="index.html">Welcome</a></li>
+                <li class="active"><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="#connect" class="modal-trigger">Connect</a></li>
+            </ul>
+            <ul id="nav-mobile" class="side-nav">
+                <li><a href="index.html"><i class="material-icons">room</i> Welcome</a></li>
+                <li class="active"><a href="portfolio.html"><i class="material-icons">work</i> Portfolio</a></li>
+                <li><a href="resume.html"><i class="material-icons">description</i> Resume</a></li>
+                <li><a href="about.html"><i class="material-icons">info</i> About</a></li>
+                <li><a href="#connect" class="modal-trigger" onclick="$('.button-collapse').sideNav('hide');"><i class="material-icons">contact_phone</i> Connect</a></li>
+            </ul>
+        </div>
+    </nav>
+     <!-- begin #connect modal structure -->
+    <div id="connect" class="modal blue white-text bottom-sheet">
+        <h4 class="white blue-text text-darken-2">
+            <i class="material-icons">contact_phone</i> Connect
+            <a href="#!" class="modal-action modal-close waves-effect waves-blue blue-text text-darken-2 btn-flat right">
+                <i class="material-icons circle">close</i></a>
+        </h4>
+        <div class="row modal-content">
+            <div class="col s12 m12 l6" id="jrid">
+                <img src="images/JR.jpg" class="circle left">
+                 <h4 class="white-text">Jason Riddle</h4>
+                 <span class="title white-text">Senior User Experience | UI | Graphics</span>
+                 <h5 class="white-text"><i class="material-icons">call</i> 408.306.3734</h5>
+            </div>                
+            <div class="col s12 m12 l6">
+                <ul id="sociallist">
+                    <li class="blue darken-4" onclick="window.open('https://www.linkedin.com/in/jasonriddledotnet');" class="waves-effect">
+                        <div class="socicon center"><h3>j</h3></div>
+                      <h5 class="title center">LinkedIn</h5>
+                    </li>
+                    <li class="light-green" onclick="sendEmail();" class="waves-effect">
+                      <div class="socicon center"><h3>@</h3></div>
+                      <h5 class="title center">Email</5h>
+                    </li>
+                    <li class="grey darken-1" onclick="window.open('https://goo.gl/3fQDyr');" class="waves-effect">
+                      <div class="socicon center"><h3>c</h3></div>
+                      <h5 class="title center">Google+</h5>
+                    </li>
+                     <li class="blue lighten-2" onclick="skypeMe();" class="waves-effect">
+                      <div class="socicon center"><h3>g</h3></div>
+                      <h5 class="title center">Skype</h5>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- end #connect modal structure -->
+    
+    <!--begin portfolio-->
+    <div class="section grey darken-2">
+        <div class="container portfolio white-text">
+         <h2>Portfolio: Shipped<sup>*</sup> Products</h2>
+            <p>* Only designs which have actually shipped to customers, or which have been published on the web, in marketing materials, etc.</p>
+        </div>
+    </div>
+
+    <div class="divider"></div>
+   
+<!--begin Auto Run programs grid block-->
+    <div class="container portfolio">
+        <h3>Autorun CD Programs</h3>
+        <p>The following gallery contains a selection of images from various Autorun CD programs which I've created, from the early days at Xyratex.</p>
+        <p><i class="material-icons blue-text text-lighten-2">information</i> Click images in the galleries below for a closer view, when images are enlarged click them again to return to the portfolio.</p>
+      <div class="row">
+            <div class="col s4">
+                 <img class="materialboxed" src="images/portfolio/autorun_cd_default.jpg" data-caption="Xyratex F5402E Autorun CD Installer UI design">
+            </div>
+            <div class="col s4">
+                <img class="materialboxed" src="images/portfolio/autorun_dell.jpg" data-caption="Dell E5402E beta Autorun CD Installer UI design">
+              </div>
+            <div class="col s4">
+                <img class="materialboxed" src="images/portfolio/autorun_cd.jpg" data-caption="Xyratex F5402E Autorun CD Installer UI design">
+              </div>
+        </div>
+        <div class="row">
+            <div class="col s4">
+                <img class="materialboxed" src="images/portfolio/autorun_instructions.jpg" data-caption="Xyratex Autorun CD Installer UI design">
+              </div>
+            <div class="col s4">
+                <img class="materialboxed" src="images/portfolio/autorun_cd_bull.jpg" data-caption="Bull StoreWay Optima Autorun CD Installer UI design">
+            </div>
+            <div class="col s4">
+                <img class="materialboxed" src="images/portfolio/autorun_r2.5.jpg" data-caption="Xyratex multi-product Autorun CD Installer UI design">
+            </div>
+        </div>
+    </div>
+<!--end autorun programs grid block -->  
+
+    <div class="divider"></div>
+   
+<!--begin Side Projects programs grid block-->
+    <div class="container portfolio">
+        <h3>Volunteer and Side Projects</h3>
+        <p>The following gallery contains a selection of images from volunteer projects I completed to help my team, other groups at Xyratex and Seagate and/or management. Some of these were quick projects, and others like the Team Software Development site represented significant investment of after hours work.</p>
+        <p><i class="material-icons blue-text text-lighten-2">information</i> Click images in the galleries below for a closer view, when images are enlarged click them again to return to the portfolio.</p>
+      <div class="row">
+            <div class="col s4">
+                <img class="materialboxed" src="images/portfolio/xyr_colors.jpg" data-caption="Xyratex Corporate color palette I designed which was used for many years.">
+              </div>
+           <div class="col s4" id="d-icon-box2">
+                <i class="material-icons socicon blue-text text-lighten-2" id="d-icon-2" title="Site built with Drupal">#</i>
+                <img class="materialboxed" src="images/portfolio/xyr_soft_dev.jpg" data-caption="A Drupal site I built as a volunteer project with 150+ users, the Xyratex Software Development web site">
+            </div>
+            <div class="col s4">
+                <img class="materialboxed" src="images/portfolio/xyr_web_banner.jpg" data-caption="Xyratex web banner design I created, assisting Marketing department with tradeshow advertising.">
+              </div>
+        </div>
+      <div class="row">
+            <div class="col s4">
+                 <img class="materialboxed" src="images/portfolio/hero_award.jpg" data-caption="Xyratex Hero Award T-shirt design">
+            </div>
+            <div class="col s4">
+                <img class="materialboxed" src="images/portfolio/xyr_customer_summit.jpg" data-caption="Xyratex Customer Summit promo">
+              </div>
+            <div class="col s4">
+                <img class="materialboxed" src="images/portfolio/antares_tshirt.jpg" data-caption="Software team release Tshirt celebrating ClusterStor dashboard shipped to customers.">
+              </div>
+        </div>
+        <div class="row">
+            <div class="col s4">
+                <img class="materialboxed" src="images/portfolio/xyr_wellness.jpg" data-caption="Xyratex Wellness program graphics to help HR department">
+              </div>
+            <div class="col s4">
+                <img class="materialboxed" src="images/portfolio/xyr_global_prescence.jpg" data-caption="Xyratex Global Prescence slide for HR">
+            </div>
+            <div class="col s4">
+                 <img class="materialboxed" src="images/portfolio/xyr_market_advantage.jpg" data-caption="Xyratex Market Advantage marketing program illustration">
+            </div>
+        </div>
+        <p><i class="material-icons socicon blue-text text-lighten-2" title="Site built with Drupal">#</i> This symbol indicates that I have designed, built, and 'themed' the featured site shown using <a href="https://drupal.org" target="_blank">Drupal</a> Content Management System.</p>
+    </div>
+    
+<!--end Side Projects grid block -->
+    <div class="divider"></div>
+<!--begin print ads grid block-->
+    <div class="container portfolio">
+        <h3>Print Advertisements</h3>
+        <p>A selection of print ads which I created years ago in my Art Director and Graphic Design days.</p>
+        <p><i class="material-icons blue-text text-lighten-2">information</i> Click images in the galleries below for a closer view, when images are enlarged click them again to return to the portfolio.</p>
+      <div class="row">
+            <div class="col s3">
+                <img class="materialboxed" src="images/portfolio/print_ads_eton1.jpg" data-caption="Print ads for Eton">
+              </div>
+           <div class="col s3">
+                <img class="materialboxed" src="images/portfolio/print_ads_eton2.jpg" data-caption="Print ads for Eton (2)">
+            </div>
+            <div class="col s3">
+                <img class="materialboxed" src="images/portfolio/print_ads_homes.jpg" data-caption="Print ads for Homes Magazine">
+            </div>
+            <div class="col s3">
+                <img class="materialboxed" src="images/portfolio/print_ads_small_ads.jpg" data-caption="Print ads for Homes Magazine (2)">
+            </div>
+        </div>
+    </div>
+    
+<!--end print ads grid block -->
+    <div class="portfolio grey lighten-4">
+        <p class="disclaimer container"><strong>Disclaimer:</strong> The name StorView is &copy; Seagate Technology. The name StoreWay Optima is &copy; Bull, Inc. Dell logo is &copy; Dell, Inc. All other logos and names are &copy; their respective copyright holders. Product images are shown for demonstration purposes only.</p>   
+    </div>
+<div class="divider"></div><br>
+<p class="container portfolio"><i class="material-icons blue-text text-lighten-2">information</i> <strong>Thank you</strong> for taking the time to view my design portfolio. Please continue to browse using the links provided below, view my <a href="resume.html">resume</a>, or <a href="#connect" class="modal-trigger">contact me</a> now.</p>
+    <!--begin pagination-->
+     <ul class="pagination center">
+        <li class="waves-effect" onClick="location.href='portfolio2.html';"><i class="material-icons">chevron_left</i></li>
+        <li class="waves-effect" onClick="location.href='portfolio.html';">1</li>
+        <li class="waves-effect" onClick="location.href='portfolio2.html';">2</li>
+        <li class="active white-text light-green waves-effect" onClick="location.href='portfolio3.html';">3</li>
+        <li class="disabled"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
+      </ul>
+    <!--begin footer-->
+    <footer class="page-footer blue">
+        <div class="container">
+            <div class="row">
+                <div class="col s12 l6">
+                <h5 class="white-text"><i class="material-icons">person_pin</i> Quick Bio</h5>
+                <p class="grey-text text-lighten-4">Senior User Experience and User Interface Design, Interaction Design, and Agile Development are my specialties; I'm ready to get to work building great experiences for your users</p>
+                </div>
+                <div class="col s12 l4">
+                    <h5 class="white-text"><i class="material-icons">contact_phone</i> Connect</h5>
+                    <ul id="footerConnect" class="white-text">
+                         <li class="blue darken-4 center waves-effect" onclick="window.open('https://www.linkedin.com/in/jasonriddledotnet');">
+                        <div class="socicon"><h5>j</h5></div>
+                    </li>
+                    <li class="light-green center" onclick="sendEmail();" class="waves-effect">
+                      <div class="socicon"><h5>@</h5></div>
+                    </li>
+                    <li class="grey darken-1 center" onclick="window.open('https://goo.gl/3fQDyr');" class="waves-effect">
+                      <div class="socicon"><h5>c</h5></div>
+                    </li>
+                     <li class="blue lighten-2 center" onclick="skypeMe();" class="waves-effect">
+                      <div class="socicon"><h5>g</h5></div>
+                    </li>
+                    </ul>
+                </div>
+                <div class="col s12 l2">
+                    <h5 class="white-text"><i class="material-icons">menu</i> Menu</h5>
+                    <ul>
+                        <li><a class="white-text" href="index.html">Welcome</a></li>
+                        <li><a class="white-text" href="resume.html">Resume</a></li>
+                        <li><a class="white-text" href="about.html">About</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright center">
+            <div class="container">
+                &copy; 2015 <a class="blue-text text-lighten-3" href="http://jasonriddle.net" alt="JasonRiddle.net">Jason Riddle</a>. Built with <a class="blue-text text-lighten-3" href="http://www.w3.org/TR/html5/" target="_blank" alt="HTML5">HTML5</a>, <a class="blue-text text-lighten-3" href="http://www.w3.org/TR/css3-roadmap/" target="_blank" alt="CSS3">CSS3</a>, <a class="blue-text text-lighten-3" href="http://materializecss.com" target="_blank" alt="Materialze">Materialize</a>, <a class="blue-text text-lighten-3" href="http://socicon.com" target="_blank" alt="Socicon">Socicon</a>, and <a class="blue-text text-lighten-3" href="http://brackets.io" target="_blank" alt="Brackets">Brackets</a>.
+            </div>
+        </div>
+    </footer>
+    <!--  Scripts-->
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="js/materialize.min.js"></script>
+    <script src="js/init.js"></script>
+    <!-- Google analytics -->
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-72486062-1', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+    </body>
+</html>

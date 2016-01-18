@@ -1,46 +1,220 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
-  <!-- Basic Page Needs
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <meta charset="utf-8">
-  <title>Your page title here :)</title>
-  <meta name="description" content="">
-  <meta name="author" content="">
-
-  <!-- Mobile Specific Metas
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <!-- FONT
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
-
-  <!-- CSS
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/skeleton.css">
-
-  <!-- Favicon
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="icon" type="image/png" href="images/favicon.png">
-
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+    <title>JasonRiddle.net | Senior User Experience Design | User Interface Design | Interaction Design  | Prototypes | Agile Development</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+    <link href="css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link rel="icon" type="image/png" href="images/jr_2015_logo.svg"/>
 </head>
 <body>
-
-  <!-- Primary Page Layout
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <div class="container">
-    <div class="row">
-      <div class="one-half column" style="margin-top: 25%">
-        <h4>Basic Page</h4>
-        <p>This index.html page is a placeholder with the CSS, font and favicon. It's just waiting for you to add some content! If you need some help hit up the <a href="http://www.getskeleton.com">Skeleton documentation</a>.</p>
-      </div>
+    <!--navigation: header and side-nav-->
+    <nav class="white" role="navigation">
+        <div class="nav-wrapper site-header left z-depth-2">
+            <a id="logo-container" href="http://jasonriddle.net" class="brand-logo left"><img src="images/jr_2015_logo.svg" id="jr-logo">JasonRiddle.net</a>
+            <ul class="left hide-on-large-only">
+                <li><a href="#" data-activates="nav-mobile" class="button-collapse show-on-large"><i class="material-icons light-green-text">menu</i></a></li>
+            </ul>
+            <ul class="right hide-on-med-and-down">
+                <li class="active"><a href="index.html">Welcome</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="#connect" class="modal-trigger">Connect</a></li>
+            </ul>
+            <ul id="nav-mobile" class="side-nav">
+                <li class="active"><a href="index.html"><i class="material-icons">room</i> Welcome</a></li>
+                <li><a href="portfolio.html"><i class="material-icons">work</i> Portfolio</a></li>
+                <li><a href="resume.html"><i class="material-icons">description</i> Resume</a></li>
+                <li><a href="about.html"><i class="material-icons">info</i> About</a></li>
+                <li><a href="#connect" class="modal-trigger" onclick="$('.button-collapse').sideNav('hide');"><i class="material-icons">contact_phone</i> Connect</a></li>
+            </ul>
+        </div>
+    </nav>
+     <!-- begin #connect modal structure -->
+    <div id="connect" class="modal blue white-text bottom-sheet">
+        <h4 class="white blue-text text-darken-2">
+                <i class="material-icons">contact_phone</i> Connect
+                <a href="#!" class="modal-action modal-close waves-effect waves-blue blue-text text-darken-2 btn-flat right">
+                    <i class="material-icons circle">close</i></a>
+        </h4>
+        <div class="row modal-content">
+            <div class="col s12 m12 l6" id="jrid">
+                <img src="images/JR.jpg" class="circle left">
+                 <h4 class="white-text">Jason Riddle</h4>
+                 <span class="title white-text">Senior UX and UI Design | Interaction Design  | Prototypes </span>
+                 <h5 class="white-text"><i class="material-icons">call</i> 408.306.3734</h5>
+            </div>              
+            <div class="col s12 m12 l6">
+                <ul id="sociallist">
+                    <li class="blue darken-4" onclick="window.open('https://www.linkedin.com/in/jasonriddledotnet');" class="waves-effect">
+                        <div class="socicon center"><h3>j</h3></div>
+                      <h5 class="title center">LinkedIn</h5>
+                    </li>
+                    <li class="light-green" onclick="sendEmail();" class="waves-effect">
+                      <div class="socicon center"><h3>@</h3></div>
+                      <h5 class="title center">Email</5h>
+                    </li>
+                    <li class="grey darken-1" onclick="window.open('https://goo.gl/3fQDyr');" class="waves-effect">
+                      <div class="socicon center"><h3>c</h3></div>
+                      <h5 class="title center">Google+</h5>
+                    </li>
+                     <li class="blue lighten-2" onclick="skypeMe();" class="waves-effect">
+                      <div class="socicon center"><h3>g</h3></div>
+                      <h5 class="title center">Skype</h5>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </div>
-  </div>
+    <!-- end #connect modal structure -->
+    <!--PARALLAX BANNER-->
+    <div id="index-banner" class="parallax-container">
+        <div class="section no-pad-bot">
+            <div class="container">
+                <h1 class="header center blue-text text-lighten-2">Jason Riddle</h1>
+                <div class="row center">
+                    <h5 class="header col s12 light">Senior UX / UI Design | Interaction Design | Agile Development</h5>
+                </div>
+                <div class="row center">
+                    <a href="#connect" id="index-connect" class="modal-trigger btn-large waves-effect waves-light light-green darken-1 hoverable">Connect</a>
+                </div>
+            </div>
+        </div>
+        <div class="parallax"><img src="images/sj_panorama.jpg" alt="Skyline at night: San Jose, CA."><!--This file is licensed under the Creative Commons Attribution-Share Alike 3.0 Unported license.--></div>
+    </div>
+    <!--promo layout area-->
+    <div class="container">
+        <div class="section">
+        <!--   Icon Section   -->
+            <div class="row">
+                <div class="col s12 m4">
+                    <div class="icon-block">
+                    <h1 class="center blue-text text-darken-2"><i class="material-icons">business</i></h1>
+                    <h5 class="center">Business Value Focused</h5>
+                    <p class="light">As a Designer and Developer with many years of experience building and shipping Web-based software products, I recognize the need to remain focused on deliverables which enhance business value and maximize return on investment. If a product or service isn't solving a real-world business problem then it is unlikely to thrive in the marketplace.</p>
+                    </div>
+                </div>
+                <div class="col s12 m4">
+                    <div class="icon-block">
+                    <h1 class="center blue-text text-darken-2"><i class="material-icons">group</i></h1>
+                    <h5 class="center">User Experience is Everything</h5>
+                    <p class="light">If understanding the needs and desired workflows of users are not elevated to first priority, then the product will struggle or even fail. My focus is to help customers as well as internal and external stakeholders to solve real business problems and to provide modern, working solutions presented in an intuitive and useable form.</p>
+                    </div>
+                </div>
+                <div class="col s12 m4">
+                    <div class="icon-block">
+                    <h1 class="center blue-text text-darken-2"><i class="material-icons">aspect_ratio</i></h1>
+                    <h5 class="center">Responsive and Agile Development</h5>
 
-<!-- End Document
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-</body>
+                    <p class="light">In an ever-changing world of devices, technologies and requirements it's essential to adapt and remain flexible on all fronts, from development processes through to shipping products. I leverage processes like Agile / Scrum / Kanban and deep experience with responsive web development best practices to deliver exceptional results.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--mid-page parallax container-->
+    <div class="parallax-container valign-wrapper">
+        <div class="section no-pad-bot">
+            <div class="container">
+                <div class="row center">
+                    <h5 class="header col s12 light">Available now for new design and development opportunities!</h5>
+                </div>
+            </div>
+        </div>
+        <div class="parallax"><img src="images/mirror.jpg" alt="Agile & Responsive Design"></div>
+    </div>
+    <!--new direction-->
+    <div class="container">
+        <div class="section">
+            <div class="row">
+                <div class="icon-block center">
+                    <h1 class="center blue-text text-darken-2"><i class="material-icons">open_with</i></h1>
+                    <h5>It's time to go in a new direction.</h5>
+                    <p class="left-align light">I'm a dedicated and experienced professional with consistently stellar reviews from customers, teammates, management, and other project stakeholders which I've had the pleasure to work with in the past. In February 2015 I received the <!-- Modal Trigger --><a class="waves-effect waves-light modal-trigger" href="#rasAward">Seagate Cloud Systems and Solutions RAS Award</a>, <em>"In recognition for the dedication, passion, and delivery of improvements in Reliability, Availability, and Serviceability of Seagate CSS Products and Services"</em>. But after 9.5 years of service at Xyratex and Seagate, it is time to make a change. Now, I look forward to discovering what new opportunities await on the horizon. </p>
+                    <p class="left-align light"><a href="#connect" class="modal-trigger" onclick="$('.button-collapse').sideNav('hide');">Contact me</a> today, and let's discuss if I might be a good fit for your organization. I'd also like to invite you to read letters of recommendation on my <a href="https://www.linkedin.com/in/jasonriddledotnet" target="_blank">LinkedIn profile</a> to see what my employers and colleagues have to say about working with me. Thank you for your time and consideration. </p>
+                </div>
+                <!-- Modal Structure -->
+                <div id="rasAward" class="modal">
+                    <div class="modal-content">
+                      <h4>Seagate Cloud Systems and Solutions RAS Award ~ Feb 2015</h4>
+                      <div class="center"><img class="responsive-img" src="images/ras_award.png"></div>
+                    </div>
+                    <div class="modal-footer">
+                      <a href="#!" class="modal-action modal-close waves-effect waves-blue btn-flat ">Congrats!</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--bottom-page parallax container-->
+    <div class="parallax-container valign-wrapper greenDivide">
+        <div class="section no-pad-bot">
+            <div class="container">
+                <div class="row center">
+                    <h5 class="header col s12 light">I'm looking forward to building great user experiences together.</h5>
+                </div>
+            </div>
+        </div>
+        <div class="parallax"><img src="images/footer.jpg" alt="Contact me"></div>
+    </div>
+    <!--begin footer-->
+    <footer class="page-footer blue">
+        <div class="container">
+            <div class="row">
+                <div class="col s12 l6">
+                <h5 class="white-text"><i class="material-icons">person_pin</i> Quick Bio</h5>
+                <p class="grey-text text-lighten-4">Senior User Experience and User Interface Design, Interaction Design, and Agile Development are my specialties; I'm ready to get to work building great experiences for your users</p>
+                </div>
+                <div class="col s12 l4">
+                    <h5 class="white-text"><i class="material-icons">contact_phone</i> Connect</h5>
+                    <ul id="footerConnect" class="white-text">
+                        <li class="blue darken-4 center waves-effect" onclick="window.open('https://www.linkedin.com/in/jasonriddledotnet');">
+                        <div class="socicon"><h5>j</h5></div>
+                    </li>
+                    <li class="light-green center" onclick="sendEmail();" class="waves-effect">
+                      <div class="socicon"><h5>@</h5></div>
+                    </li>
+                    <li class="grey darken-1 center" onclick="window.open('https://goo.gl/3fQDyr');" class="waves-effect">
+                      <div class="socicon"><h5>c</h5></div>
+                    </li>
+                     <li class="blue lighten-2 center" onclick="skypeMe();"  class="waves-effect">
+                      <div class="socicon"><h5>g</h5></div>
+                    </li>
+                    </ul>
+                </div>
+                <div class="col s12 l2">
+                    <h5 class="white-text"><i class="material-icons">menu</i> Menu</h5>
+                    <ul>
+                        <li><a class="white-text" href="portfolio.html">Portfolio</a></li>
+                        <li><a class="white-text" href="resume.html">Resume</a></li>
+                        <li><a class="white-text" href="about.html">About</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright center">
+            <div class="container">
+                &copy; 2015 <a class="blue-text text-lighten-3" href="http://jasonriddle.net" alt="JasonRiddle.net">Jason Riddle</a>. Built with <a class="blue-text text-lighten-3" href="http://www.w3.org/TR/html5/" target="_blank" alt="HTML5">HTML5</a>, <a class="blue-text text-lighten-3" href="http://www.w3.org/TR/css3-roadmap/" target="_blank" alt="CSS3">CSS3</a>, <a class="blue-text text-lighten-3" href="http://materializecss.com" target="_blank" alt="Materialze">Materialize</a>, <a class="blue-text text-lighten-3" href="http://socicon.com" target="_blank" alt="Socicon">Socicon</a>, and <a class="blue-text text-lighten-3" href="http://brackets.io" target="_blank" alt="Brackets">Brackets</a>.
+            </div>
+        </div>
+    </footer>
+    <!--  Scripts-->
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="js/materialize.min.js"></script>
+    <script src="js/init.js"></script>
+    <!-- Google analytics -->
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-72486062-1', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+    </body>
 </html>

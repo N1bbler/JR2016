@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+    <title>JasonRiddle.net ~ Portfolio 2</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+    <link href="css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link rel="icon" type="image/png" href="images/jr_2015_logo.svg"/>
+</head>
+<body>
+    <nav class="white" role="navigation">
+        <div class="nav-wrapper site-header left z-depth-2">
+            <a id="logo-container" href="http://jasonriddle.net" class="brand-logo left"><img src="images/jr_2015_logo.svg" id="jr-logo">JasonRiddle.net</a>
+             <ul class="left hide-on-large-only">
+                <li><a href="#" data-activates="nav-mobile" class="button-collapse show-on-large"><i class="material-icons light-green-text">menu</i></a></li>
+            </ul>
+            <ul class="right hide-on-med-and-down">
+                <li><a href="index.html">Welcome</a></li>
+                <li class="active"><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="#connect" class="modal-trigger">Connect</a></li>
+            </ul>
+            <ul id="nav-mobile" class="side-nav">
+                <li><a href="index.html"><i class="material-icons">room</i> Welcome</a></li>
+                <li class="active"><a href="portfolio.html"><i class="material-icons">work</i> Portfolio</a></li>
+                <li><a href="resume.html"><i class="material-icons">description</i> Resume</a></li>
+                <li><a href="about.html"><i class="material-icons">info</i> About</a></li>
+                <li><a href="#connect" class="modal-trigger" onclick="$('.button-collapse').sideNav('hide');"><i class="material-icons">contact_phone</i> Connect</a></li>
+            </ul>
+        </div>
+    </nav>
+     <!-- begin #connect modal structure -->
+    <div id="connect" class="modal blue white-text bottom-sheet">
+        <h4 class="white blue-text text-darken-2">
+            <i class="material-icons">contact_phone</i> Connect
+            <a href="#!" class="modal-action modal-close waves-effect waves-blue blue-text text-darken-2 btn-flat right">
+                <i class="material-icons circle">close</i></a>
+        </h4>
+        <div class="row modal-content">
+           <div class="col s12 m12 l6" id="jrid">
+                <img src="images/JR.jpg" class="circle left">
+                 <h4 class="white-text">Jason Riddle</h4>
+                 <span class="title white-text">Senior User Experience | UI | Graphics</span>
+                 <h5 class="white-text"><i class="material-icons">call</i> 408.306.3734</h5>
+            </div>              
+            <div class="col s12 m12 l6">
+                <ul id="sociallist">
+                    <li class="blue darken-4" onclick="window.open('https://www.linkedin.com/in/jasonriddledotnet');" class="waves-effect">
+                        <div class="socicon center"><h3>j</h3></div>
+                      <h5 class="title center">LinkedIn</h5>
+                    </li>
+                    <li class="light-green" onclick="sendEmail();" class="waves-effect">
+                      <div class="socicon center"><h3>@</h3></div>
+                      <h5 class="title center">Email</5h>
+                    </li>
+                    <li class="grey darken-1" onclick="window.open('https://goo.gl/3fQDyr');" class="waves-effect">
+                      <div class="socicon center"><h3>c</h3></div>
+                      <h5 class="title center">Google+</h5>
+                    </li>
+                     <li class="blue lighten-2" onclick="skypeMe();" class="waves-effect">
+                      <div class="socicon center"><h3>g</h3></div>
+                      <h5 class="title center">Skype</h5>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- end #connect modal structure -->
+    
+    <!--begin portfolio-->
+    <div class="section light-green darken-2">
+        <div class="container portfolio white-text">
+         <h2>Portfolio: Shipped<sup>*</sup> Products</h2>
+            <p>* Only designs which have actually shipped to customers, or which have been published on the web, in marketing materials, etc.</p>
+        </div>
+    </div>
+    
+       <!--begin CSM grid block-->
+    <div class="divider"></div>
+    <div class="container portfolio">
+      <h5>ClusterStor Manager (Seagate)</h5>
+        <p>ClusterStor Manager is the 'single pane of glass' management software which ships with the <a href="http://goo.gl/yDIa04" target="_blank">ClusterStor Parallel Storage System</a> by Seagate Technology.</p>
+      <div class="row">
+          <div class="col s12 m6 l6">
+              <div class="card hoverable grey lighten-4">
+                <div class="card-image waves-effect waves-block waves-light">
+                  <img class="activator" src="images/portfolio/card_csm.jpg">
+                </div>
+                <div class="card-content">
+                  <span class="card-title activator grey-text text-darken-4">Dashboard User Interface<i class="material-icons right">more_vert</i></span>
+                </div>
+                <div class="card-reveal">
+                  <span class="card-title grey-text text-darken-4">Dashboard UI Design and Implementation<i class="material-icons right">close</i></span>
+                  <p>I worked with a small team of talented Architects, Engineers and Product Owner to design, implement and integrate this product UI and responsive dashboard into the ClusterStor Manager product. I created the logo, header image, overall layout, graphics, as well as information architecture and design of each individual view. We built it with custom HTML5 and CSS3 that I wrote along with Dojo JS and our custom backend framework.</p>
+                    <p> Behind the scenes UX work included taking input directly from customers, creating user profiles, incorporating Accessibility features and progressive enhancements. Interaction Design work included sketches, wireframes, and functional prototypes. </p>
+                    <p>The dashboard received rave reviews from customers and was featured at numerous SuperComputing conferences, which I also helped to present.</p>
+                </div>
+              </div>  
+        </div>
+         <div class="col s12 m6 l6">
+            <div class="row">
+                <div class="col s6">
+                    <img class="materialboxed" src="images/portfolio/csm.jpg" data-caption="ClusterStor Manager dashboard UI."> 
+                </div>
+                <div class="col s6">
+                   <img class="materialboxed" src="images/portfolio/csm_nodes.jpg" data-caption="Node Status view is a responsive heatmap which can scale to monitor a few to hundreds or thousands of nodes in a small area.">
+                </div>
+            </div> 
+            <div class="row">
+                <div class="col s6">
+                    <img class="materialboxed" src="images/portfolio/csm_filesystem.jpg" data-caption="File System Throughput is a simple chart for viewing I/O with timeline zoom feature.">
+                </div>
+                <div class="col s6">
+                    <img class="materialboxed" src="images/portfolio/csm_topstats.jpg" data-caption="Top System Statistics shows aggregated statistics from across the system and pie-chart visualization for larger screens.">
+                </div>
+            </div>
+        </div>   
+      </div>
+    </div>
+    <!--end CSM grid block-->
+    
+    <div class="divider"></div>
+
+    <!--begin SSM grid block-->
+    <div class="container portfolio">
+      <h5>Sonexion System Manager (Cray)</h5>
+        <p>Sonexion System Manger is monitoring and management software for the <a href="http://goo.gl/D2imOx" target="_blank">Sonexion Scale-Out Lustre Storage System.</a></p>
+      <div class="row">
+          <div class="col s12 m6 l6">
+              <div class="card hoverable grey lighten-4">
+                <div class="card-image waves-effect waves-block waves-light">
+                  <img class="activator" src="images/portfolio/card_ssm.jpg">
+                </div>
+                <div class="card-content">
+                  <span class="card-title activator grey-text text-darken-4">Product Branding<i class="material-icons right">more_vert</i></span>
+                </div>
+                <div class="card-reveal">
+                  <span class="card-title grey-text text-darken-4">Product Branding and Implementation<i class="material-icons right">close</i></span>
+                  <p>Sonexion System Manager is Cray's re-branded product based on ClusterStor Manager. With input from Cray, I designed and implemented the product logo, theme colors and overall look and feel. Cray supplied the 'blue swish' image in the middle of the header area as well as their official logo and asked that it be incorporated, which I did to produce the final design.</p>
+                </div>
+              </div>  
+        </div>
+         <div class="col s12 m6 l6">
+            <div class="row">
+                <div class="col s6">
+                    <img class="materialboxed" src="images/portfolio/ssm.jpg" data-caption="Sonexion System Manager - product branding">
+                </div>
+                <div class="col s6">
+                    <img class="materialboxed" src="images/portfolio/ssm_modal.jpg" data-caption="Sonexion System Manager - product branding">
+                </div>
+            </div>
+        </div>   
+      </div>
+    </div>
+    <!-- END SSm GRID BLOCK -->
+
+    <!--begin StorView grid block-->
+    <div class="divider"></div>
+    <div class="container portfolio">
+      <h5>StorView (Xyratex)</h5>
+        <p>StorView is enclosure management software from (the former) Xyratex, now owned by Seagate. I believe this product may be EOL (End of Life), although it still seems to be widely <a href="https://goo.gl/U84Wfl" target="_blank">available online</a>.</p>
+      <div class="row">
+          <div class="col s12 m6 l6">
+              <div class="card hoverable grey lighten-4">
+                <div class="card-image waves-effect waves-block waves-light">
+                  <img class="activator" src="images/portfolio/card_storview.jpg">
+                </div>
+                <div class="card-content">
+                  <span class="card-title activator grey-text text-darken-4">Modal UI Screens<i class="material-icons right">more_vert</i></span>
+                </div>
+                <div class="card-reveal">
+                  <span class="card-title grey-text text-darken-4">StorView Modal UI Screens<i class="material-icons right">close</i></span>
+                  <p>StorView was one of the first products (with a pre-existing UI) that I worked on after joining Xyratex. I designed graphical enclosure views, topological overlays, modal screen UIs, and icons.</p>
+                    <p>Although StorView was re-designed and later versions were prototyped, these products did not end up being shipped, and so have not been included in this collection. It does account for the more dated appearance of some of the screens, however.</p>
+                    
+                </div>
+              </div>  
+        </div>
+         <div class="col s12 m6 l6">
+            <div class="row">
+                <div class="col s6">
+                    <img class="materialboxed" src="images/portfolio/storview.jpg" data-caption="StorView enclosure widgets">
+                </div>
+                <div class="col s6">
+                    <img class="materialboxed" src="images/portfolio/storview_topology.jpg" data-caption="StorView topological overlays">
+                </div>
+            </div> 
+            <div class="row">
+                <div class="col s6">
+                    <img class="materialboxed" src="images/portfolio/storview_modal.jpg" data-caption="StorView modal UI screens">
+                </div>
+                <div class="col s6">
+                    <img class="materialboxed" src="images/portfolio/storview_modal2.jpg" data-caption="StorView modal UI screens">
+                </div>
+            </div>
+        </div>   
+      </div>
+    </div>
+    <!--end StorView grid block-->
+    <div class="divider"></div>
+<!--begin Marketing materials grid block-->
+    <div class="container portfolio">
+        <h3>Marketing Materials</h3>
+        <p>The following gallery contains a selection of images from various marketing materials, including white paper and datasheet illustrations, tradeshow presentation graphics, brochure designs, iconography, and other graphical assets which I've created, some very recently and others going back several years or more.</p>
+        <p><i class="material-icons blue-text text-lighten-2">information</i> Click images in the galleries below for a closer view, when images are enlarged click them again to return to the portfolio.</p>
+      <div class="row">
+            <div class="col s4">
+                <img class="materialboxed" src="images/portfolio/xyr_brochure.jpg" data-caption="Xyratex product brochure design">
+            </div>
+            <div class="col s4">
+                <img class="materialboxed" src="images/portfolio/xyr_tradeshow_gfx.jpg" data-caption="Xyratex tradeshow graphics">
+              </div>
+            <div class="col s4">
+                <img class="materialboxed" src="images/portfolio/xyr_wp_gem.jpg" data-caption="Xyratex white paper - GEM logging illustration">
+              </div>
+        </div>
+        <div class="row">
+            <div class="col s4">
+                <img class="materialboxed" src="images/portfolio/xyr_wp_mero.jpg" data-caption="Xyratex white paper - technical illustration">
+              </div>
+            <div class="col s4">
+                <img class="materialboxed" src="images/portfolio/xyr_wp1.jpg" data-caption="Xyratex white paper technical illustration">
+            </div>
+            <div class="col s4">
+                <img class="materialboxed" src="images/portfolio/xyr_wp2.jpg" data-caption="Xyratex StorView white paper - technical illustration">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s4">
+                <img class="materialboxed" src="images/portfolio/xyr_wp3.jpg" data-caption="Xyratex white paper - technical illustration">
+              </div>
+            <div class="col s4">
+                <img class="materialboxed" src="images/portfolio/xyr_wp4.jpg" data-caption="Xyratex white paper - technical illustration">
+            </div>
+            <div class="col s4">
+                <img class="materialboxed" src="images/portfolio/xyr_wp_gem2.jpg" data-caption="Xyratex white paper - GEM building blocks illustration">
+            </div>
+        </div>
+    </div>
+    <!--end featured designs-->
+    <div class="portfolio grey lighten-4">
+        <p class="disclaimer container"><strong>Disclaimer:</strong> The names ClusterStor, ClusterStor Service Console, and StorView are &copy; Seagate Technology. The names Sonexion, Sonexion Service Console are &copy; Cray, Inc. Product images are shown for demonstration purposes only.</p>
+    </div>
+<!--begin pagination--> 
+<div class="divider"></div><br>
+<p class="container portfolio"><i class="material-icons blue-text text-lighten-2">information</i> <strong>Thank you</strong> for taking the time to view my design portfolio. Please continue to browse using the links provided below, view my <a href="resume.html">resume</a>, or <a href="#connect" class="modal-trigger">contact me</a> now.</p>
+    <!--begin pagination-->
+     <ul class="pagination center">
+        <li class="waves-effect" onClick="location.href='portfolio.html';"><i class="material-icons">chevron_left</i></li>
+        <li class="waves-effect" onClick="location.href='portfolio.html';">1</li>
+        <li class="active white-text light-green waves-effect" onClick="location.href='portfolio.html2';">2</li>
+        <li class="waves-effect" onClick="location.href='portfolio3.html';">3</li>
+        <li class="waves-effect" onClick="location.href='portfolio3.html';"><i class="material-icons">chevron_right</i></li>
+      </ul>
+    <!--begin footer-->
+    <footer class="page-footer blue">
+        <div class="container">
+            <div class="row">
+                <div class="col s12 l6">
+                <h5 class="white-text"><i class="material-icons">person_pin</i> Quick Bio</h5>
+                <p class="grey-text text-lighten-4">Senior User Experience and User Interface Design, Interaction Design, and Agile Development are my specialties; I'm ready to get to work building great experiences for your users</p>
+                </div>
+                <div class="col s12 l4">
+                    <h5 class="white-text"><i class="material-icons">contact_phone</i> Connect</h5>
+                    <ul id="footerConnect" class="white-text">
+                         <li class="blue darken-4 center waves-effect" onclick="window.open('https://www.linkedin.com/in/jasonriddledotnet');">
+                        <div class="socicon"><h5>j</h5></div>
+                    </li>
+                    <li class="light-green center" onclick="sendEmail();" class="waves-effect">
+                      <div class="socicon"><h5>@</h5></div>
+                    </li>
+                    <li class="grey darken-1 center" onclick="window.open('https://goo.gl/3fQDyr');" class="waves-effect">
+                      <div class="socicon"><h5>c</h5></div>
+                    </li>
+                     <li class="blue lighten-2 center" onclick="skypeMe();" class="waves-effect">
+                      <div class="socicon"><h5>g</h5></div>
+                    </li>
+                    </ul>
+                </div>
+                <div class="col s12 l2">
+                    <h5 class="white-text"><i class="material-icons">menu</i> Menu</h5>
+                    <ul>
+                        <li><a class="white-text" href="index.html">Welcome</a></li>
+                        <li><a class="white-text" href="resume.html">Resume</a></li>
+                        <li><a class="white-text" href="about.html">About</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright center">
+            <div class="container">
+                &copy; 2015 <a class="blue-text text-lighten-3" href="http://jasonriddle.net" alt="JasonRiddle.net">Jason Riddle</a>. Built with <a class="blue-text text-lighten-3" href="http://www.w3.org/TR/html5/" target="_blank" alt="HTML5">HTML5</a>, <a class="blue-text text-lighten-3" href="http://www.w3.org/TR/css3-roadmap/" target="_blank" alt="CSS3">CSS3</a>, <a class="blue-text text-lighten-3" href="http://materializecss.com" target="_blank" alt="Materialze">Materialize</a>, <a class="blue-text text-lighten-3" href="http://socicon.com" target="_blank" alt="Socicon">Socicon</a>, and <a class="blue-text text-lighten-3" href="http://brackets.io" target="_blank" alt="Brackets">Brackets</a>.
+            </div>
+        </div>
+    </footer>
+    <!--  Scripts-->
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="js/materialize.min.js"></script>
+    <script src="js/init.js"></script>
+    <!-- Google analytics -->
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-72486062-1', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+    </body>
+</html>
