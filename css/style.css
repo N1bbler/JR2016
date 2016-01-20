@@ -425,8 +425,14 @@ a[href^=tel]
 .section-header
 {
     height: 60vh;
+    position: relative;
 }
-
+.section-header h2
+{
+    position: absolute;
+    bottom: 10%;
+    right: 10%;
+}
 .profile ul li 
 {
     list-style-type: circle;
