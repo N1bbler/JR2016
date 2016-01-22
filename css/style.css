@@ -429,15 +429,55 @@ a[href^=tel]
 }
 .section-header h2
 {
-    position: absolute;
-    bottom: 10%;
-    right: 10%;
+    float: right;
+    margin-top: 45vh;
+    /*white-space: nowrap;*/
+}
+.profile ul
+{
+    padding-bottom: 0;
 }
 .profile ul li 
 {
     list-style-type: circle;
     margin-left: 50px;
 }
+.profile p
+{
+    border-bottom: 1px dashed #CCC;
+    padding: 0 20px 10px 0;
+    margin-top: -10px;
+}
+
+/* Glyph, by Harry Roberts, tweaked by JR */
+hr.style-eight {
+    padding: 0;
+    border: none;
+    border-top: medium double #CCC;
+    color: #CCC;
+    text-align: center;
+}
+hr.style-eight:after {
+    content: "§";
+    display: inline-block;
+    position: relative;
+    top: -0.85em;
+    font-size: 1em;
+    padding: 0 0.25em;
+    background: white;
+}
+video
+{
+    margin-bottom: 10px;
+}
+.dropdown-content li>a, .dropdown-content li>span 
+{
+    font-size: 1.2rem;
+    color: #1976D2;
+    display: block;
+    padding: 1rem 1rem;
+}
+
 /*JR theme color palette*/
 .dark-primary-color    { background: #1976D2; }
 .default-primary-color { background: #2196F3; }

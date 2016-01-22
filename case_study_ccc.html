@@ -18,14 +18,26 @@
             </ul>
             <ul class="right hide-on-med-and-down">
                 <li><a href="index.html">Welcome</a></li>
-                <li class="active"><a href="portfolio.html">Portfolio</a></li>
+                <li><a class="dropdown-button" href="#!" data-activates="dropdown1">Case Studies<i class="mdi-navigation-arrow-drop-down right"></i></a>
+              <ul id='dropdown1' class='dropdown-content'>
+                <li><a href="#!">Consumer-Facing Website</a></li>
+                <li><a href="#!">Enterprise Software Application: Big Data Dashboard</a></li>
+                <li><a href="#!">Enterprise Software Application: Service Console</a></li>
+                <li><a href="#!">Mobile Application Concept</a></li>
+              </ul></li>
                 <li><a href="resume.html">Resume</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="#connect" class="modal-trigger">Connect</a></li>
             </ul>
              <ul id="nav-mobile" class="side-nav">
                 <li><a href="index.html"><i class="material-icons">room</i> Welcome</a></li>
-                <li class="active"><a href="portfolio.html"><i class="material-icons">work</i> Portfolio</a></li>
+                 <li><a class="dropdown-button" href="#!" data-activates="dropdown2">Case Studies<i class="mdi-navigation-arrow-drop-down right"></i></a>
+              <ul id='dropdown2' class='dropdown-content'>
+                <li><a href="#!">Consumer-Facing Website</a></li>
+                <li><a href="#!">Enterprise Software Application: Big Data Dashboard</a></li>
+                <li><a href="#!">Enterprise Software Application: Service Console</a></li>
+                <li><a href="#!">Mobile Application Concept</a></li>
+              </ul></li>
                 <li><a href="resume.html"><i class="material-icons">description</i> Resume</a></li>
                 <li><a href="about.html"><i class="material-icons">info</i> About</a></li>
                 <li><a href="#connect" class="modal-trigger" onclick="$('.button-collapse').sideNav('hide');"><i class="material-icons">contact_phone</i> Connect</a></li>
@@ -73,27 +85,29 @@
     <!--begin portfolio-->
     <div class="section dark-primary-color section-header">
         <div class="container portfolio white-text">
-         <h2>ChannelCatCharters.com: Case Study</h2>
+         <h2>ChannelCatCharters.com: <br>Case Study</h2>
         </div>
     </div>
     <div class="container portfolio profile">
         <div class="row">
-            <div class="col s7">
+            <div class="col s12">
                 <h3>Project Profile</h3>
                 <p class="flow-text"><strong>Type:</strong> Site Redesign</p>
                 <p class="flow-text"><strong>Category:</strong> Consumer-Facing Website</p>
-                <p class="flow-text"><strong>Description:</strong> The Channel Cat Charters website is the online presence for the Channel Cat ship located in the Santa Barbara Harbor. The site is used as a sales and marketing tool, as well as to demonstrate the qualities and features of the Channel Cat charter experience. The business is low volume and caters to a high-end clientale with personalized service. The (now former) site was launched in 2007. While it served them well for many years, it was built with yesterday's technology (Flash, Java applets) and was no longer working for them or many of their clients. This resulted in lost booking opportunities, as well as having to guide clients through the site, which was expensive in terms of time allocation. Previously, the site did not include any analytics solution, so measuring these lost opportunities was impossible.</p>
+                <p class="flow-text"><strong>Description:</strong> The Channel Cat Charters website is the online presence for the Channel Cat ship located in Santa Barbara Harbor, SB, CA. The site is used as a sales and marketing tool, as well as to demonstrate the qualities and features of the Channel Cat charter experience to potential clientele. The business caters to a high-end audience and offers individualized and highly personalized service. The (now former) site was launched in 2007. While it served them well for many years, it was built with yesterday's technology (Flash, Java applets) and was no longer working for them or many of their clients. This resulted in lost booking opportunities, as well as having to guide clients through the site, which was expensive in terms of time allocation. Previously, the site did not include any analytics solution, so measuring these lost opportunities was impossible.</p>
                  <p class="flow-text"><strong>Purpose of the site:</strong>
-                 <ul class="flow-text">
-                        <li>For customers to see the grandeur of the ship and then to contact the Charter Agent for a booking</li>
+                     <ul class="flow-text">
+                        <li>For clientele to see the beauty, size, and overall grandeur of the ship and then to contact the Charter Agent for a booking</li>
                         <li>For Charter Agent and other stakeholders to use the site as a sales and marketing tool</li>
-                </p>           
+                    </ul>
+                </p>
                 <p class="flow-text"><strong>Goals for the redesign:</strong>
-                 <ul class="flow-text">
-                        <li>Make it easier for Users to navigate the site</li>
+                    <ol class="flow-text">
                         <li>Make Virtual Tours work across devices, the tours are a big selling point</li>
                         <li>Make Video interview with <i>Extreme Yachts</i> television show work across devices</li>
                         <li>Update the Directions to be more clear, requires custom map routes as the mailing address is not the same as the boarding location</li>
+                        <li>Make it easier for Users to navigate the content itself (not in tiny window frame)</li>
+                    </ol>
                 </p>
                 <p class="flow-text"><strong>Problems to Solve:</strong>
                     <ul class="flow-text">
@@ -114,19 +128,58 @@
                     </ul>
                 </p>           
                 <p class="flow-text"><strong>Preliminary Client notes:</strong>
-                 <ul class="flow-text">                        
-                        <li>Wants Big beautiful pictures</li>
-                        <li>Believes "Less is more" with words, wants pictures to speak for themselves</li>
-                        <li>Client is a Senior Citizen that struggles a bit with computers and technology; ease of use, large images and scalable text is key</li>
-                        <li>Client is not interested in going the route of a booking and reservation system; as a high-end chartering business with an exclusive clientele, they hold the customer's hands through every step of the booking process.</li>
+                     <ul class="flow-text">                        
+                            <li>Wants Big beautiful pictures</li>
+                            <li>Believes "Less is more" with words, wants pictures to speak for themselves</li>
+                            <li>Client is a Senior Citizen that struggles a bit with computers and technology; ease of use, large images and scalable text is key</li>
+                         <li>Client is not interested in going the route of a booking and reservation system; as a high-end chartering business with an exclusive clientele, they hold the customer's hands through every step of the booking process.</li>
+                    </ul>
                 </p>           
             </div>
-            <div class="col s5">
+            <div class="col m12 l8 process flow-text">
+                <h3>UX + UI Design Process (Phase 1):</h3>
+                <ul>
+                    <li>Initial client consultation in order to:</li>
+                    <li style="list-style-type: none;"> <!-- class not working? -->
+                        <ul>
+                            <li>Understand the business itself and purpose of the site</li>
+                            <li>Understand the problems they are facing with the site</li>
+                            <li>Understand their goals for the site redesign</li>
+                            <li>Understand their clientele, as well as their goals and needs</li>
+                            <li>Understand their internal use cases for the site</li>
+                            <li>Establish delivery of content and assets</li>
+                            <li>Establish any parameters or limitations</li>
+                            <li>Estimate time to completion, explain process, and address administrative matters</li>
+                        </ul>
+                    </li>
+                    <li>Perform Site Audit to understand current site, content, technical implementation and to reinforce goals</li>
+                    <li>Analyze current workflow and information architecture</li>
+                    <li>Define initial User Profiles / Personas, as well as simple Use Cases</li>
+                    <li>Engage in initial ideation and wireframe sessions (analog) to quickly define potential solutions and approach</li>
+                    <li>Model different Call-To-Action (CTA) approaches</li>
+                    <li>Define and explain thoughts on Navigational Model changes (old site to new, responsive site)</li>
+                </ul>
+                <hr class="style-eight">
+                <h3>UX + UI Design Process Continued (Phase 2):</h3>
+                <ul>
+                    <li>Follow up client consultation in order to:</li>
+                    <li style="list-style-type: none;"> <!-- class not working? -->
+                        <ul>
+                            <li>Validate initial User Personas and Use Cases (they needed refining)</li>
+                            <li>Validate initial wireframe concepts, walk them through</li>
+                            
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="col m12 l4 process flow-text">
                 <h3>Site Audit</h3>
                   <video class="responsive-video" controls>
                    <source src="video/ccc_site_audit.mp4" type="video/mp4">
                   </video>
-                  <p class="flow-text">The Site Audit shows a walkthrough of the site before any of the redesign work commenced. I speak about the features of the site, some of the goals for the redesign, as well as issues to overcome with the implementation.</p>
+                  <p>The Site Audit shows a walkthrough of the site before any of the redesign work commenced. I speak about the features of the site, some of the goals for the redesign, as well as issues to overcome with the implementation.</p>
+                <h3>Initial User Personas</h3>
+                <img class="materialboxed" src="images/case_studies/ccc_initial_users.png" data-caption="Initial User Personas">
             </div>
         </div>
         
@@ -147,15 +200,15 @@
       </div>
     <!-- end case study -->
     
-<p class="container portfolio"><i class="material-icons blue-text text-lighten-2">information</i> <strong>Thank you</strong> for taking the time to view my design portfolio. Please continue to browse using the links provided below, view my <a href="resume.html">resume</a>, or <a href="#connect" class="modal-trigger">contact me</a> now.</p>
-    <!--begin pagination-->
+<!--<p class="container portfolio"><i class="material-icons blue-text text-lighten-2">information</i> <strong>Thank you</strong> for taking the time to view my design portfolio. Please continue to browse using the links provided below, view my <a href="resume.html">resume</a>, or <a href="#connect" class="modal-trigger">contact me</a> now.</p>-->
+    <!--begin pagination
      <ul class="pagination center">
         <li class="disabled"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
         <li class="active white-text light-green waves-effect" onClick="location.href='portfolio.html';">1</li>
         <li class="waves-effect" onClick="location.href='portfolio2.html';">2</li>
         <li class="waves-effect" onClick="location.href='portfolio3.html';">3</li>
         <li class="waves-effect" onClick="location.href='portfolio2.html';"><i class="material-icons">chevron_right</i></li>
-      </ul>
+      </ul>-->
     <!--begin footer-->
     <footer class="page-footer blue">
         <div class="container">
