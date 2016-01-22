@@ -113,7 +113,7 @@ nav .brand-logo
 .side-nav 
 {
     top: 65px;
-    width: 200px;
+    width: 250px;
     padding: 0;
 }
 @media only screen and (max-width : 600px) {
@@ -477,6 +477,8 @@ video
     display: block;
     padding: 1rem 1rem;
 }
+
+
 .process img
 {
     margin-bottom: 20px;
