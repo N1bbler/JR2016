@@ -180,13 +180,18 @@ footer.page-footer
 {
     padding: 0 5px 0 5px;
 }
-/*.portfolio i.material-icons
+.collapsible-header i 
 {
-    width: 1.25rem;
-    margin: 0 5px 0 0;
-    line-height: 1rem;
-}*/
-
+    float: right;
+}
+#zebra li:nth-of-type(even) 
+{
+  background: #F5F5F5;
+}
+#zebra li:nth-of-type(even):hover 
+{
+  background: #DEDEDE;
+}
 /* Drupal badges, IDs required */
 #d-icon-box1,
 #d-icon-box2
