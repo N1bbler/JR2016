@@ -482,7 +482,10 @@ video
     display: block;
     padding: 1rem 1rem;
 }
-
+.offset-top
+{
+    margin-top: 30px;
+}
 
 .process img
 {
