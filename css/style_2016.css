@@ -453,6 +453,15 @@ a[href^=tel]
     padding: 0 20px 10px 0;
     margin-top: -10px;
 }
+.pro-sidebar p
+{
+    padding: 0 0 10px 0;
+    font-size: 1.25rem;
+}
+.pro-sidebar h3
+{
+    margin-bottom: 0;
+}
 
 /* Glyph, by Harry Roberts, tweaked by JR */
 hr.style-eight {
@@ -490,6 +499,7 @@ video
 .process img
 {
     margin-bottom: 20px;
+    border: 1px solid #DDD;
 }
 /*JR theme color palette*/
 .dark-primary-color    { background: #1976D2; }
