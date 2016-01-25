@@ -495,12 +495,16 @@ video
 {
     margin-top: 30px;
 }
-
 .process img
 {
     margin-bottom: 20px;
     border: 1px solid #DDD;
 }
+p.no-bdr
+{
+    border-bottom: none;
+}
+
 /*JR theme color palette*/
 .dark-primary-color    { background: #1976D2; }
 .default-primary-color { background: #2196F3; }
