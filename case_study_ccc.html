@@ -221,7 +221,7 @@
                         </ul>
                     </li>
                 </ul>
-                <p>With this new feedback, I was ready to move onto digital, medium-fidelity wireframes (created in Sketch app), in order to present these to the client. I created these quickly from the low-fi mockups as a reference, along with my ample client notes and feedback documentation.</p>
+<p>With this new feedback, I was ready to move onto digital, medium-fidelity wireframes (created in <a href="https://www.sketchapp.com/" target="_blank">Sketch app</a>), in order to present these to the client. I created these quickly from the low-fi mockups as a reference, along with my ample client notes and client feedback documentation.</p>
                 <h4>Communicate, Validate, Iterate</h4>
                 <ul>
                     <li>Based on the discussion with the client regarding the medium-fidelity wireframes, it was determined:</li>
@@ -248,15 +248,59 @@
                 <hr class="style-eight">
                 <h3>Technology Stack Research</h3>
                 <ul>
-                    <li>Based on the now known site functionality, I researched and decided on the following technology choices:</li>
+                    <li>Based on the now known site functionality, user and business goals and needs, as well as the wireframes feedback, it was time to move on to rapid prototyping, and so I researched and decided on the following technology choices:</li>
                     <li style="list-style-type: none;"> <!-- class not working? -->
                         <ul>
-                            <li><a href="http://getbootstrap.com/" target="_blank">Bootstrap 3</a>: for the mobile-first responsive capabilities</li>
+                            <li><a href="http://getbootstrap.com/" target="_blank">Bootstrap 3</a>: for the mobile-first responsive UI capabilities</li>
                             <li><a href="https://jquery.com/" target="_blank">jQuery</a>: for the carousel functionality, extensive examples, and plugins available</li>
                             <li><a href="http://www.jqueryscript.net/demo/Mobile-Friendly-Bootstrap-Tabs-Enhancement-with-jQuery/" target="_blank">jQuery/Bootstrap Responsive Tabs</a>: exactly what I needed to handle inline tab content in a responsive way</li>
                             <li><a href="https://github.com/oriongunning/gridder" target="_blank">Gridder 1.4.1</a>: a jQuery based library which was exactly what I was looking for the Gallery functionality</li>
                             <li><a href="https://fortawesome.github.io/Font-Awesome/" target="_blank">Font Awesome</a>: for WebFont icons, used in Gridder/Gallery UI for next, back and close buttons.</li>
-                            <li><a href="http://ggnome.com/pano2vr" target="_blank">Pano2VR</a>: modern vitural tour software capable of exporting to HTML 5 and CSS3</li>
+                            <li><a href="http://ggnome.com/pano2vr" target="_blank">Pano2VR</a>: modern vitural tour software capable of exporting to HTML5 , CSS3, XML, and WebGL, which works on modern devices and platforms.</li>
+                            <li><a href="https://analytics.google.com/analytics/web/" target="_blank">Google Analytics</a>: In order to measure/learn from user behavior in the future (no analytics were used on the site in the past).</li>
+                        </ul>
+                    </li>
+                </ul>
+                <hr class="style-eight">
+                <h3>Initial Prototypes</h3>
+                <ul>
+                    <li>Using Adobe Photoshop CS, I readied all images and optimized them for the Web</li>
+                    <li>Using Bootstrap, I quickly built the initial home page prototypes, including the Header area and navigation and basic layout</li>
+                    <li>Using jQuery, I built the Carousel prototype on the home page</li>
+                    <li>Using Pano2VR, I built the Virtual Tours and using inline tabs in Bootstrap, laid the out with the grid</li>
+                    <li>Using a jQuery script, I implemented responsive tabs design pattern for the virtual tours to ensure a good experience on mobile </li>
+                    <li>Using Gridder, I built the Gallery prototype and added FontAwesome UI controls</li>
+                    <li>Using custom HTML and CSS, as well Bootstrap helper classes, I laid out the About page in a magazine-inspired layout</li>
+                    <li>Using custom HTML and CSS, I laid out the Contact Page</li>
+                    <li>Researching and then leveraging the Google Maps API, I added an interactive map to the directions page, and used screenshots + Adobe Illustrator CS to add custom routes</li>
+                    <li>Using GIT and <a href="https://github.com/N1bbler" target="_blank">GitHub</a>, I backed up all of my work with version control. See the commit history <a href="https://github.com/N1bbler/ccc/commits/master" target="_blank">here</a>.</li>
+                </ul>
+                <hr class="style-eight">
+                <h3>Communicate, Validate, Negotiate</h3>
+                <ul>
+                    <li>Follow up client consultation in order to:</li>
+                    <li style="list-style-type: none;"> <!-- class not working? -->
+                        <ul>
+                            <li>Validate Home page design (we decided to go back to full-height carousel and move Virtual Tours to their own page)</li>
+                            <li>Validate Gallery design (client loved this as is, but had extra photos she wanted to add), we also discussed adding the video to this page</li>
+                            <li>Validate About design (client also loved this but wanted to re-use photo from home page. After discussing my reasoning for using the particular panoramic photo, she agreed with this and we decided to proceed as is)</li>
+                            <li>Validate Directions design (client wasn't sure about the interactive map, but when I discussed the idea behind it, we agreed to keep it but move it below the fold)</li>
+                            
+                        </ul>
+                    </li>
+                </ul>
+                <hr class="style-eight">
+                <h3>Iterate, Expand, Implement</h3>
+                <ul>
+                    <li>With the full green-light now in place, I worked quickly to expand and refine the initial work:</li>
+                    <li style="list-style-type: none;"> <!-- class not working? -->
+                        <ul>
+                            <li>Refined navigation with expanding text for mobile mode</li>
+                            <li>Moved the Virtual Tours to their own page and added <i>Extreme Yachts</i> video after extracting it from previous Flash source and converting it to use modern web codecs, which allowed for native HTML5 playback</li>
+                            <li>Added tons of content to the Gallery, moved images around and randomized things a bit for a more interesting presentation</li>
+                            <li>Added tons of content to the About page and worked heavily on the typography for this text-heavy page, utilizing smart quotes and responsive text, as well as numerous stylistic type treatments</li>
+                            <li>Built the Contact page around the Call-to-Action design which is at the bottom of each page on the site. Also added full-screen background of the crew to also convey to the user they are in the right place</li>
+                            
                         </ul>
                     </li>
                 </ul>
@@ -302,12 +346,26 @@ their clientele.</p>
                 <h4>Learning Virtual Tour Software</h4>
                 <img class="materialboxed" src="images/case_studies/ccc_pano2vr.jpg" data-caption="Pano2VR Virtual Tour software">
                 <p>Learning new software (Pano2VR) was required in order to deliver the necessary Virtual Tour functionality which would work across devices. I picked it up easily, and even was able to customize a "skin" of UI controls for the interface.</p>
-                <h4>First Prototype</h4>
+                <h4>Home Prototypes</h4>
+                <img class="materialboxed" src="images/case_studies/ccc_home_mobile_sim.jpg" data-caption="An early mobile - portrait mode screenshot">
+                <p>An early mobile first - portrait mode screenshot before finalizing the navigation design and implementing responsive links.</p>
                 <img class="materialboxed" src="images/case_studies/ccc_proto_0.jpg" data-caption="The first prototype of the new homepage">
-                <p>The first prototype of the new homepage featured a full-screen height image, with virtual tour placeholder and call-to-action below the fold.</p>
-                <h4>Second Prototype</h4>
                 <img class="materialboxed" src="images/case_studies/ccc_proto_home1.jpg" data-caption="The second prototype of the new homepage">
-                <p>The second prototype of the new homepage reduced the height of the carousel, in order to hint at further content below the fold.</p>
+                <p>The first desktop prototype of the new homepage featured a full-screen height image, with virtual tour placeholder and call-to-action below the fold. The second reduced the height of the carousel, in order to hint at further content below the fold.</p> 
+                <h4>Vtours Prototype</h4>
+                <img class="materialboxed" src="images/case_studies/ccc_vtours_proto1.jpg" data-caption="The first Virtual Tours prototype">
+                <p>First Virtual Tours prototype showing the inline tab design pattern.</p>
+                <h4>Gallery Prototypes</h4>
+                <img class="materialboxed" src="images/case_studies/ccc_gallery_proto1.jpg" data-caption="The first Gallery prototype">
+                <img class="materialboxed" src="images/case_studies/ccc_gallery_proto1B.jpg" data-caption="Gallery prototype, user has clicked on image">
+                <p>First Gallery prototype showing the thumbnail grid, before user has clicked an image, the second shows image expanded and in focus.</p>
+                <h4>About Prototype</h4>
+                <img class="materialboxed" src="images/case_studies/ccc_about_proto.jpg" data-caption="About page prototype">
+                <p>I had a clear vision for the about page and the initial prototype set the pace for the rest of the magazing-inspired layout to come.</p>
+                <h4>Directions Prototype</h4>
+                <img class="materialboxed" src="images/case_studies/ccc_directions_proto.jpg" data-caption="Directions page prototype">
+                <p>The Directions prototype initially had an interactive Google map at the top of the page an Diretions below, we later deemphasized this and placed the Directions above the fold.</p>
+                
             </div><!-- end right column -->
         </div><!-- end left column -->
       </div><!-- end page wrapper -->
