@@ -106,7 +106,7 @@
     <div class="container portfolio profile">
         <div class="row">
             <div class="col m12 l8 flow-text">
-                <h3>Project Profile</h3>
+                <h2>Project Profile</h2>
                 <p><strong>Type:</strong> Site Redesign</p>
                 <p><strong>Category:</strong> Consumer-Facing Website</p>
                 <p><strong>Description:</strong> The Channel Cat Charters website is the online presence for the Channel Cat ship located in Santa Barbara Harbor, SB, CA. The site is used as a sales and marketing tool, as well as to demonstrate the qualities and features of the Channel Cat charter experience to potential clientele. The business caters to a high-end audience and offers individualized and highly personalized service. The (now former) site was launched in 2007. While it served them well for many years, it was built with yesterday's technology (Flash, Java applets) and was no longer working for them or many of their clients. This resulted in lost booking opportunities, as well as having to guide clients through the site, which was expensive in terms of time allocation. Previously, the site did not include any analytics solution, so measuring these lost opportunities was impossible.</p>
@@ -150,6 +150,9 @@
                          <li>Client is not interested in going the route of a booking and reservation system; as a high-end chartering business with an exclusive clientele, they hold the customer's hands through every step of the booking process.</li>
                     </ul>
                 </p>
+                <h3>My UX + UI Design Process</h3>
+                <p class="no-bdr">A detailed case-study follows of my design and development process of the site redesign. I explain each step along the way of a very iterative process and provide in-progress artifact screenshots, as well as a gallery at the end of the document showcasing the final result in before/after format.</p>
+                <hr class="style-eight">
                 <h3>Discovery, Research, Wireframes</h3>
                 <ul>
                     <li>Initial client consultation in order to:</li>
@@ -165,7 +168,7 @@
                             <li>Estimate time to completion, explain process, and address administrative matters</li>
                         </ul>
                     </li>
-                    <li>Performed Site Audit to understand current site, content, technical implementation and to reinforce goals</li>
+                    <li>Performed <a href="#an-audit">Site Audit</a> to understand current site, content, technical implementation and to reinforce goals</li>
                     <li>Analyzed current workflow and information architecture</li>
                     <li>Performed Competitive Analysis in order to:</li>
                     <li style="list-style-type: none;"> <!-- class not working? -->
@@ -176,8 +179,8 @@
                         </ul>
                     </li>
                     <li>Reviewed current and new site content for awareness and inspiration</li>
-                    <li>Defined initial User Profiles / Personas, as well as simple Use Cases</li>
-                    <li>Engage in initial ideation and wireframe sessions (analog) to quickly define potential solutions and approach</li>
+                    <li>Defined <a href="#an-personas">initial User Profiles / Personas</a>, as well as simple Use Cases</li>
+                    <li>Engage in initial ideation and created <a href="#an-low-fi">low-fidelity wireframes (analog)</a> to quickly define potential solutions and approach</li>
                     <li>Modelled different Call-To-Action (CTA) approaches</li>
                     <li>Define and explain thoughts on Navigational Model changes (old site to new, responsive site)</li>
                 </ul>
@@ -197,7 +200,7 @@
                         </ul>
                     </li>
                 </ul>
-                <p class="no-bdr">I updated the User Personas document, to reflect increased understanding of the site's user base. </p>
+<p class="no-bdr">I updated the <a href="#an-personas-upd">User Personas</a> document, to reflect increased understanding of the site's user base. </p>
                 <ul>
                     <li>Due to older demographic, it is particularly important to ensure text is large and readable</li>
                     <li>Simple and easy to use navigation is key</li>
@@ -272,7 +275,8 @@
                     <li>Using Gridder, I built the Gallery prototype and added FontAwesome UI controls</li>
                     <li>Using custom HTML and CSS, as well Bootstrap helper classes, I laid out the About page in a magazine-inspired layout</li>
                     <li>Using custom HTML and CSS, I laid out the Contact Page</li>
-                    <li>Researching and then leveraging the Google Maps API, I added an interactive map to the directions page, and used screenshots + Adobe Illustrator CS to add custom routes</li>
+                    <li>Researching and then leveraging the <a href="https://developers.google.com/maps/?hl=en" target="_blank">Google Maps API</a>, I added an interactive map to the directions page, and used screenshots + Adobe Illustrator CS to add custom routes</li>
+                    <li>Using <a href="https://developers.google.com/web/tools/chrome-devtools/?hl=en" target="_blank">Google's Developer Tools</a> for debugging and early optimization to target any performance bottlenecks</li>
                     <li>Using GIT and <a href="https://github.com/N1bbler" target="_blank">GitHub</a>, I backed up all of my work with version control. See the commit history <a href="https://github.com/N1bbler/ccc/commits/master" target="_blank">here</a>.</li>
                 </ul>
                 <hr class="style-eight">
@@ -320,21 +324,21 @@
                 <p>ChannelCatCharters.com Home page on an iPhone. Broken due to use of Flash. (image cropped)</p>
                 <img src="images/case_studies/ccc_broken_java.PNG" class="materialboxed" data-caption="ChannelCatCharters.com Home page on an iPhone (broken due to use of Java applets)">
                 <p>ChannelCatCharters.com Virtual Tours on an iPhone. Broken due to use of Java applets. (image cropped)</p>
-                <h4>Site Audit Video</h4>
+                <h4 id="an-audit">Site Audit Video</h4>
                   <video class="responsive-video" controls>
                    <source src="video/ccc_site_audit.mp4" type="video/mp4">
                   </video>
                   <p>The Site Audit shows a walkthrough of the site before any of the redesign work commenced. I speak about the features of the site, some of the goals for the redesign, as well as issues to overcome with the implementation. You may wish to use the full-screen button (at right of volume control) for a better view.</p>
-                <h4>Initial User Personas</h4>
+                <h4 id="an-personas">Initial User Personas</h4>
                 <img class="materialboxed" src="images/case_studies/ccc_initial_users.jpg" data-caption="Initial User Personas (before discussing reservation process)">
                 <p>The first User Personas did capture some aspects of actual users, but were in need of refinement. I learned the average age was much older than initially assumed, and that online reservations where less of a priority both for the business and for
 their clientele.</p>
-                <h4>Initial Lo-Fi Wireframes</h4>
+                <h4 id="an-low-fi">Initial Lo-Fi Wireframes</h4>
                 <img class="materialboxed" src="images/case_studies/ccc_wirefames_1.jpg" data-caption="Initial Low-Fidelity Wireframes: Home page">
                 <p>Quick, rough sketches were used to begin mapping out the Home page layout. This generated new ideas as well as questions for the client.</p>
                 <img class="materialboxed" src="images/case_studies/ccc_wirefames_2.jpg" data-caption="Initial Low-Fidelity Wireframes: Gallery Concepts">
                 <p>Low-fidelity sketches of two Gallery interaction concepts.</p>
-                <h4>Updated User Personas</h4>
+                <h4 id="an-personas-upd">Updated User Personas</h4>
                 <img class="materialboxed" src="images/case_studies/ccc_updated_users.jpg" data-caption="Updated User Persona">
                 <p>Updated User Personas reflected revised age estimates. Although the changes were minimal, it is important to keep the personas updated based on current understanding and lessons learned.</p>
                 <h4>Color Palette</h4>
@@ -347,8 +351,8 @@ their clientele.</p>
                 <img class="materialboxed" src="images/case_studies/ccc_pano2vr.jpg" data-caption="Pano2VR Virtual Tour software">
                 <p>Learning new software (Pano2VR) was required in order to deliver the necessary Virtual Tour functionality which would work across devices. I picked it up easily, and even was able to customize a "skin" of UI controls for the interface.</p>
                 <h4>Home Prototypes</h4>
-                <img class="materialboxed" src="images/case_studies/ccc_home_mobile_sim.jpg" data-caption="An early mobile - portrait mode screenshot">
-                <p>An early mobile first - portrait mode screenshot before finalizing the navigation design and implementing responsive links.</p>
+                <img class="materialboxed" src="images/case_studies/ccc_home_mobile_sim.jpg" data-caption="An early mobile - portrait mode simulation using Developer Tools">
+                <p>An early mobile first - portrait mode simulation (using Developer Tools) before finalizing the navigation design and implementing responsive links.</p>
                 <img class="materialboxed" src="images/case_studies/ccc_proto_0.jpg" data-caption="The first prototype of the new homepage">
                 <img class="materialboxed" src="images/case_studies/ccc_proto_home1.jpg" data-caption="The second prototype of the new homepage">
                 <p>The first desktop prototype of the new homepage featured a full-screen height image, with virtual tour placeholder and call-to-action below the fold. The second reduced the height of the carousel, in order to hint at further content below the fold.</p> 
@@ -370,16 +374,7 @@ their clientele.</p>
         </div><!-- end left column -->
       </div><!-- end page wrapper -->
     <!-- end case study -->
-    
-<!--<p class="container portfolio"><i class="material-icons blue-text text-lighten-2">information</i> <strong>Thank you</strong> for taking the time to view my design portfolio. Please continue to browse using the links provided below, view my <a href="resume.html">resume</a>, or <a href="#connect" class="modal-trigger">contact me</a> now.</p>-->
-    <!--begin pagination
-     <ul class="pagination center">
-        <li class="disabled"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
-        <li class="active white-text light-green waves-effect" onClick="location.href='portfolio.html';">1</li>
-        <li class="waves-effect" onClick="location.href='portfolio2.html';">2</li>
-        <li class="waves-effect" onClick="location.href='portfolio3.html';">3</li>
-        <li class="waves-effect" onClick="location.href='portfolio2.html';"><i class="material-icons">chevron_right</i></li>
-      </ul>-->
+
     <!--begin footer-->
     <footer class="page-footer blue">
         <div class="container">
@@ -425,6 +420,18 @@ their clientele.</p>
     <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script src="js/materialize.min.js"></script>
     <script src="js/init.js"></script>
+    <script>// smooth scroll with URL retention, preserves Back functionality
+        var $root = $('html, body');
+        $('a').click(function() {
+            var href = $.attr(this, 'href');
+            $root.animate({
+                scrollTop: $(href).offset().top
+            }, 500, function () {
+                window.location.hash = href;
+            });
+            return false;
+        });
+    </script>
     <!-- Google analytics -->
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

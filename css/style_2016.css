@@ -500,7 +500,8 @@ video
     margin-bottom: 20px;
     border: 1px solid #DDD;
 }
-p.no-bdr
+.no-bdr,
+.profile p.no-bdr
 {
     border-bottom: none;
 }
