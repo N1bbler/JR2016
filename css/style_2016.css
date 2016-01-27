@@ -532,13 +532,17 @@ video
 }
 .slider
 {
-    margin: -20px 0 10px 0;
+    margin: -20px 0 20px 0;
 }
 .slider h3
 {
     text-transform: uppercase;
     margin-top: -8.5vh;   
 }
+.slider .indicators .indicator-item.active {
+    background-color: #1976D2;
+}
+
 /*JR theme color palette*/
 .dark-primary-color    { background: #1976D2; }
 .default-primary-color { background: #2196F3; }
