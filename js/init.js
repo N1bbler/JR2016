@@ -10,6 +10,7 @@
 $(document).ready(function() {
     // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
     $('.modal-trigger').leanModal();
+    // smooth scrolling
     $('a[href^="#"]').on('click',function (e) {
 	    e.preventDefault();
 
@@ -22,6 +23,8 @@ $(document).ready(function() {
 	        window.location.hash = target;
 	    });
 	});
+    // slider
+    $('.slider').slider({full_width: true, height:640});
   });
 
 function sendEmail() 

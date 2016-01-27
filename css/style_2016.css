@@ -529,7 +529,15 @@ video
 {
     border-bottom: none;
 }
-
+.slider
+{
+    /*height: 640px !important;*/
+    margin: -20px 0 10px 0;
+}
+.slider .slides li img
+{
+    /*height: 640px !important;*/
+}
 /*JR theme color palette*/
 .dark-primary-color    { background: #1976D2; }
 .default-primary-color { background: #2196F3; }
