@@ -558,7 +558,10 @@ video
 .slider .indicators .indicator-item.active {
     background-color: #1976D2;
 }
-
+.cta-btn-pos
+{
+    margin: -20px 0 20px 0;
+}
 /*JR theme color palette*/
 .dark-primary-color    { background: #1976D2; }
 .default-primary-color { background: #2196F3; }
