@@ -505,6 +505,22 @@ hr.style-eight:after {
     padding: .45em;
     background: white;
 }
+hr.style-fin {
+    padding: 0;
+    border: none;
+    border-top: medium double #CCC;
+    color: #CCC;
+    text-align: center;
+}
+hr.style-fin:after {
+    content: "fin";
+    display: inline-block;
+    position: relative;
+    top: -1.25em;
+    font-size: 1em;
+    padding: .45em;
+    background: white;
+}
 video
 {
     margin-bottom: 10px;
