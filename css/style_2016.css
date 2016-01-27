@@ -440,8 +440,14 @@ a[href^=tel]
 }
 .profile ul
 {
+    margin-top: -10px;
     padding-bottom: 0;
 }
+.profile ul ul
+{
+    margin-top: 0;
+}
+
 .profile ul li 
 {
     list-style-type: circle;
@@ -452,6 +458,10 @@ a[href^=tel]
     border-bottom: 1px dashed #CCC;
     padding: 0 20px 10px 0;
     margin-top: -10px;
+}
+.pro-sidebar
+{
+    background-color: #EEEEEE;
 }
 .pro-sidebar p
 {
@@ -473,11 +483,21 @@ hr.style-eight {
 }
 hr.style-eight:after {
     content: "§";
+    /* Safari */
+    -webkit-transform: rotate(-90deg);
+    /* Firefox */
+    -moz-transform: rotate(-90deg);
+    /* IE */
+    -ms-transform: rotate(-90deg);
+    /* Opera */
+    -o-transform: rotate(-90deg);
+    /* Internet Explorer */
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
     display: inline-block;
     position: relative;
-    top: -0.85em;
+    top: -1.25em;
     font-size: 1em;
-    padding: 0 0.25em;
+    padding: .45em;
     background: white;
 }
 video
