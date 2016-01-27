@@ -456,18 +456,6 @@ their clientele.</p>
     <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script src="js/materialize.min.js"></script>
     <script src="js/init.js"></script>
-    <script>// smooth scroll with URL retention, preserves Back functionality
-        var $root = $('html, body');
-        $('a').click(function() {
-            var href = $.attr(this, 'href');
-            $root.animate({
-                scrollTop: $(href).offset().top
-            }, 500, function () {
-                window.location.hash = href;
-            });
-            return false;
-        });
-    </script>
     <!-- Google analytics -->
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
