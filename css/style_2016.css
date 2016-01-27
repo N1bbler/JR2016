@@ -429,14 +429,18 @@ a[href^=tel]
 /* 2016 site styles */
 .section-header
 {
-    height: 60vh;
+    /*background: url(../images/case_studies/ccc_header.jpg) no-repeat center center;*/
+    height: 80vh;
     position: relative;
 }
-.section-header h2
+.section-header h1
 {
-    float: right;
-    margin-top: 45vh;
-    /*white-space: nowrap;*/
+    font-family: "Roboto Ultra Bold", sans-serif;
+    font-size: 6rem;
+    line-height: 4.35rem;
+    letter-spacing: .15rem;
+    font-weight: 900;
+    margin-top: 30vh;
 }
 .profile ul
 {
