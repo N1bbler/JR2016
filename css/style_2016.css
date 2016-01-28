@@ -430,9 +430,10 @@ a[href^=tel]
 /* 2016 site styles */
 .section-header
 {
-    height: 80vh;
+    height: 60vh;
     min-height: 480px;
     position: relative;
+    transition: all 0.5s ease;
 }
 .section-header img
 {
@@ -446,9 +447,10 @@ a[href^=tel]
     line-height: 4.35rem;
     letter-spacing: .15rem;
     font-weight: 900;
-    margin-top: 30vh;
+    margin-top: 20vh;
     padding: 20px 0 20px 0;
     max-width: 610px;
+    transition: all 0.5s ease;
     background: -moz-linear-gradient(left,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.65) 50%, rgba(0,0,0,0) 100%); /* FF3.6+ */
     background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(0,0,0,0)), color-stop(50%,rgba(0,0,0,0.65)), color-stop(100%,rgba(0,0,0,0))); /* Chrome,Safari4+ */
     background: -webkit-linear-gradient(left,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 50%,rgba(0,0,0,0) 100%); /* Chrome10+,Safari5.1+ */
@@ -462,6 +464,7 @@ a[href^=tel]
     {
         font-size: 5rem;
         line-height: 3.85rem;
+        transition: all 0.5s ease;
     }  
 }
 @media only screen and (max-width: 1280px) {
@@ -470,6 +473,7 @@ a[href^=tel]
         font-size: 4.5rem;
         line-height: 3rem;
         max-width: 500px;
+        transition: all 0.5s ease;
     }  
 }
 @media only screen and (max-width: 1024px) {
@@ -479,6 +483,7 @@ a[href^=tel]
         line-height: 2.85rem;
         margin-top: 30vh;
         max-width: 435px;
+        transition: all 0.5s ease;
     }  
 }
 @media only screen and (max-width: 990px) {
@@ -486,6 +491,7 @@ a[href^=tel]
     {
         margin-top: 1vh;
         max-width: 365px;
+        transition: all 0.5s ease;
     }  
 }
 @media only screen and (max-width: 770px) {
@@ -494,20 +500,24 @@ a[href^=tel]
         font-size: 3.5rem;
         line-height: 2.35rem;
         margin-top: 1vh;
+        transition: all 0.5s ease;
     }  
 }
 @media only screen and (max-width: 670px) {
+    .section-header
+    {
+        height: 30vh;
+        transition: all 0.5s ease;
+    }
     .section-header h1
     {
         font-size: 3rem;
         line-height: 2rem;
         margin-top: 1vh;
-        padding: 10px 0 10px 0;
         max-width: 350px;
+        transition: all 0.5s ease;
     }  
 }
-
-
 
 .profile ul
 {
