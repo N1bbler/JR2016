@@ -431,7 +431,13 @@ a[href^=tel]
 .section-header
 {
     height: 80vh;
+    min-height: 480px;
     position: relative;
+}
+.section-header img
+{
+    min-width: 960px;
+    width: 100vw;
 }
 .section-header h1
 {
@@ -441,6 +447,15 @@ a[href^=tel]
     letter-spacing: .15rem;
     font-weight: 900;
     margin-top: 30vh;
+    padding: 20px 0 20px 0;
+    max-width: 610px;
+    background: -moz-linear-gradient(left,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.65) 50%, rgba(0,0,0,0) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(0,0,0,0)), color-stop(50%,rgba(0,0,0,0.65)), color-stop(100%,rgba(0,0,0,0))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(left,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 50%,rgba(0,0,0,0) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(left,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 50%,rgba(0,0,0,0) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(left,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 50%,rgba(0,0,0,0) 100%); /* IE10+ */
+    background: linear-gradient(to right,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 50%,rgba(0,0,0,0) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#00000000',GradientType=1 ); /* IE6-9 */
 }
 @media only screen and (max-width: 1400px) {
     .section-header h1
@@ -449,20 +464,51 @@ a[href^=tel]
         line-height: 3.85rem;
     }  
 }
+@media only screen and (max-width: 1280px) {
+    .section-header h1
+    {
+        font-size: 4.5rem;
+        line-height: 3rem;
+        max-width: 500px;
+    }  
+}
 @media only screen and (max-width: 1024px) {
     .section-header h1
     {
         font-size: 4rem;
         line-height: 2.85rem;
         margin-top: 30vh;
+        max-width: 435px;
     }  
 }
 @media only screen and (max-width: 990px) {
     .section-header h1
     {
         margin-top: 1vh;
+        max-width: 365px;
     }  
 }
+@media only screen and (max-width: 770px) {
+    .section-header h1
+    {
+        font-size: 3.5rem;
+        line-height: 2.35rem;
+        margin-top: 1vh;
+    }  
+}
+@media only screen and (max-width: 670px) {
+    .section-header h1
+    {
+        font-size: 3rem;
+        line-height: 2rem;
+        margin-top: 1vh;
+        padding: 10px 0 10px 0;
+        max-width: 350px;
+    }  
+}
+
+
+
 .profile ul
 {
     margin-top: -10px;
