@@ -544,11 +544,6 @@ a[href^=tel]
 {
     background-color: #EEEEEE;
 }
-.pro-sidebar p
-{
-    padding: 0 0 10px 0;
-    font-size: 1.25rem;
-}
 .pro-sidebar h3
 {
     margin-bottom: 0;
@@ -637,6 +632,26 @@ video
 .cta-btn-pos
 {
     margin: -20px 0 20px 0;
+}
+#case-study p,
+#case-study li
+{
+    font-size: 1.25rem;
+}
+#case-study .pro-sidebar p
+{
+    border-bottom: none;
+    padding: 0 0 20px 0;
+    font-size: 1rem;
+}
+#case-study img
+{
+    margin-top: 20px;
+}
+.l4 p
+{
+    border-bottom: none;
+    margin: 0;
 }
 /*JR theme color palette*/
 .dark-primary-color    { background: #1976D2; }
