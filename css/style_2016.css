@@ -648,9 +648,10 @@ video
 {
     margin-top: 20px;
 }
-#logo-container img
+#logo-container img,
+.slider .slides li img
 {
-    margin-top: 0;
+    margin-top: 0 !important;
 }
 .l4 p
 {
