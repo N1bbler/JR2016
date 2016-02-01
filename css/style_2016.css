@@ -658,6 +658,12 @@ video
     border-bottom: none;
     margin: 0;
 }
+.materialbox-caption
+{
+background-color: rgba(0,0,0,.75);    
+}
+
+
 /*JR theme color palette*/
 .dark-primary-color    { background: #1976D2; }
 .default-primary-color { background: #2196F3; }
