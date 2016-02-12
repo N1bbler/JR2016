@@ -23,9 +23,10 @@
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
+
 body 
 {
-    min-width: 420px;   
+    min-width: 420px; 
 }
 .site-header
 {
