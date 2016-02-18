@@ -37,5 +37,5 @@ function skypeMe()
 }
 function getDoc() 
 {
-    location.href = "Jason_Riddle_resume_2015.doc";
+    location.href = "jr_resume_2016.docx";
 }

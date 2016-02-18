@@ -23,7 +23,10 @@
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
-
+html
+{
+    font-size: 14px;
+}
 body 
 {
     min-width: 420px; 
@@ -663,7 +666,10 @@ video
 {
 background-color: rgba(51,51,51,.75);    
 }
-
+#resumePDF
+{
+    height:calc(100vh - 64px);
+}
 
 /*JR theme color palette*/
 .dark-primary-color    { background: #1976D2; }
