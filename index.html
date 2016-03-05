@@ -5,64 +5,79 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
     <title>JasonRiddle.net | Senior UX + UI Design | Agile Development</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+    <link href='https://fonts.googleapis.com/css?family=Raleway:500,700' rel='stylesheet' type='text/css'>
     <link href="css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-    <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-    <link rel="icon" type="image/png" href="images/jr_2015_logo.svg"/>
+    <link href="css/style_2016.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link rel="icon" type="image/png" href="images/jr_2016_logo.svg"/>
 </head>
-<body>
+<body class="drk-grey">
     <!--navigation: header and side-nav-->
-    <nav class="white" role="navigation">
-        <div class="nav-wrapper site-header left z-depth-2">
-            <a id="logo-container" href="http://jasonriddle.net" class="brand-logo left"><img src="images/jr_2015_logo.svg" id="jr-logo">JasonRiddle.net</a>
+    <nav class="drk-grey" role="navigation">
+        <div class="nav-wrapper site-header left">
+            <a id="logo-container" href="http://jasonriddle.net" class="brand-logo left"><img src="images/jr_2016_logo.svg" id="jr-logo" class="left"><div class="left logo-text">JasonRiddle.net</div></a>
             <ul class="left hide-on-large-only">
-                <li><a href="#" data-activates="nav-mobile" class="button-collapse show-on-large"><i class="material-icons light-green-text">menu</i></a></li>
+                <li><a data-activates="nav-mobile" class="button-collapse show-on-large"><i class="material-icons white-text">menu</i></a></li>
             </ul>
-            <ul class="right hide-on-med-and-down">
+            <ul class="right hide-on-med-and-down" id="hdr-links">
                 <li class="active"><a href="index.html">Welcome</a></li>
                 <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="resume.html">Resume</a></li>
+                <li><a class="dropdown-button" data-activates="dropdown2">Resume<i class="mdi-navigation-arrow-drop-down right"></i></a></li>
+              <li><ul id='dropdown2' class='dropdown-content'>
+                <li><a href="Jason_Riddle_resume_2016.pdf" target="_blank">View PDF</a></li>
+                <li><a href="Jason_Riddle_resume_2016.docx" target="_blank">Download DOC</a></li>
+              </ul></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="#connect" class="modal-trigger">Connect</a></li>
             </ul>
             <ul id="nav-mobile" class="side-nav">
                 <li class="active"><a href="index.html"><i class="material-icons">room</i> Welcome</a></li>
                 <li><a href="portfolio.html"><i class="material-icons">work</i> Portfolio</a></li>
-                <li><a href="resume.html"><i class="material-icons">description</i> Resume</a></li>
+                <ul class="collapsible collapsible-accordion">
+                  <li>
+                    <a class="collapsible-header"><i class="mdi-navigation-arrow-drop-down left"></i>Resume</a>
+                    <div class="collapsible-body">
+                      <ul id="zebra">
+                        <li><a href="Jason_Riddle_resume_2016.pdf" target="_blank"><i class="material-icons">description</i>View PDF</a></li>
+                        <li><a href="Jason_Riddle_resume_2016.docx" target="_blank"><i class="material-icons">description</i>Word DOC</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                </ul>
                 <li><a href="about.html"><i class="material-icons">info</i> About</a></li>
                 <li><a href="#connect" class="modal-trigger" onclick="$('.button-collapse').sideNav('hide');"><i class="material-icons">contact_phone</i> Connect</a></li>
-            </ul>
+            </ul> 
         </div>
     </nav>
      <!-- begin #connect modal structure -->
-    <div id="connect" class="modal blue white-text bottom-sheet">
-        <h4 class="white blue-text text-darken-2">
+    <div id="connect" class="modal drk-brown white-text bottom-sheet">
+        <h4 class="med-grey drk-brown-txt">
                 <i class="material-icons">contact_phone</i> Connect
-                <a class="modal-action modal-close waves-effect waves-blue blue-text text-darken-2 btn-flat right">
+                <a class="modal-action modal-close waves-effect waves-grey drk-brown-txt btn-flat right">
                     <i class="material-icons circle">close</i></a>
         </h4>
         <div class="row modal-content">
             <div class="col s12 m12 l6" id="jrid">
                 <img src="images/JR.jpg" class="circle left">
                  <h4 class="white-text">Jason Riddle</h4>
-                 <span class="title white-text">Senior UX + UI Design | Agile Development </span>
+                 <span class="title white-text">Senior UX + UI Design <i class="material-icons">location_on</i> San Jose, CA </span>
                  <h5 class="white-text"><i class="material-icons">call</i> 408.306.3734</h5>
             </div>              
             <div class="col s12 m12 l6">
                 <ul id="sociallist">
                     <li class="blue darken-4" onclick="window.open('https://www.linkedin.com/in/jasonriddledotnet');" class="waves-effect">
-                        <div class="socicon center"><h3>j</h3></div>
+                        <div class="socicon center"><h5>j</h5></div>
                       <h5 class="title center">LinkedIn</h5>
                     </li>
                     <li class="light-green" onclick="sendEmail();" class="waves-effect">
-                      <div class="socicon center"><h3>@</h3></div>
+                      <div class="socicon center"><h5>@</h5></div>
                       <h5 class="title center">Email</5h>
                     </li>
                     <li class="grey darken-1" onclick="window.open('https://goo.gl/3fQDyr');" class="waves-effect">
-                      <div class="socicon center"><h3>c</h3></div>
+                      <div class="socicon center"><h5>c</h5></div>
                       <h5 class="title center">Google+</h5>
                     </li>
                      <li class="blue lighten-2" onclick="skypeMe();" class="waves-effect">
-                      <div class="socicon center"><h3>g</h3></div>
+                      <div class="socicon center"><h5>g</h5></div>
                       <h5 class="title center">Skype</h5>
                     </li>
                 </ul>
@@ -71,133 +86,70 @@
     </div>
     <!-- end #connect modal structure -->
     <!--PARALLAX BANNER-->
-    <div id="index-banner" class="parallax-container">
-        <div class="section no-pad-bot">
-            <div class="container">
-                <h1 class="header center blue-text text-lighten-2">Jason Riddle</h1>
-                <div class="row center">
-                    <h5 class="header col s12 light">Senior UX + UI Design | Agile Development</h5>
-                </div>
-                <div class="row center">
-                    <a href="#connect" id="index-connect" class="modal-trigger btn-large waves-effect waves-light light-green darken-1 hoverable">Connect</a>
-                </div>
-            </div>
+    <section id="index-banner" class="parallax-container orange-brdr">
+        <div class="row center" style="margin-top: 150px;">
+            <h5 class="raleway col s4 offset-m4">Senior UX + UI Designer <br><i class="material-icons">location_on</i> San Jose, CA</h5>
         </div>
-        <div class="parallax"><img src="images/sj_panorama.jpg" alt="Skyline at night: San Jose, CA."><!--This file is licensed under the Creative Commons Attribution-Share Alike 3.0 Unported license.--></div>
-    </div>
+        <div class="parallax"><img src="images/sj_panorama_2016.jpg" alt="Skyline at night: San Jose, CA."><!--This file is licensed under the Creative Commons Attribution-Share Alike 3.0 Unported license.--></div>
+    </section>
     <!--promo layout area-->
-    <div class="container">
-        <div class="section">
-        <!--   Icon Section   -->
+    <!--DESIGN-->
+    <section class="med-grey dark-grey-brdr">
+        <div class="container section">
+            <!--   Icon Section   -->
             <div class="row">
-                <div class="col s12 m4">
-                    <div class="icon-block">
-                    <h1 class="center blue-text text-darken-2"><i class="material-icons">business</i></h1>
-                    <h5 class="center">Business Value Focused</h5>
-                    <p class="light">As a Designer and Developer with many years of experience building and shipping Web-based software products, I recognize the need to remain focused on deliverables which enhance business value and maximize return on investment. If a product or service isn't solving a real-world business problem then it is unlikely to thrive in the marketplace.</p>
-                    </div>
+                <h2 class="col s12 left drk-grey-txt">Design</h2>
+                <div class="col s12 m4 center icon-block">
+                    <img src="images/icon_users.png" class="center index-icons">
+                    <h5 class="center">User Experiences</h5>
+                    <p class="light left">Working with cross-functional Agile teams, my passion is for building great user experiences. This is achieved by first understanding business goals, customer needs, and user motivations. By utilizing proven human-centered design processes, rapid testing and iteration, we can deliver delightful and effective solutions.</p>
                 </div>
-                <div class="col s12 m4">
-                    <div class="icon-block">
-                    <h1 class="center blue-text text-darken-2"><i class="material-icons">group</i></h1>
-                    <h5 class="center">User Experience is Everything</h5>
-                    <p class="light">If understanding the needs and desired workflows of users are not elevated to first priority, then the product will struggle or even fail. My focus is to help customers as well as internal and external stakeholders to solve real business problems and to provide modern, working solutions presented in an intuitive and useable form.</p>
-                    </div>
+                <div class="col s12 m4 center icon-block">
+                    <img src="images/icon_devices.png" class="center index-icons">
+                    <h5 class="center">User Interfaces</h5>
+                    <p class="light left">In an ever-changing world of devices, technologies and requirements it's essential to adapt and remain flexible on all fronts, from design and development processes to iteratively updated products. Responsive design and a mobile-first approach are my preferred techniques to designing relevant solutions.</p>
                 </div>
-                <div class="col s12 m4">
-                    <div class="icon-block">
-                    <h1 class="center blue-text text-darken-2"><i class="material-icons">aspect_ratio</i></h1>
-                    <h5 class="center">Responsive and Agile Development</h5>
-
-                    <p class="light">In an ever-changing world of devices, technologies and requirements it's essential to adapt and remain flexible on all fronts, from development processes through to shipping products. I leverage processes like Agile / Scrum / Kanban and deep experience with responsive web development best practices to deliver exceptional results.</p>
-                    </div>
+                <div class="col s12 m4 center icon-block">
+                    <img src="images/icon_code.png" class="center index-icons">
+                    <h5 class="center">Interactive Prototypes</h5>
+                    <p class="light left">After designing with tools such as Photoshop, Illustrator and Sketch, I code HTML5, CSS3, leverage popular frameworks like Bootstrap, libraries like jQuery, and version control with GIT; building flexible and robust prototypes with semantic code which can easily be changed or actively developed into shipping products.</p>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
     <!--mid-page parallax container-->
-    <div class="parallax-container valign-wrapper">
-        <div class="section no-pad-bot">
-            <div class="container">
-                <div class="row center">
-                    <h5 class="header col s12 light">Available now for new design and development opportunities!</h5>
-                </div>
-            </div>
+    <section class="parallax-container drk-brown-brdr">
+         <div class="row center"  style="margin-top: 150px;">
+            <h5 class="raleway">Currently seeking the right opportunity in the South Bay area</h5>
         </div>
-        <div class="parallax"><img src="images/mirror.jpg" alt="Agile & Responsive Design"></div>
-    </div>
+        <div class="parallax"><img src="images/mirror_2016.jpg" alt="Agile & Responsive Design"></div>
+    </section>
     <!--new direction-->
-    <div class="container">
-        <div class="section">
+    <!--DESIGN-->
+    <section class="taupe dark-grey-brdr">
+        <div class="container section">
+            <!--   Icon Section   -->
             <div class="row">
-                <div class="icon-block center">
-                    <h1 class="center blue-text text-darken-2"><i class="material-icons">open_with</i></h1>
-                    <h5>It's time to go in a new direction.</h5>
-                    <p class="left-align light">I'm a dedicated and experienced professional with consistently stellar reviews from customers, teammates, management, and other project stakeholders which I've had the pleasure to work with in the past. In February 2015 I received the <!-- Modal Trigger --><a class="waves-effect waves-light modal-trigger" href="#rasAward">Seagate Cloud Systems and Solutions RAS Award</a>, <em>"In recognition for the dedication, passion, and delivery of improvements in Reliability, Availability, and Serviceability of Seagate CSS Products and Services"</em>. But after 9.5 years of service at Xyratex and Seagate, it is time to make a change. Now, I look forward to discovering what new opportunities await on the horizon. </p>
-                    <p class="left-align light"><a href="#connect" class="modal-trigger" onclick="$('.button-collapse').sideNav('hide');">Contact me</a> today, and let's discuss if I might be a good fit for your organization. I'd also like to invite you to read letters of recommendation on my <a href="https://www.linkedin.com/in/jasonriddledotnet" target="_blank">LinkedIn profile</a> to see what my employers and colleagues have to say about working with me. Thank you for your time and consideration. </p>
-                </div>
-                <!-- Modal Structure -->
-                <div id="rasAward" class="modal">
-                    <div class="modal-content">
-                      <h4>Seagate Cloud Systems and Solutions RAS Award ~ Feb 2015</h4>
-                      <div class="center"><img class="responsive-img" src="images/ras_award.png"></div>
-                    </div>
-                    <div class="modal-footer">
-                      <a href="#!" class="modal-action modal-close waves-effect waves-blue btn-flat ">Congrats!</a>
-                    </div>
+                <h2 class="col s12 left med-grey-txt">Process</h2>
+                <div class="col s12 center icon-block">
+                    <img src="images/icons_process.png" class="center responsive-img">
                 </div>
             </div>
         </div>
-    </div>
+    </section>
     <!--bottom-page parallax container-->
-    <div class="parallax-container valign-wrapper greenDivide">
-        <div class="section no-pad-bot">
-            <div class="container">
-                <div class="row center">
-                    <h5 class="header col s12 light">I'm looking forward to building great user experiences together.</h5>
-                </div>
-            </div>
+    <section class="parallax-container med-grey-brdr">
+         <div class="row center" style="margin-top: 150px;">
+            <!--<h5 class="raleway col s4 offset-m4">Are you ready to build great user experiences together?</h5>-->
+             <a href="#connect" id="index-connect" class="modal-trigger btn-large waves-effect waves-light orange hoverable">Let's Build Something Great</a>
         </div>
-        <div class="parallax"><img src="images/footer.jpg" alt="Contact me"></div>
-    </div>
+        <div class="parallax"><img src="images/footer_2016.jpg" alt="Contact me"></div>
+    </section>
     <!--begin footer-->
-    <footer class="page-footer blue">
-        <div class="container">
-            <div class="row">
-                <div class="col s12 l6">
-                <h5 class="white-text"><i class="material-icons">person_pin</i> Quick Bio</h5>
-                <p class="grey-text text-lighten-4">Senior User Experience and User Interface Design, Interaction Design, and Agile Development are my specialties; I'm ready to get to work building great experiences for your users</p>
-                </div>
-                <div class="col s12 l4">
-                    <h5 class="white-text"><i class="material-icons">contact_phone</i> Connect</h5>
-                    <ul id="footerConnect" class="white-text">
-                        <li class="blue darken-4 center waves-effect" onclick="window.open('https://www.linkedin.com/in/jasonriddledotnet');">
-                        <div class="socicon"><h5>j</h5></div>
-                    </li>
-                    <li class="light-green center" onclick="sendEmail();" class="waves-effect">
-                      <div class="socicon"><h5>@</h5></div>
-                    </li>
-                    <li class="grey darken-1 center" onclick="window.open('https://goo.gl/3fQDyr');" class="waves-effect">
-                      <div class="socicon"><h5>c</h5></div>
-                    </li>
-                     <li class="blue lighten-2 center" onclick="skypeMe();"  class="waves-effect">
-                      <div class="socicon"><h5>g</h5></div>
-                    </li>
-                    </ul>
-                </div>
-                <div class="col s12 l2">
-                    <h5 class="white-text"><i class="material-icons">menu</i> Menu</h5>
-                    <ul>
-                        <li><a class="white-text" href="portfolio.html">Portfolio</a></li>
-                        <li><a class="white-text" href="resume.html">Resume</a></li>
-                        <li><a class="white-text" href="about.html">About</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
+    <footer class="drk-brown">
         <div class="footer-copyright center">
             <div class="container">
-                &copy; 2015 <a class="blue-text text-lighten-3" href="http://jasonriddle.net" alt="JasonRiddle.net">Jason Riddle</a>. Built with <a class="blue-text text-lighten-3" href="http://www.w3.org/TR/html5/" target="_blank" alt="HTML5">HTML5</a>, <a class="blue-text text-lighten-3" href="http://www.w3.org/TR/css3-roadmap/" target="_blank" alt="CSS3">CSS3</a>, <a class="blue-text text-lighten-3" href="http://materializecss.com" target="_blank" alt="Materialze">Materialize</a>, <a class="blue-text text-lighten-3" href="http://socicon.com" target="_blank" alt="Socicon">Socicon</a>, and <a class="blue-text text-lighten-3" href="http://brackets.io" target="_blank" alt="Brackets">Brackets</a>.
+                &copy; 2016 <a class="blue-text text-lighten-3" href="http://jasonriddle.net" alt="JasonRiddle.net">Jason Riddle</a>. Built with <a class="blue-text text-lighten-3" href="http://www.w3.org/TR/html5/" target="_blank" alt="HTML5">HTML5</a>, <a class="blue-text text-lighten-3" href="http://www.w3.org/TR/css3-roadmap/" target="_blank" alt="CSS3">CSS3</a>, <a class="blue-text text-lighten-3" href="http://materializecss.com" target="_blank" alt="Materialze">Materialize</a>, <a class="blue-text text-lighten-3" href="http://socicon.com" target="_blank" alt="Socicon">Socicon</a>, and <a class="blue-text text-lighten-3" href="http://brackets.io" target="_blank" alt="Brackets">Brackets</a>.
             </div>
         </div>
     </footer>

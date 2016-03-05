@@ -1,0 +1,224 @@
+.section-header
+{
+    height: 60vh;
+    min-height: 480px;
+    position: relative;
+    transition: all 0.5s ease;
+}
+.section-header img
+{
+    min-width: 960px;
+    width: 100vw;
+}
+.section-header h1
+{
+    font-family: "Roboto Ultra Bold", sans-serif;
+    font-size: 5rem;
+    line-height: 4.35rem;
+    letter-spacing: .15rem;
+    font-weight: 900;
+    margin-top: 20vh;
+    padding: 20px 0 20px 0;
+    max-width: 610px;
+    transition: all 0.5s ease;
+    background: -moz-linear-gradient(left,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.65) 50%, rgba(0,0,0,0) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(0,0,0,0)), color-stop(50%,rgba(0,0,0,0.65)), color-stop(100%,rgba(0,0,0,0))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(left,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 50%,rgba(0,0,0,0) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(left,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 50%,rgba(0,0,0,0) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(left,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 50%,rgba(0,0,0,0) 100%); /* IE10+ */
+    background: linear-gradient(to right,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 50%,rgba(0,0,0,0) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#00000000',GradientType=1 ); /* IE6-9 */
+}
+@media only screen and (max-width: 1400px) {
+    .section-header h1
+    {
+        font-size: 4rem;
+        line-height: 3.85rem;
+        transition: all 0.5s ease;
+    }  
+}
+@media only screen and (max-width: 1280px) {
+    .section-header h1
+    {
+        font-size: 3.5rem;
+        line-height: 3rem;
+        max-width: 500px;
+        transition: all 0.5s ease;
+    }  
+}
+@media only screen and (max-width: 1024px) {
+    .section-header h1
+    {
+        font-size: 3rem;
+        line-height: 2.85rem;
+        margin-top: 30vh;
+        max-width: 435px;
+        transition: all 0.5s ease;
+    }  
+}
+@media only screen and (max-width: 990px) {
+    .section-header h1
+    {
+        margin-top: 1vh;
+        max-width: 365px;
+        transition: all 0.5s ease;
+    }  
+}
+@media only screen and (max-width: 770px) {
+    .section-header h1
+    {
+        font-size: 2.5rem;
+        line-height: 2.35rem;
+        margin-top: 1vh;
+        transition: all 0.5s ease;
+    }  
+}
+@media only screen and (max-width: 670px) {
+    .section-header
+    {
+        height: 30vh;
+        transition: all 0.5s ease;
+    }
+    .section-header h1
+    {
+        font-size: 2rem;
+        line-height: 2rem;
+        margin-top: 1vh;
+        max-width: 350px;
+        transition: all 0.5s ease;
+    }  
+}
+
+.profile ul
+{
+    margin-top: -10px;
+    padding-bottom: 0;
+}
+.profile ul ul
+{
+    margin-top: 0;
+}
+
+.profile ul li 
+{
+    list-style-type: circle;
+    margin-left: 50px;
+}
+.profile p
+{
+    border-bottom: 1px dashed #CCC;
+    padding: 0 20px 10px 0;
+    margin-top: -10px;
+}
+.pro-sidebar
+{
+    background-color: #EEEEEE;
+}
+.pro-sidebar h3
+{
+    margin-bottom: 0;
+}
+
+/* Glyph, by Harry Roberts, tweaked by JR */
+hr.style-eight {
+    padding: 0;
+    border: none;
+    border-top: medium double #CCC;
+    color: #CCC;
+    text-align: center;
+}
+hr.style-eight:after {
+    content: "§";
+    /* Safari */
+    -webkit-transform: rotate(-90deg);
+    /* Firefox */
+    -moz-transform: rotate(-90deg);
+    /* IE */
+    -ms-transform: rotate(-90deg);
+    /* Opera */
+    -o-transform: rotate(-90deg);
+    /* Internet Explorer */
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+    display: inline-block;
+    position: relative;
+    top: -1.25em;
+    font-size: 1em;
+    padding: .45em;
+    background: white;
+}
+hr.style-fin {
+    padding: 0;
+    border: none;
+    border-top: medium double #CCC;
+    color: #CCC;
+    text-align: center;
+}
+hr.style-fin:after {
+    content: "fin";
+    display: inline-block;
+    position: relative;
+    top: -1.25em;
+    font-size: 1em;
+    padding: .45em;
+    background: white;
+}
+video
+{
+    margin-bottom: 10px;
+}
+
+.offset-top
+{
+    margin-top: 30px;
+}
+.process img
+{
+    margin-bottom: 20px;
+    border: 1px solid #DDD;
+}
+.no-bdr,
+.profile p.no-bdr
+{
+    border-bottom: none;
+}
+.slider
+{
+    margin: -20px 0 20px 0;
+}
+.slider h4
+{
+    text-transform: uppercase;
+    margin-top: -8.5vh;   
+}
+.slider .indicators .indicator-item.active {
+    background-color: #1976D2;
+}
+.cta-btn-pos
+{
+    margin: -20px 0 20px 0;
+}
+#case-study p,
+#case-study li
+{
+    font-size: 1.25rem;
+}
+#case-study .pro-sidebar p
+{
+    border-bottom: none;
+    padding: 0 0 20px 0;
+    font-size: 1rem;
+}
+#case-study img
+{
+    margin-top: 20px;
+}
+#logo-container img,
+.slider .slides li img
+{
+    margin-top: 0 !important;
+}
+.l4 p
+{
+    border-bottom: none;
+    margin: 0;
+}

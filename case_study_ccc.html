@@ -6,13 +6,14 @@
     <title>JasonRiddle.net ~ ChannelCatCharters.com: Case Study</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
     <link href="css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="css/case_studies.css" type="text/css" rel="stylesheet" media="screen,projection"/>
     <link href="css/style_2016.css" type="text/css" rel="stylesheet" media="screen,projection"/>
     <link rel="icon" type="image/png" href="images/jr_2015_logo.svg"/>
 </head>
 <body id="case-study">
-    <nav class="white" role="navigation">
-        <div class="nav-wrapper site-header left z-depth-2">
-            <a id="logo-container" href="http://jasonriddle.net" class="brand-logo left"><img src="images/jr_2015_logo.svg" id="jr-logo">JasonRiddle.net</a>
+     <nav class="drk-grey" role="navigation">
+        <div class="nav-wrapper site-header left">
+            <a id="logo-container" href="http://jasonriddle.net" class="brand-logo left"><img src="images/jr_2016_logo.svg" id="jr-logo" class="left"><div class="left logo-text">JasonRiddle.net</div></a>
              <ul class="left hide-on-large-only">
                 <li><a href="#" data-activates="nav-mobile" class="button-collapse show-on-large"><i class="material-icons light-green-text">menu</i></a></li>
             </ul>
@@ -26,7 +27,11 @@
                 <li><a href="#!">Mobile Application Concept</a></li>
               </ul></li>
                 <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="resume.html">Resume</a></li>
+                <li><a class="dropdown-button" data-activates="dropdown2">Resume<i class="mdi-navigation-arrow-drop-down right"></i></a></li>
+              <li><ul id='dropdown2' class='dropdown-content'>
+                <li><a href="Jason_Riddle_resume_2016.pdf" target="_blank">View PDF</a></li>
+                <li><a href="Jason_Riddle_resume_2016.docx" target="_blank">Download DOC</a></li>
+              </ul></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="#connect" class="modal-trigger">Connect</a></li>
             </ul>
@@ -94,7 +99,7 @@
     
     <!--begin CASE STUDY portfolio
         <!--PARALLAX BANNER-->
-    <div class="parallax-container section-header">
+    <div id="index-banner" class="parallax-container section-header">
         <div class="section no-pad-bot">
             <div class="container">
                 <h1>ChannelCat<br>Charters.com<br>Case Study</h1>

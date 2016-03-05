@@ -25,6 +25,21 @@ $(document).ready(function() {
     $('.slider').slider({full_width: true, height:640});
   });
 
+// shrink header on scroll
+$(document).on("scroll", function(){
+    if
+  ($(document).scrollTop() > 100){
+      $("nav").addClass("shrink");
+      $("#index-banner").addClass("shrink-lax");
+    }
+    else
+    {
+        $("nav").removeClass("shrink");
+        $("#index-banner").removeClass("shrink-lax");
+    }
+});
+
+
 function sendEmail() 
 {
     location.href = "mailto:riddledesignworks@gmail.com";
@@ -35,5 +50,9 @@ function skypeMe()
 }
 function getDoc() 
 {
-    location.href = "jr_resume_2016.docx";
+    location.href = "Jason_Riddle_resume_2016.docx";
+}
+function getPDF() 
+{
+    location.href = "Jason_Riddle_resume_2016.pdf";
 }
