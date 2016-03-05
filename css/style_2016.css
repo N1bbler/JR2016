@@ -641,7 +641,7 @@ footer.page-footer
 .about-me-content,
 .about-site-content
 {
-    background-color: rgba(255,255,255,.85);
+    background-color: rgba(255,255,255,.9);
     padding: 0 25px 1px 25px;
     opacity: 1.0;
 }
