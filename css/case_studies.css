@@ -1,4 +1,4 @@
-.section-header
+#index-banner.section-header
 {
     height: 60vh;
     min-height: 480px;
@@ -35,7 +35,7 @@
         font-size: 4rem;
         line-height: 3.85rem;
         transition: all 0.5s ease;
-    }  
+    }
 }
 @media only screen and (max-width: 1280px) {
     .section-header h1
@@ -44,7 +44,11 @@
         line-height: 3rem;
         max-width: 500px;
         transition: all 0.5s ease;
-    }  
+    } 
+    .collapsible-header h3
+    {
+        font-size: 2.5rem;
+    }
 }
 @media only screen and (max-width: 1024px) {
     .section-header h1
@@ -62,7 +66,11 @@
         margin-top: 1vh;
         max-width: 365px;
         transition: all 0.5s ease;
-    }  
+    }
+    .collapsible-header h3
+    {
+        font-size: 2.25rem;
+    }
 }
 @media only screen and (max-width: 770px) {
     .section-header h1
@@ -71,10 +79,14 @@
         line-height: 2.35rem;
         margin-top: 1vh;
         transition: all 0.5s ease;
-    }  
+    }
+    .collapsible-header h3
+    {
+        font-size: 2rem;
+    }
 }
 @media only screen and (max-width: 670px) {
-    .section-header
+    #index-banner.section-header
     {
         height: 30vh;
         transition: all 0.5s ease;
@@ -86,7 +98,12 @@
         margin-top: 1vh;
         max-width: 350px;
         transition: all 0.5s ease;
-    }  
+    }
+    .collapsible-header h3
+    {
+        font-size: 1.85rem;
+        padding: 0;
+    }
 }
 
 .profile ul
@@ -106,9 +123,9 @@
 }
 .profile p
 {
-    border-bottom: 1px dashed #CCC;
-    padding: 0 20px 10px 0;
-    margin-top: -10px;
+    /*border-bottom: 1px dashed #CCC;*/
+    padding: 10px 20px 10px 10px;
+    /*margin-top: -10px;*/
 }
 .pro-sidebar
 {
@@ -144,7 +161,7 @@ hr.style-eight:after {
     top: -1.25em;
     font-size: 1em;
     padding: .45em;
-    background: white;
+    /*background: white;*/
 }
 hr.style-fin {
     padding: 0;
@@ -191,7 +208,7 @@ video
     margin-top: -8.5vh;   
 }
 .slider .indicators .indicator-item.active {
-    background-color: #1976D2;
+    background-color: #FBB040;
 }
 .cta-btn-pos
 {

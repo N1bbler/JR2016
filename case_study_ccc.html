@@ -10,23 +10,17 @@
     <link href="css/style_2016.css" type="text/css" rel="stylesheet" media="screen,projection"/>
     <link rel="icon" type="image/png" href="images/jr_2015_logo.svg"/>
 </head>
-<body id="case-study">
-     <nav class="drk-grey" role="navigation">
+<body id="case-study" class="case-study-bg">
+    <!--navigation: header and side-nav-->
+    <nav class="drk-grey" role="navigation">
         <div class="nav-wrapper site-header left">
             <a id="logo-container" href="http://jasonriddle.net" class="brand-logo left"><img src="images/jr_2016_logo.svg" id="jr-logo" class="left"><div class="left logo-text">JasonRiddle.net</div></a>
-             <ul class="left hide-on-large-only">
-                <li><a href="#" data-activates="nav-mobile" class="button-collapse show-on-large"><i class="material-icons light-green-text">menu</i></a></li>
+            <ul class="left hide-on-large-only">
+                <li><a data-activates="nav-mobile" class="button-collapse show-on-large"><i class="material-icons white-text">menu</i></a></li>
             </ul>
-            <ul class="right hide-on-med-and-down">
+            <ul class="right hide-on-med-and-down" id="hdr-links">
                 <li><a href="index.html">Welcome</a></li>
-                <li><a class="dropdown-button" href="#!" data-activates="dropdown1">Case Studies<i class="mdi-navigation-arrow-drop-down right"></i></a>
-              <ul id='dropdown1' class='dropdown-content'>
-                <li><a href="#!">Consumer-Facing Website</a></li>
-                <li><a href="#!">Enterprise Software Application: Big Data Dashboard</a></li>
-                <li><a href="#!">Enterprise Software Application: Service Console</a></li>
-                <li><a href="#!">Mobile Application Concept</a></li>
-              </ul></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
+                <li class="active"><a href="portfolio.html">Portfolio</a></li>
                 <li><a class="dropdown-button" data-activates="dropdown2">Resume<i class="mdi-navigation-arrow-drop-down right"></i></a></li>
               <li><ul id='dropdown2' class='dropdown-content'>
                 <li><a href="Jason_Riddle_resume_2016.pdf" target="_blank">View PDF</a></li>
@@ -35,28 +29,23 @@
                 <li><a href="about.html">About</a></li>
                 <li><a href="#connect" class="modal-trigger">Connect</a></li>
             </ul>
-             <ul id="nav-mobile" class="side-nav">
+            <ul id="nav-mobile" class="side-nav">
                 <li><a href="index.html"><i class="material-icons">room</i> Welcome</a></li>
-                <li class="no-padding">
-                    <ul class="collapsible collapsible-accordion">
-                      <li>
-                        <a class="collapsible-header"><i class="material-icons">description</i>Case Studies<i class="mdi-navigation-arrow-drop-down"></i></a>
-                        <div class="collapsible-body">
-                          <ul id="zebra">
-                            <li><a href="#!">Website</a></li>
-                            <li><a href="#!">Dashboard</a></li>
-                            <li><a href="#!">Console</a></li>
-                            <li><a href="#!">Mobile</a></li>
-                          </ul>
-                        </div>
-                      </li>
-                    </ul>
-                </li>
-                 <li><a href="portfolio.html"><i class="material-icons">work</i> Portfolio</a></li>
-                <li><a href="resume.html"><i class="material-icons">description</i> Resume</a></li>
+                <li class="active"><a href="portfolio.html"><i class="material-icons">work</i> Portfolio</a></li>
+                <ul class="collapsible collapsible-accordion">
+                  <li>
+                    <a class="collapsible-header"><i class="mdi-navigation-arrow-drop-down left"></i>Resume</a>
+                    <div class="collapsible-body">
+                      <ul id="zebra">
+                        <li><a href="Jason_Riddle_resume_2016.pdf" target="_blank"><i class="material-icons">description</i>View PDF</a></li>
+                        <li><a href="Jason_Riddle_resume_2016.docx" target="_blank"><i class="material-icons">description</i>Word DOC</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                </ul>
                 <li><a href="about.html"><i class="material-icons">info</i> About</a></li>
                 <li><a href="#connect" class="modal-trigger" onclick="$('.button-collapse').sideNav('hide');"><i class="material-icons">contact_phone</i> Connect</a></li>
-            </ul>
+            </ul> 
         </div>
     </nav>
      <!-- begin #connect modal structure -->
@@ -96,10 +85,9 @@
         </div>
     </div>
     <!-- end #connect modal structure -->
-    
-    <!--begin CASE STUDY portfolio
+    <!--begin CASE STUDY portfolio -->
         <!--PARALLAX BANNER-->
-    <div id="index-banner" class="parallax-container section-header">
+    <div id="index-banner" class="parallax-container section-header drk-grey-brdr">
         <div class="section no-pad-bot">
             <div class="container">
                 <h1>ChannelCat<br>Charters.com<br>Case Study</h1>
@@ -107,16 +95,28 @@
         </div>
         <div class="parallax"><img src="images/case_studies/ccc_header.jpg" alt="ChannelCatCharters.com: case study"></div>
     </div>
-    <div class="container portfolio profile">
+    
+    <ul class="collapsible" data-collapsible="expandable">
+    <li>
+        <section class="collapsible-header tan taupe-brdr drk-brown-txt">   
+            <div class="container portfolio profile">
+                <div class="row">
+                    <div class="col s12">
+                        <h3>Project Profile</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+    <section class="collapsible-body taupe-brdr lt-grey">
+        <div class="container portfolio profile">
         <div class="row">
             <div class="col l12">
-                <h2>Project Profile</h2>
                 <p><strong>Type:</strong> Site Redesign</p>
                 <p><strong>Category:</strong> Consumer-Facing Website</p>
                 <p><strong>Description:</strong> The Channel Cat Charters website is the online presence for the Channel Cat ship located in Santa Barbara Harbor, SB, CA. The site is used as a sales and marketing tool, as well as to demonstrate the qualities and features of the Channel Cat charter experience to potential clientele. The business caters to a high-end audience and offers individualized and highly personalized service. The (now former) site was launched in 2007. While it served them well for many years, it was built with legacy technology (Flash, Java applets) and was no longer working for them or many of their clients. This resulted in lost booking opportunities, as well as having to guide clients through the site, which was expensive in terms of time allocation. Previously, the site did not include any analytics solution, so measuring these lost opportunities was impossible.</p>
             </div>
         </div>
-         <div class="row pro-sidebar">
+         <div class="row pro-sidebar curvebox">
              <div class="col s12 l4 process">
                 <h4>Exclusive Clientele</h4>
                 <img src="images/case_studies/ccc_bill_gates.JPG" class="materialboxed" data-caption="Bill Gates pictured at the helm of the Channel Cat">
@@ -177,7 +177,7 @@
                 </p>
             </div>
         </div>
-         <div class="row pro-sidebar">
+         <div class="row pro-sidebar curvebox">
              <div class="col s12 l4 process">
                 <h4>Before: Desktop (Home)</h4>
                 <img src="images/case_studies/ccc_former_homepage.jpg" class="materialboxed" data-caption="ChannelCatCharters.com Home page BEFORE the redesign">
@@ -194,210 +194,251 @@
                 <img src="images/case_studies/ccc_broken_java.PNG" class="materialboxed" data-caption="ChannelCatCharters.com Home page on an iPhone (broken due to use of Java applets)">
                 <p>ChannelCatCharters.com Virtual Tours on an iPhone. Broken due to use of Java applets. (image cropped)</p>
             </div>
-        </div> 
-
-         <div class="row">
-             <div class="col s12">
-                <hr class="style-eight">
-                <h3>My UX + UI Design Process</h3>
-                <p class="no-bdr">A detailed case-study follows of my design and development process of the site redesign. I explain each step along the way of a very iterative process and provide in-progress artifact screenshots, as well as a gallery at the end of the document showcasing the final result in before/after format.</p>
-                 <hr class="style-eight">
-             </div>
-             <div class="col s12 l8">
-                <h3>Discovery, Research, Wireframes</h3>
-                <ul>
-                    <li>Initial client consultation in order to:</li>
-                    <li style="list-style-type: none;"> 
-                        <ul>
-                            <li>Understand the business itself and purpose of the site</li>
-                            <li>Understand the problems they are facing with the site</li>
-                            <li>Understand their goals for the site redesign</li>
-                            <li>Understand their clientele, as well as their goals and needs</li>
-                            <li>Understand their internal use cases for the site</li>
-                            <li>Establish delivery of content and assets</li>
-                            <li>Establish any parameters or limitations</li>
-                            <li>Estimate time to completion, explain process, and address administrative matters</li>
-                        </ul>
-                    </li>
-                    <li>Performed <a href="#an-audit">Site Audit</a> to understand current site, content, technical implementation and to reinforce goals</li>
-                    <li>Analyzed current workflow and information architecture</li>
-                    <li>Performed Competitive Analysis in order to:</li>
-                    <li style="list-style-type: none;"> 
-                        <ul>
-                            <li>Be aware of competing Charter companies in Santa Barbara</li>
-                            <li>Evaluate the pros and cons of competitive sites</li>
-                            <li>Understand where the bar is set, in order to be sure we overshoot it</li>
-                        </ul>
-                    </li>
-                    <li>Reviewed current and new site content for awareness and inspiration</li>
-                    <li>Defined <a href="#an-personas">initial User Profiles / Personas</a>, as well as simple Use Cases</li>
-                    <li>Engage in initial ideation and created <a href="#an-low-fi">low-fidelity wireframes (analog)</a> to quickly define potential solutions and approach</li>
-                    <li>Modelled different Call-To-Action (CTA) approaches</li>
-                    <li>Define and explain thoughts on Navigational Model changes (old site to new, responsive site)</li>
-                </ul>
+        </div>
+    </div>
+    </section>
+    
+    </li>
+    <li>
+        <section class="collapsible-header drk-brown taupe-brdr med-grey-txt">   
+        <div class="container portfolio profile">
+            <div class="row">
+                <div class="col s12">
+                    <h3>Discovery, Research, Wireframes</h3>
+                </div>
             </div>
-            <div class="col s12 l4 pro-sidebar offset-top">
-                <h4 id="an-audit">Site Audit Video</h4>
-                  <video class="responsive-video" controls>
-                   <source src="video/ccc_site_audit.mp4" type="video/mp4">
-                  </video>
-                  <p class="no-bdr">The Site Audit shows a walkthrough of the site before any of the redesign work commenced. I speak about the features of the site, some of the goals for the redesign, as well as issues to overcome with the implementation. You may wish to use the full-screen button (at right of volume control) for a better view.</p>
+        </div>
+    </section>
+        <section class="collapsible-body med-grey-brdr tan">
+        <div class="container portfolio profile">
+        <div class="row">
+         <div class="col s12 l8">
+            <p class="no-bdr">A detailed case-study follows of my design and development process of the site redesign. I explain each step along the way of a very iterative process and provide in-progress artifact screenshots, as well as a gallery at the end of the document showcasing the final result in before/after format.</p><br>
+            <ul>
+                <li>Initial client consultation in order to:</li>
+                <li style="list-style-type: none;"> 
+                    <ul>
+                        <li>Understand the business itself and purpose of the site</li>
+                        <li>Understand the problems they are facing with the site</li>
+                        <li>Understand their goals for the site redesign</li>
+                        <li>Understand their clientele, as well as their goals and needs</li>
+                        <li>Understand their internal use cases for the site</li>
+                        <li>Establish delivery of content and assets</li>
+                        <li>Establish any parameters or limitations</li>
+                        <li>Estimate time to completion, explain process, and address administrative matters</li>
+                    </ul>
+                </li>
+                <li>Performed <a href="#an-audit">Site Audit</a> to understand current site, content, technical implementation and to reinforce goals</li>
+                <li>Analyzed current workflow and information architecture</li>
+                <li>Performed Competitive Analysis in order to:</li>
+                <li style="list-style-type: none;"> 
+                    <ul>
+                        <li>Be aware of competing Charter companies in Santa Barbara</li>
+                        <li>Evaluate the pros and cons of competitive sites</li>
+                        <li>Understand where the bar is set, in order to be sure we overshoot it</li>
+                    </ul>
+                </li>
+                <li>Reviewed current and new site content for awareness and inspiration</li>
+                <li>Defined <a href="#an-personas">initial User Profiles / Personas</a>, as well as simple Use Cases</li>
+                <li>Engage in initial ideation and created <a href="#an-low-fi">low-fidelity wireframes (analog)</a> to quickly define potential solutions and approach</li>
+                <li>Modelled different Call-To-Action (CTA) approaches</li>
+                <li>Define and explain thoughts on Navigational Model changes (old site to new, responsive site)</li>
+            </ul>
+        </div>
+        <div class="col s12 l4 pro-sidebar offset-top taupe curvebox">
+            <h4 id="an-audit" class="med-grey-txt">Site Audit Video</h4>
+              <video class="responsive-video" controls>
+               <source src="video/ccc_site_audit.mp4" type="video/mp4">
+              </video>
+              <p>The Site Audit shows a walkthrough of the site before any of the redesign work commenced. I speak about the features of the site, some of the goals for the redesign, as well as issues to overcome with the implementation. You may wish to use the full-screen button (at right of volume control) for a better view.</p>
+        </div>  
+        </div>
+        <div class="row pro-sidebar curvebox">
+         <div class="col s12 l4 process">
+            <h4 id="an-personas">Initial User Personas</h4>
+            <img class="materialboxed" src="images/case_studies/ccc_initial_users.jpg" data-caption="Initial User Personas (before discussing reservation process)">
+            <p>The first User Personas did capture some aspects of actual users, but were in need of refinement. I learned the average age was much older than initially assumed, and that online reservations where less of a priority both for the business and for
+        their clientele.
+        </div>
+        <div class="col s12 l4 process">
+           <h4 id="an-low-fi">Low-Fi Wireframes</h4>
+            <img class="materialboxed" src="images/case_studies/ccc_wirefames_1.jpg" data-caption="Initial Low-Fidelity Wireframes: Home page">
+            <p>Quick, rough sketches were used to begin mapping out the Home page layout. This generated new ideas as well as questions for the client.</p>
+        </div>
+        <div class="col s12 l4 process">
+            <h4 id="an-low-fi">Lo-Fi Gallery</h4>
+            <img class="materialboxed" src="images/case_studies/ccc_wirefames_2.jpg" data-caption="Initial Low-Fidelity Wireframes: Gallery Concepts">
+            <p>Low-fidelity sketches of two Gallery interaction concepts. Note these in no way reflect my drawing skill; the purpose is to rapidly capture ideas, not to produce a beautiful drawing to hang on the wall.</p>
+        </div>
+        </div>
+        </div>
+    </section>  
+    </li>
+    <li>
+        <section class="collapsible-header drk-grey med-grey-brdr med-grey-txt">   
+        <div class="container portfolio profile">
+            <div class="row">
+                <div class="col s12">
+                    <h3>Communicate, Validate, Educate</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+        <section class="collapsible-body taupe-brdr lt-grey"><div class="container portfolio profile">
+            <div class="row">
+                <div class="col s12 l8 offset-top">
+                    <ul>
+                        <li>Follow up client consultation in order to:</li>
+                        <li style="list-style-type: none;"> 
+                            <ul>
+                                <li>Validate findings from Competitive Analysis (Client agreed with findings)</li>
+                                <li>Validate initial User Personas and Use Cases (they needed refining, these are rarely exact on the first attempt)</li>
+                                <li>Validate initial wireframe concepts, walk them through and explain wireframes are like blueprints</li>
+                                <li>Walked client through process of locating original files stored in Picassa which they use to manage photos, and how to determine file size and resolution of images via Windows Explorer</li>
+                                <li>Obtained high-resolution photos and discussed content strategy with client</li>
+                                <li>Discussed proposed navigational model with client</li>
+                                <li>Explained concept of Call-To-Action and plan to have every page guide the User to Contact them, which ultimately is the primary goal of the site</li>
+                            </ul>
+                        </li>
+                    </ul>
+    <p class="no-bdr">I updated the <a href="#an-personas-upd">User Personas</a> document, to reflect increased understanding of the site's user base. </p>
+                    <ul>
+                        <li>Due to older demographic, it is particularly important to ensure text is large and readable</li>
+                        <li>Simple and easy to use navigation is key</li>
+                        <li>More clients search on mobile now than the past, so a responsive design is important</li>
+                        <li>Conveying ship capacity is very important for planning large events</li>
+                        <li>Large, beautiful pictures, as well as virtual tours and videos help sell the experience</li>
+                        <li>Since online booking is not a possibility, make it as easy as possible to contact Charter agent</li>
+                    </ul>
+                </div>
+                <div class="col s12 l4 pro-sidebar offset-top drk-brown med-grey-txt curvebox">
+                    <h4 id="an-personas-upd">Updated User Personas</h4>
+                    <img class="materialboxed" src="images/case_studies/ccc_updated_users.jpg" data-caption="Updated User Persona"><br>
+                    <p>Updated User Personas reflected revised age estimates. Although the changes were minimal, it is important to keep the personas updated based on current understanding and lessons learned.</p>
+                </div> 
             </div>  
         </div>
-         <div class="row pro-sidebar">
-             <div class="col s12 l4 process">
-                <h4 id="an-personas">Initial User Personas</h4>
-                <img class="materialboxed" src="images/case_studies/ccc_initial_users.jpg" data-caption="Initial User Personas (before discussing reservation process)">
-                <p>The first User Personas did capture some aspects of actual users, but were in need of refinement. I learned the average age was much older than initially assumed, and that online reservations where less of a priority both for the business and for
-their clientele.
+    </section>  
+    </li>
+    <li>
+        <section class="collapsible-header tan taupe-brdr drk-brown-txt">   
+            <div class="container portfolio profile">
+                <div class="row">
+                    <div class="col s12">
+                        <h3>Process Feedback, Med-Fi Wireframes</h3>
+                    </div>
+                </div>
             </div>
-            <div class="col s12 l4 process">
-               <h4 id="an-low-fi">Low-Fi Wireframes</h4>
-                <img class="materialboxed" src="images/case_studies/ccc_wirefames_1.jpg" data-caption="Initial Low-Fidelity Wireframes: Home page">
-                <p>Quick, rough sketches were used to begin mapping out the Home page layout. This generated new ideas as well as questions for the client.</p>
+        </section>
+        <section class="collapsible-body taupe-brdr lt-tan">
+            <div class="container portfolio profile">  
+                <div class="row">    
+                    <div class="col s12 l8 offset-top">
+                        <ul>
+                            <li>Based on feedback from client, I learned:</li>
+                            <li style="list-style-type: none;"> 
+                                <ul>
+                                    <li>Client does not want to use old logo, yet feels there is not a need for a new one at this time</li>
+                                    <li>It is important to the client to not crop the sail off of (at least the majority) of the images</li>
+                                    <li>Client wants full-screen images on the homepage, without any overlay text.</li>
+                                    <li>Client *loved* the idea of a slideshow (or carousel) of selected images on the homepage</li>
+                                    <li>Client likes the new/improved navigational model proposed</li>
+                                    <li>Client likes the proposed Call-To-Action model, is OK with it being "below the fold" on the homepage</li>
+                                </ul>
+                            </li>
+                        </ul>
+        <p>With this new feedback, I was ready to move onto digital, <a href="#an-med-fi">medium-fidelity wireframes</a> (created in <a href="https://www.sketchapp.com/" target="_blank">Sketch app</a>), in order to present these to the client. I created these quickly from the low-fi mockups as a reference, along with my ample client notes and client feedback documentation.</p>
+                        <h4>Communicate, Validate, Iterate</h4>
+                        <ul>
+                            <li>Based on the discussion with the client regarding the medium-fidelity wireframes, it was determined:</li>
+                            <li style="list-style-type: none;"> 
+                                <ul>
+                                    <li>In Desktop HD mode we would right-align the navigation</li>
+                                    <li>Client wanted 7-10 images instead of 3 in Carousel</li>
+                                    <li>In Tablet Portrait view we would switch to mobile navigation mode</li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>Initial <a href="#an-color">color-palette</a> suggestions were also approved:</li>
+                            <li style="list-style-type: none;">
+                                <ul>
+                                    <li>White reflected the ship itself, and lended clean, modern feel to the site with lots of "white space"</li>
+                                    <li>Sky-Blue reflected clear waters, a much lighter blue accent color than was used previously</li>
+                                    <li>Complementary tints and shades would be used for interaction</li>
+                                    <li>We would drop the green color from the mobile menu, as it distracts</li>
+                                    <li>Overall, the limited color palette was designed to direct focus to the content itself</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col s12 l4 pro-sidebar offset-top drk-grey curvebox">
+                        <h4 id="an-med-fi" class="med-grey-txt">Medium-Fi Wireframes</h4>
+                        <img class="materialboxed" src="images/case_studies/ccc_wireframes_med.png" data-caption="Medium-Fidelity wireframes of the homepage, suitable to present to the client"><br>
+                        <p class="med-grey-txt">Medium-fidelity wireframes of the homepage where more appropriate to show this particular client, and allowed me to demonstrate how the layout would change on different devices with responsive design.</p>
+                        <h4 id="an-color" class="med-grey-txt">Color Palette</h4>
+                        <img class="materialboxed" src="images/case_studies/ccc_color_palette.png" data-caption="Channel Cat site - new color palette"><br>
+                        <p class="med-grey-txt">Designed a new, limited color palette with the intention of keeping the site light and modern feeling, in order to allow the content itself to be the focus.</p> 
+                    </div>
+                </div>
             </div>
-            <div class="col s12 l4 process">
-                <h4 id="an-low-fi">Lo-Fi Gallery</h4>
-                <img class="materialboxed" src="images/case_studies/ccc_wirefames_2.jpg" data-caption="Initial Low-Fidelity Wireframes: Gallery Concepts">
-                <p>Low-fidelity sketches of two Gallery interaction concepts. Note these in no way reflect my drawing skill; the purpose is to rapidly capture ideas, not to produce a beautiful drawing to hang on the wall.</p>
+</section>
+    </li>
+    <li>
+        <section class="collapsible-header drk-brown taupe-brdr med-grey-txt">   
+        <div class="container portfolio profile">
+            <div class="row">
+                <div class="col s12">
+                    <h3>Technology Stack / Tools Used</h3>
+                </div>
             </div>
         </div>
-        <div class="row">
-            <div class="col s12"><hr class="style-eight"></div>
-        </div>
-        <div class="row">
-            <div class="col s12 l8">
-                <h3>Communicate, Validate, Educate</h3>
-                <ul>
-                    <li>Follow up client consultation in order to:</li>
-                    <li style="list-style-type: none;"> 
-                        <ul>
-                            <li>Validate findings from Competitive Analysis (Client agreed with findings)</li>
-                            <li>Validate initial User Personas and Use Cases (they needed refining, these are rarely exact on the first attempt)</li>
-                            <li>Validate initial wireframe concepts, walk them through and explain wireframes are like blueprints</li>
-                            <li>Walked client through process of locating original files stored in Picassa which they use to manage photos, and how to determine file size and resolution of images via Windows Explorer</li>
-                            <li>Obtained high-resolution photos and discussed content strategy with client</li>
-                            <li>Discussed proposed navigational model with client</li>
-                            <li>Explained concept of Call-To-Action and plan to have every page guide the User to Contact them, which ultimately is the primary goal of the site</li>
-                        </ul>
-                    </li>
-                </ul>
-<p class="no-bdr">I updated the <a href="#an-personas-upd">User Personas</a> document, to reflect increased understanding of the site's user base. </p>
-                <ul>
-                    <li>Due to older demographic, it is particularly important to ensure text is large and readable</li>
-                    <li>Simple and easy to use navigation is key</li>
-                    <li>More clients search on mobile now than the past, so a responsive design is important</li>
-                    <li>Conveying ship capacity is very important for planning large events</li>
-                    <li>Large, beautiful pictures, as well as virtual tours and videos help sell the experience</li>
-                    <li>Since online booking is not a possibility, make it as easy as possible to contact Charter agent</li>
-                </ul>
-            </div>
-            <div class="col s12 l4 pro-sidebar offset-top">
-                <h4 id="an-personas-upd">Updated User Personas</h4>
-                <img class="materialboxed" src="images/case_studies/ccc_updated_users.jpg" data-caption="Updated User Persona"><br>
-                <p>Updated User Personas reflected revised age estimates. Although the changes were minimal, it is important to keep the personas updated based on current understanding and lessons learned.</p>
-            </div> 
-        </div>  
-    
-        <div class="row">
-            <div class="col s12"><hr class="style-eight"></div>
-        </div>
-            
-        <div class="row">    
-            <div class="col s12 l8">
-                <h3>Process Feedback, Med-Fi Wireframes</h3>
-                <ul>
-                    <li>Based on feedback from client, I learned:</li>
-                    <li style="list-style-type: none;"> 
-                        <ul>
-                            <li>Client does not want to use old logo, yet feels there is not a need for a new one at this time</li>
-                            <li>It is important to the client to not crop the sail off of (at least the majority) of the images</li>
-                            <li>Client wants full-screen images on the homepage, without any overlay text.</li>
-                            <li>Client *loved* the idea of a slideshow (or carousel) of selected images on the homepage</li>
-                            <li>Client likes the new/improved navigational model proposed</li>
-                            <li>Client likes the proposed Call-To-Action model, is OK with it being "below the fold" on the homepage</li>
-                        </ul>
-                    </li>
-                </ul>
-<p>With this new feedback, I was ready to move onto digital, <a href="#an-med-fi">medium-fidelity wireframes</a> (created in <a href="https://www.sketchapp.com/" target="_blank">Sketch app</a>), in order to present these to the client. I created these quickly from the low-fi mockups as a reference, along with my ample client notes and client feedback documentation.</p>
-                <h4>Communicate, Validate, Iterate</h4>
-                <ul>
-                    <li>Based on the discussion with the client regarding the medium-fidelity wireframes, it was determined:</li>
-                    <li style="list-style-type: none;"> 
-                        <ul>
-                            <li>In Desktop HD mode we would right-align the navigation</li>
-                            <li>Client wanted 7-10 images instead of 3 in Carousel</li>
-                            <li>In Tablet Portrait view we would switch to mobile navigation mode</li>
-                        </ul>
-                    </li>
-                </ul>
-                <ul>
-                    <li>Initial <a href="#an-color">color-palette</a> suggestions were also approved:</li>
-                    <li style="list-style-type: none;">
-                        <ul>
-                            <li>White reflected the ship itself, and lended clean, modern feel to the site with lots of "white space"</li>
-                            <li>Sky-Blue reflected clear waters, a much lighter blue accent color than was used previously</li>
-                            <li>Complementary tints and shades would be used for interaction</li>
-                            <li>We would drop the green color from the mobile menu, as it distracts</li>
-                            <li>Overall, the limited color palette was designed to direct focus to the content itself</li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-            <div class="col s12 l4 pro-sidebar offset-top">
-                <h4 id="an-med-fi">Medium-Fi Wireframes</h4>
-                <img class="materialboxed" src="images/case_studies/ccc_wireframes_med.png" data-caption="Medium-Fidelity wireframes of the homepage, suitable to present to the client"><br>
-                <p>Medium-fidelity wireframes of the homepage where more appropriate to show this particular client, and allowed me to demonstrate how the layout would change on different devices with responsive design.</p>
-                <h4 id="an-color">Color Palette</h4>
-                <img class="materialboxed" src="images/case_studies/ccc_color_palette.png" data-caption="Channel Cat site - new color palette"><br>
-                <p>Designed a new, limited color palette with the intention of keeping the site light and modern feeling, in order to allow the content itself to be the focus.</p> 
-            </div>
-        </div>
-    
-        <div class="row">
-            <div class="col s12"><hr class="style-eight"></div>
-        </div>
-              
-        <div class="row">    
-            <div class="col s12 l8">                
-                <h3>Technology Stack / Tools Used</h3>
-                <ul>
-                    <li>Based on the now known site functionality, user and business goals and needs, as well as the wireframes feedback, it was time to move on to rapid prototyping, and so I researched and decided on the following technology choices:</li>
-                    <li style="list-style-type: none;"> 
-                        <ul>
-                            <li><a href="http://getbootstrap.com/" target="_blank">Bootstrap 3</a>: for the mobile-first responsive UI capabilities</li>
-                            <li><a href="https://jquery.com/" target="_blank">jQuery</a>: for the carousel functionality, extensive examples, and plugins available</li>
-                            <li><a href="http://www.jqueryscript.net/demo/Mobile-Friendly-Bootstrap-Tabs-Enhancement-with-jQuery/" target="_blank">jQuery/Bootstrap Responsive Tabs</a>: exactly what I needed to handle inline tab content in a responsive way</li>
-                            <li><a href="https://github.com/oriongunning/gridder" target="_blank">Gridder 1.4.1</a>: a jQuery based library which was exactly what I was looking for the Gallery functionality</li>
-                            <li><a href="https://fortawesome.github.io/Font-Awesome/" target="_blank">Font Awesome</a>: for WebFont icons, used in Gridder/Gallery UI for next, back and close buttons.</li>
-                            <li><a href="http://ggnome.com/pano2vr" target="_blank">Pano2VR</a>: modern vitural tour software capable of exporting to HTML5 , CSS3, XML, and WebGL, which works on modern devices and platforms.</li>
-                            <li><a href="https://www.apachefriends.org/index.html" target="_blank">XAMPP</a>: a simple webserver-in-a-box in order to develop the site locally, prior to uploading to the remote test site (with <a href="https://filezilla-project.org/" target="_blank">Filezilla</a> for SFTP).</li>
-                            <li><a href="http://brackets.io" target="_blank">Brackets</a>: my current preferred text editor, which is all I need to code HTML5, CSS3, and JavaScript with.</li>
-                            <li><a href="http://www.adobe.com/creativecloud.html" target="_blank">Adobe Photoshop CC<sup>&reg;</sup>, Adobe Illustrator CC<sup>&reg;</sup></a>: for image formatting, optimization, and minor map topography overlay work. </li>
-                            <li><a href="https://analytics.google.com/analytics/web/" target="_blank">Google Analytics</a>: In order to measure/learn from user behavior in the future (no analytics were used on the site in the past).</li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-            <div class="col s12 l4 pro-sidebar offset-top">
-                <!--<h4 id="an-pano">Learning Virtual Tour Software</h4>
-                    <img class="materialboxed" src="images/case_studies/ccc_pano2vr.jpg" data-caption="Pano2VR Virtual Tour software">
-                    <p>Learning new software (Pano2VR) was required in order to deliver the necessary Virtual Tour functionality which would work across devices. I picked it up easily, and even was able to customize a "skin" of UI controls for the interface.</p>-->
-                    <h4 id="an-git">Git Version Control</h4>
+    </section>
+        <section class="collapsible-body med-grey-brdr tan">
+        <div class="container portfolio profile">          
+            <div class="row">    
+                <div class="col s12 l8 offset-top">
+                    <ul>
+                        <li>Based on the now known site functionality, user and business goals and needs, as well as the wireframes feedback, it was time to move on to rapid prototyping, and so I researched and decided on the following technology choices:</li>
+                        <li style="list-style-type: none;"> 
+                            <ul>
+                                <li><a href="http://getbootstrap.com/" target="_blank">Bootstrap 3</a>: for the mobile-first responsive UI capabilities</li>
+                                <li><a href="https://jquery.com/" target="_blank">jQuery</a>: for the carousel functionality, extensive examples, and plugins available</li>
+                                <li><a href="http://www.jqueryscript.net/demo/Mobile-Friendly-Bootstrap-Tabs-Enhancement-with-jQuery/" target="_blank">jQuery/Bootstrap Responsive Tabs</a>: exactly what I needed to handle inline tab content in a responsive way</li>
+                                <li><a href="https://github.com/oriongunning/gridder" target="_blank">Gridder 1.4.1</a>: a jQuery based library which was exactly what I was looking for the Gallery functionality</li>
+                                <li><a href="https://fortawesome.github.io/Font-Awesome/" target="_blank">Font Awesome</a>: for WebFont icons, used in Gridder/Gallery UI for next, back and close buttons.</li>
+                                <li><a href="http://ggnome.com/pano2vr" target="_blank">Pano2VR</a>: modern vitural tour software capable of exporting to HTML5 , CSS3, XML, and WebGL, which works on modern devices and platforms.</li>
+                                <li><a href="https://www.apachefriends.org/index.html" target="_blank">XAMPP</a>: a simple webserver-in-a-box in order to develop the site locally, prior to uploading to the remote test site (with <a href="https://filezilla-project.org/" target="_blank">Filezilla</a> for SFTP).</li>
+                                <li><a href="http://brackets.io" target="_blank">Brackets</a>: my current preferred text editor, which is all I need to code HTML5, CSS3, and JavaScript with.</li>
+                                <li><a href="http://www.adobe.com/creativecloud.html" target="_blank">Adobe Photoshop CC<sup>&reg;</sup>, Adobe Illustrator CC<sup>&reg;</sup></a>: for image formatting, optimization, and minor map topography overlay work. </li>
+                                <li><a href="https://analytics.google.com/analytics/web/" target="_blank">Google Analytics</a>: In order to measure/learn from user behavior in the future (no analytics were used on the site in the past).</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col s12 l4 pro-sidebar offset-top taupe curvebox">
+                    <h4 id="an-git" class="med-grey-txt">Git Version Control</h4>
                     <img class="materialboxed" src="images/case_studies/ccc_git.png" data-caption="Git for version control and Github repository management"><br>
                     <p>The command line tool Git + Github was used for version control and repository management.</p>
+                </div>
             </div>
         </div>
-    
-     
-        <div class="row">
-            <div class="col s12"><hr class="style-eight"></div>
-        </div>
-               
-    
-        <div class="row">
-            <div class="col l8">
+     </section>
+    </li>
+    <li>
+        <section class="collapsible-header drk-grey med-grey-brdr med-grey-txt">   
+        <div class="container portfolio profile">
+            <div class="row">
+                <div class="col s12">
                     <h3>Initial Prototypes</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+        <section class="collapsible-body taupe-brdr lt-grey">
+        <div class="container portfolio profile">   
+        <div class="row">
+            <div class="col l8 offset-top">
                     <ul>
                         <li>Using Adobe Photoshop CS, I readied all images and optimized them for the Web</li>
                         <li>Using Bootstrap, I quickly built the initial home page prototypes, including the Header area and navigation and basic layout</li>
@@ -412,329 +453,330 @@ their clientele.
                         <li><a href="#an-git">Using GIT</a> and <a href="https://github.com/N1bbler" target="_blank">GitHub</a>, I backed up all of my work with version control. See the commit history <a href="https://github.com/N1bbler/ccc/commits/master" target="_blank">here</a>.</li>
                     </ul>
             </div>
-            <div class="col s12 l4 pro-sidebar">
-            <h4 id="an-carousel">Home Prototypes</h4>
-            <img class="materialboxed" src="images/case_studies/ccc_home_mobile_sim.jpg" data-caption="An early mobile - portrait mode simulation using Developer Tools"><br>
-            <p>An early mobile first - portrait mode simulation (using Developer Tools) before finalizing the navigation design and implementing responsive links.</p>                 
-        </div>
+            <div class="col s12 l4 pro-sidebar drk-brown med-grey-txt offset-top curvebox">
+                <h4>Home Prototype 1</h4>
+                <img class="materialboxed" src="images/case_studies/ccc_proto_0.jpg" data-caption="The first prototype of the new homepage"><br>
+                <p>The first desktop prototype of the new homepage featured a full-screen height image, with virtual tour placeholder and call-to-action below the fold. </p> 
+            </div>
     </div>
-    
-    <div class="row pro-sidebar">
-        <div class="col s12 l6">
-            <h4>Home Prototype 1</h4>
-            <img class="materialboxed" src="images/case_studies/ccc_proto_0.jpg" data-caption="The first prototype of the new homepage"><br>
-            <p>The first desktop prototype of the new homepage featured a full-screen height image, with virtual tour placeholder and call-to-action below the fold. </p></div>
-        <div class="col s12 l6">
-            <h4>Home Prototype 2</h4>
-            <img class="materialboxed" src="images/case_studies/ccc_proto_home1.jpg" data-caption="The second prototype of the new homepage"><br>
-            <p>The second desktop prototype reduced the height of the carousel, in order to hint at further content below the fold.</p> 
+        <div class="row pro-sidebar curvebox">
+            <div class="col s12 l4">
+                <h4 id="an-vtours">Vtours Prototype</h4>
+                <img class="materialboxed" src="images/case_studies/ccc_vtours_proto1.jpg" data-caption="The first Virtual Tours prototype"><br>
+                <p>First Virtual Tours prototype showing the inline tab design pattern.</p>
+            </div>
+            <div class="col s12 l4">
+                <h4 id="an-gallery">Gallery Prototype 1A</h4>
+                <img class="materialboxed" src="images/case_studies/ccc_gallery_proto1.jpg" data-caption="The first Gallery prototype"><br>
+                <p>First Gallery prototype showing the thumbnail grid, before user has clicked an image</p>
+            </div>
+            <div class="col s12 l4">
+                <h4 id="an-gallery">Gallery Prototype 1B</h4>
+                <img class="materialboxed" src="images/case_studies/ccc_gallery_proto1B.jpg" data-caption="Gallery prototype, user has clicked on image"><br>
+                <p>The second Gallery prototype shows the image initially clicked on, now expanded and in focus.</p>
+            </div>       
+</div>
+        <div class="row pro-sidebar curvebox">
+            <div class="col s12 l4">
+                <h4 id="an-about">About Prototype</h4>
+                <img class="materialboxed" src="images/case_studies/ccc_about_proto.jpg" data-caption="About page prototype"><br>
+                <p>I had a clear vision for the about page and the initial prototype set the pace for the rest of the magazing-inspired layout to come.</p>
+            </div>
+            <div class="col s12 l4">
+                <h4 id="an-directions">Directions Prototype</h4>
+                    <img class="materialboxed" src="images/case_studies/ccc_directions_proto.jpg" data-caption="Directions page prototype"><br>
+                    <p>The Directions prototype initially had an interactive Google map at the top of the page an Diretions below, we later deemphasized this and placed the Directions above the fold.</p>
+            </div>
+            <div class="col s12 l4">
+                <h4 id="an-cta">Call-To-Action Model</h4>
+                <img class="materialboxed" src="images/case_studies/ccc_cta.jpg" data-caption="Call to Action Model"><br>
+                <p>The Call-To-Action (CTA) model used at the bottom of every page, guiding the user to the Contact page.</p>
+            </div>
+</div>   
         </div>
-    </div>
-    <div class="row pro-sidebar">
-        <div class="col s12 l4">
-            <h4 id="an-vtours">Vtours Prototype</h4>
-            <img class="materialboxed" src="images/case_studies/ccc_vtours_proto1.jpg" data-caption="The first Virtual Tours prototype"><br>
-            <p>First Virtual Tours prototype showing the inline tab design pattern.</p>
+    </section>
+    </li>
+    <li>
+        <section class="collapsible-header tan taupe-brdr drk-brown-txt">   
+        <div class="container portfolio profile">
+            <div class="row">
+                <div class="col s12">
+                    <h3>Communicate, Validate, Negotiate</h3>
+                </div>
+            </div>
         </div>
-        <div class="col s12 l4">
-            <h4 id="an-gallery">Gallery Prototype 1A</h4>
-            <img class="materialboxed" src="images/case_studies/ccc_gallery_proto1.jpg" data-caption="The first Gallery prototype"><br>
-            <p>First Gallery prototype showing the thumbnail grid, before user has clicked an image</p>
-        </div>
-        <div class="col s12 l4">
-            <h4 id="an-gallery">Gallery Prototype 1B</h4>
-            <img class="materialboxed" src="images/case_studies/ccc_gallery_proto1B.jpg" data-caption="Gallery prototype, user has clicked on image"><br>
-            <p>The second Gallery prototype shows the image initially clicked on, now expanded and in focus.</p>
-        </div>       
-    </div>
-    <div class="row pro-sidebar">
-        <div class="col s12 l4">
-            <h4 id="an-about">About Prototype</h4>
-            <img class="materialboxed" src="images/case_studies/ccc_about_proto.jpg" data-caption="About page prototype"><br>
-            <p>I had a clear vision for the about page and the initial prototype set the pace for the rest of the magazing-inspired layout to come.</p>
-        </div>
-        <div class="col s12 l4">
-            <h4 id="an-directions">Directions Prototype</h4>
-                <img class="materialboxed" src="images/case_studies/ccc_directions_proto.jpg" data-caption="Directions page prototype"><br>
-                <p>The Directions prototype initially had an interactive Google map at the top of the page an Diretions below, we later deemphasized this and placed the Directions above the fold.</p>
-        </div>
-        <div class="col s12 l4">
-            <h4 id="an-cta">Call-To-Action Model</h4>
-            <img class="materialboxed" src="images/case_studies/ccc_cta.jpg" data-caption="Call to Action Model"><br>
-            <p>The Call-To-Action (CTA) model used at the bottom of every page, guiding the user to the Contact page.</p>
-        </div>
-    </div>   
-    
-    <div class="row">
-        <div class="col s12"><hr class="style-eight"></div>
-    </div>
-    
-    <div class="row">
-        <div class="col s12 l6">   
-            <h3>Communicate, Validate, Negotiate</h3>
-            <ul>
-                <li>Follow up client consultation in order to:</li>
-                <li style="list-style-type: none;"> 
+</section>
+        <section class="collapsible-body taupe-brdr lt-tan">
+        <div class="container portfolio profile">   
+            <div class="row">
+                <div class="col s12 l6 offset-top">   
                     <ul>
-                        <li>Validate <a href="#an-carousel">Home page design</a> (we decided to go back to full-height carousel and move Virtual Tours to their own page)</li>
-                        <li>Validate <a href="#an-gallery">Gallery design</a> (clients loved this as is, but had extra photos they wanted to add)</li>
-                        <li>Validate <a href="#an-vtours">Virtual Tours design</a> (client was excited at this, I showed it working on mobile as well. We also discussed adding the video to this page)</li>
-                        <li>Validate <a href="#an-about">About design</a> (client also loved this but wanted to re-use photo from home page. After discussing my reasoning for using the particular panoramic photo, they agreed with this and we decided to proceed as is)</li>
-                        <li>Validate <a href="#an-directions">Directions design</a> (client wasn't sure about the interactive map, but when I discussed the idea behind it, we agreed to keep it but to move it below the directions themselves as a secondary feature)</li>
+                        <li>Follow up client consultation in order to:</li>
+                        <li style="list-style-type: none;"> 
+                            <ul>
+                                <li>Validate <a href="#an-carousel">Home page design</a> (we decided to go back to full-height carousel and move Virtual Tours to their own page)</li>
+                                <li>Validate <a href="#an-gallery">Gallery design</a> (clients loved this as is, but had extra photos they wanted to add)</li>
+                                <li>Validate <a href="#an-vtours">Virtual Tours design</a> (client was excited at this, I showed it working on mobile as well. We also discussed adding the video to this page)</li>
+                                <li>Validate <a href="#an-about">About design</a> (client also loved this but wanted to re-use photo from home page. After discussing my reasoning for using the particular panoramic photo, they agreed with this and we decided to proceed as is)</li>
+                                <li>Validate <a href="#an-directions">Directions design</a> (client wasn't sure about the interactive map, but when I discussed the idea behind it, we agreed to keep it but to move it below the directions themselves as a secondary feature)</li>
+                            </ul>
+                        </li>
                     </ul>
-                </li>
-            </ul>
-        </div>
-        <div class="col s12 l6 pro-sidebar">
-            <h3>Iteration</h3><br>
-            <ul>
-                <li>With the full green-light now in place, I worked quickly to expand and refine the initial work, utilizing all feedback to date:</li>
-                <li style="list-style-type: none;"> 
+                </div>
+                <div class="col s12 l6 offset-top">
+                    <!--<h4>Iteration</h4>-->
                     <ul>
-                        <li>Refined navigation with expanding text for mobile mode</li>
-                        <li>Moved the Virtual Tours to their own page and added <i>Extreme Yachts</i> video after extracting it from previous Flash source and converting it to use modern web codecs, which allowed for native HTML5 playback</li>
-                        <li>Added tons of content to the Gallery, moved images around and randomized things a bit for a more interesting presentation</li>
-                        <li>Added remainder of content to the About page and worked heavily on the typography for this text-heavy page, utilizing smart quotes and responsive text, as well as numerous stylistic type treatments</li>
-                        <li>Built the Contact page around the <a href="#an-cta">Call-to-Action design</a> which is at the bottom of each page on the site. Also added full-screen background of the crew to also convey to the user they are in the right place</li>
-
+                        <li>With the full green-light now in place, I worked quickly to expand and refine the initial work, utilizing all feedback to date:</li>
+                        <li style="list-style-type: none;"> 
+                            <ul>
+                                <li>Refined navigation with expanding text for mobile mode</li>
+                                <li>Moved the Virtual Tours to their own page and added <i>Extreme Yachts</i> video after extracting it from previous Flash source and converting it to use modern web codecs, which allowed for native HTML5 playback</li>
+                                <li>Added tons of content to the Gallery, moved images around and randomized things a bit for a more interesting presentation</li>
+                                <li>Added remainder of content to the About page and worked heavily on the typography for this text-heavy page, utilizing smart quotes and responsive text, as well as numerous stylistic type treatments</li>
+                                <li>Built the Contact page around the <a href="#an-cta">Call-to-Action design</a> which is at the bottom of each page on the site. Also added full-screen background of the crew to also convey to the user they are in the right place</li>
+                            </ul>
+                        </li>
                     </ul>
-                </li>
-            </ul>
+                </div>
+            </div>
         </div>
-    </div>
- 
-        
-    <div class="row">
-        <div class="col s12"><hr class="style-eight"></div>
-    </div>
-    
-    
-    <div class="row">
-        <div class="col s12 l4">
-            <h3>Communicate, Review, Refine</h3>
-            <p>I continued working until the site was close to complete. At this point, I reviewed with the client again, and they were ecstatic. They were ready to launch the new site immediately. I explained there was some work to be done to optimize the site for best performance. Additionally, I suggested that we implement Google Analytics in order to measure and learn from the site's users going forward. Finally, although cross-browser testing and mobile tests had occurred throughout the design and development cycles, I wanted to do one last round of thorough checking and capture screenshots as well.</p>
+    </section>  
+    </li>
+    <li>
+        <section class="collapsible-header drk-brown taupe-brdr med-grey-txt">   
+        <div class="container portfolio profile">
+            <div class="row">
+                <div class="col s12">
+                    <h3>Final Implementation Phase</h3>
+                </div>
+            </div>
         </div>
-        <div class="col s12 l8 pro-sidebar">
-            <h3>Final Phase</h3><br>
-            <ul>
-                <li>Implemented Google Analytics across all pages on the site</li>
-                <li>General code cleanup and formatting</li>
-                <li>Double-checked to ensure all images had been optimized</li>
-                <li>Minified all CSS used on the site and relinked to new minified files</li>
-                <li>Extensive cross-platform and cross-browser testing on desktop; Windows: FF, Chrome, and IE; Mac OS: Safari, Chrome, and Firefox</li>
-                <li>One minor display bug was found on Safari for IOS, which I was able to quickly fix with some custom CSS</li>
-                <li>Mobile testing on Android (Chrome), no issues noted</li>
-                <li>Committed final code edits to Github repo</li>
-                <li>Backed up and then took down the old site, as well as the test/ remote staging site, and replaced with the new site</li>
-                <li>Performed another round of testing on the live site to ensure all was well</li>
-                <li>Ran into a couple of unexpected issues, which turned out to be merely file permissions related. CHMOD to the rescue.</li>
-                <li>Checked Google Analytics statistics to ensure all was working (24 hours for complete stats)</li>
-            </ul>
-        <!-- end main content area -->
-        </div>
+    </section>
+        <section class="collapsible-body med-grey-brdr tan">
+        <div class="container portfolio profile">  
+            <div class="row">
+                <div class="col s12 l6">
+                    <p class="no-bdr">I continued working until the site was close to complete. At this point, I reviewed with the client again, and they were ecstatic. They were ready to launch the new site immediately. I explained there was some work to be done to optimize the site for best performance. Additionally, I suggested that we implement Google Analytics in order to measure and learn from the site's users going forward. Finally, although cross-browser testing and mobile tests had occurred throughout the design and development cycles, I wanted to do one last round of thorough checking and capture screenshots as well.</p>
+                    <ul>
+                        <li>Implemented Google Analytics across all pages on the site</li>
+                        <li>General code cleanup and formatting</li>
+                        <li>Double-checked to ensure all images had been optimized</li>
+                        <li>Minified all CSS used on the site and relinked to new minified files</li>
+                        <li>Extensive cross-platform and cross-browser testing on desktop; Windows: FF, Chrome, and IE; Mac OS: Safari, Chrome, and Firefox</li>
+                        <li>One minor display bug was found on Safari for IOS, which I was able to quickly fix with some custom CSS</li>
+                        
+                    </ul>
+                </div>
+                <div class="col s12 l6 offset-top">
+                    <ul>
+                        <li>Mobile testing on Android (Chrome), no issues noted</li>
+                        <li>Committed final code edits to Github repo</li>
+                        <li>Backed up and then took down the old site, as well as the test/ remote staging site, and replaced with the new site</li>
+                        <li>Performed another round of testing on the live site to ensure all was well</li>
+                        <li>Ran into a couple of unexpected issues, which turned out to be merely file permissions related. CHMOD to the rescue.</li>
+                        <li>Checked Google Analytics statistics to ensure all was working (24 hours for complete stats)</li>
+                    </ul>
+                <!-- end main content area -->
+                </div>
 
-    </div><!-- end row -->
-    <!-- begin row -->
-    <!-- Begin High-resolution gallery for non-mobile devices on up -->
-    <div class="row">
-        <div class="col s12">
-                <hr class="style-eight">
-                <h3>Final Design: Before and After Gallery</h3>
+            </div><!-- end row -->
+</section>  
+    </li>
+</ul>
+
+    <section class="offset-section drk-grey med-grey-brdr med-grey-txt">   
+    <div class="container portfolio profile">
+        <div class="row">
+            <div class="col s12">
+                <h3 class="final">Final Design: Before and After Gallery</h3>
+            </div>
         </div>
     </div>
-    </div><!-- end page wrapper -->
-    <div class="slider hide-on-med-and-down">
-        <ul class="slides">
-          <li>
-            <img src="images/case_studies/ccc_final_gallery1.jpg"> 
-            <div class="caption center-align">
-              <h4>desktop: home</h4>
+</section>
+<!-- begin row -->
+<!-- Begin High-resolution gallery for non-mobile devices on up -->
+    <section class="taupe-brdr lt-tan">   
+    <div class="row">
+        <div class="slider hide-on-med-and-down">
+            <ul class="slides">
+              <li>
+                <img src="images/case_studies/ccc_final_gallery1.jpg"> 
+                <div class="caption center-align">
+                  <h4>desktop: home</h4>
+                </div>
+              </li>
+              <li>
+                <img src="images/case_studies/ccc_final_gallery2.jpg"> 
+                <div class="caption center-align">
+                  <h4>desktop: virtual tours</h4>
+                </div>
+              </li>
+              <li>
+                <img src="images/case_studies/ccc_final_gallery3.jpg"> 
+                <div class="caption center-align">
+                  <h4>desktop: gallery</h4>
+                </div>
+              </li>
+              <li>
+                <img src="images/case_studies/ccc_final_gallery4.jpg"> 
+                <div class="caption center-align">
+                  <h4>desktop: about</h4>
+                </div>
+              </li>
+              <li>
+                <img src="images/case_studies/ccc_final_gallery5.jpg"> 
+                <div class="caption center-align">
+                  <h4>desktop: contact</h4>
+                </div>
+              </li>
+              <li>
+                <img src="images/case_studies/ccc_final_gallery6.jpg"> 
+                <div class="caption center-align">
+                  <h4>desktop: directions</h4>
+                </div>
+              </li>
+              <li>
+                <img src="images/case_studies/ccc_final_gallery7.jpg"> 
+                <div class="caption center-align">
+                  <h4>mobile: home and vtours</h4>
+                </div>
+              </li>
+              <li>
+                <img src="images/case_studies/ccc_final_gallery8.jpg"> 
+                <div class="caption center-align">
+                  <h4>mobile: gallery and about</h4>
+                </div>
+              </li>
+              <li>
+                <img src="images/case_studies/ccc_final_gallery9.jpg"> 
+                <div class="caption center-align">
+                  <h4>mobile: contact and directions</h4>
+                </div>
+              </li> 
+            </ul>
+            <br><br><br>
+            <div class="col s12 center cta-btn-pos"><br>
+                <a href="http://channelcatcharters.com" target="_blank" class="modal-trigger btn-large waves-effect waves-light orange curvebox hoverable">Visit Channel Cat Charters Site</a>
             </div>
-          </li>
-          <li>
-            <img src="images/case_studies/ccc_final_gallery2.jpg"> 
-            <div class="caption center-align">
-              <h4>desktop: virtual tours</h4>
-            </div>
-          </li>
-          <li>
-            <img src="images/case_studies/ccc_final_gallery3.jpg"> 
-            <div class="caption center-align">
-              <h4>desktop: gallery</h4>
-            </div>
-          </li>
-          <li>
-            <img src="images/case_studies/ccc_final_gallery4.jpg"> 
-            <div class="caption center-align">
-              <h4>desktop: about</h4>
-            </div>
-          </li>
-          <li>
-            <img src="images/case_studies/ccc_final_gallery5.jpg"> 
-            <div class="caption center-align">
-              <h4>desktop: contact</h4>
-            </div>
-          </li>
-          <li>
-            <img src="images/case_studies/ccc_final_gallery6.jpg"> 
-            <div class="caption center-align">
-              <h4>desktop: directions</h4>
-            </div>
-          </li>
-          <li>
-            <img src="images/case_studies/ccc_final_gallery7.jpg"> 
-            <div class="caption center-align">
-              <h4>mobile: home and vtours</h4>
-            </div>
-          </li>
-          <li>
-            <img src="images/case_studies/ccc_final_gallery8.jpg"> 
-            <div class="caption center-align">
-              <h4>mobile: gallery and about</h4>
-            </div>
-          </li>
-          <li>
-            <img src="images/case_studies/ccc_final_gallery9.jpg"> 
-            <div class="caption center-align">
-              <h4>mobile: contact and directions</h4>
-            </div>
-          </li> 
-        </ul>
-      </div>
-    <div class="container hide-on-large-only">
-        <!--DESKTOP SCREENS-->
+
+        </div>
+        <div class="container hide-on-large-only">
+    <!--DESKTOP SCREENS-->
         <div class="row pro-sidebar">
-             <div class="col s12 m4 process">
-                <h4 class="center-align">Home</h4>
-                <img class="materialboxed responsive-img" src="images/case_studies/ccc_fin_sm_desk_home.jpg" data-caption="Before (top) and After (bottom) of Home page redesign (desktop)">
-            </div>
-            <div class="col s12 m4 process">
-               <h4 class="center-align">Vtours</h4>
-                <img class="materialboxed responsive-img" src="images/case_studies/ccc_fin_sm_desk_tours.jpg" data-caption="Before (top) and After (bottom) of Virtual Tours page redesign (desktop)">
-
-            </div>
-            <div class="col s12 m4 process">
-                <h4 class="center-align">Gallery</h4>
-                <img class="materialboxed responsive-img" src="images/case_studies/ccc_fin_sm_desk_gallery.jpg" data-caption="Before (top) and After (bottom) of Gallery page redesign (desktop)">
-            </div>
+         <div class="col s12 m4 process">
+            <h4 class="center-align">Home</h4>
+            <img class="materialboxed responsive-img" src="images/case_studies/ccc_fin_sm_desk_home.jpg" data-caption="Before (top) and After (bottom) of Home page redesign (desktop)">
         </div>
-         <div class="row pro-sidebar">
-             <div class="col s12 m4 process">
-                <h4 class="center-align">About</h4>
-                <img class="materialboxed responsive-img" src="images/case_studies/ccc_fin_sm_desk_about.jpg" data-caption="Before (top) and After (bottom) of About page redesign (desktop)">
-            </div>
-            <div class="col s12 m4 process">
-               <h4 class="center-align">Contact</h4>
-                <img class="materialboxed responsive-img" src="images/case_studies/ccc_fin_sm_desk_contact.jpg" data-caption="Before (top) and After (bottom) of Contact page redesign (desktop)">
-            </div>
-            <div class="col s12 m4 process">
-                <h4 class="center-align">Directions</h4>
-                <img class="materialboxed responsive-img" src="images/case_studies/ccc_fin_sm_desk_directions.jpg" data-caption="Before (top) and After (bottom) of Directions page redesign (desktop)">
-            </div>
+        <div class="col s12 m4 process">
+           <h4 class="center-align">Vtours</h4>
+            <img class="materialboxed responsive-img" src="images/case_studies/ccc_fin_sm_desk_tours.jpg" data-caption="Before (top) and After (bottom) of Virtual Tours page redesign (desktop)">
+
+        </div>
+        <div class="col s12 m4 process">
+            <h4 class="center-align">Gallery</h4>
+            <img class="materialboxed responsive-img" src="images/case_studies/ccc_fin_sm_desk_gallery.jpg" data-caption="Before (top) and After (bottom) of Gallery page redesign (desktop)">
+        </div>
+        </div>
+        <div class="row pro-sidebar">
+         <div class="col s12 m4 process">
+            <h4 class="center-align">About</h4>
+            <img class="materialboxed responsive-img" src="images/case_studies/ccc_fin_sm_desk_about.jpg" data-caption="Before (top) and After (bottom) of About page redesign (desktop)">
+        </div>
+        <div class="col s12 m4 process">
+           <h4 class="center-align">Contact</h4>
+            <img class="materialboxed responsive-img" src="images/case_studies/ccc_fin_sm_desk_contact.jpg" data-caption="Before (top) and After (bottom) of Contact page redesign (desktop)">
+        </div>
+        <div class="col s12 m4 process">
+            <h4 class="center-align">Directions</h4>
+            <img class="materialboxed responsive-img" src="images/case_studies/ccc_fin_sm_desk_directions.jpg" data-caption="Before (top) and After (bottom) of Directions page redesign (desktop)">
+        </div>
         </div> 
         <!--MOBILE SCREENS-->
         <div class="row pro-sidebar">
-             <div class="col s12 m4 process">
-                <h4 class="center-align">Home</h4>
-                <img class="materialboxed responsive-img" src="images/case_studies/ccc_fin_sm_mo_about.jpg" data-caption="Before (left) and After (right) of Home page redesign (mobile)">
-            </div>
-            <div class="col s12 m4 process">
-               <h4 class="center-align">Vtours</h4>
-                <img class="materialboxed responsive-img" src="images/case_studies/ccc_fin_sm_mo_tours.jpg" data-caption="Before (left) and After (right) of Virtual Tours page redesign (mobile)">
-            </div>
-        
-            <div class="col s12 m4 process">
-                <h4 class="center-align">Gallery</h4>
-                <img class="materialboxed responsive-img" src="images/case_studies/ccc_fin_sm_mo_gallery.jpg" data-caption="Before (left) and After (right) of Gallery page redesign (mobile)">
-            </div>
+         <div class="col s12 m4 process">
+            <h4 class="center-align">Home</h4>
+            <img class="materialboxed responsive-img" src="images/case_studies/ccc_fin_sm_mo_about.jpg" data-caption="Before (left) and After (right) of Home page redesign (mobile)">
+        </div>
+        <div class="col s12 m4 process">
+           <h4 class="center-align">Vtours</h4>
+            <img class="materialboxed responsive-img" src="images/case_studies/ccc_fin_sm_mo_tours.jpg" data-caption="Before (left) and After (right) of Virtual Tours page redesign (mobile)">
+        </div>
+
+        <div class="col s12 m4 process">
+            <h4 class="center-align">Gallery</h4>
+            <img class="materialboxed responsive-img" src="images/case_studies/ccc_fin_sm_mo_gallery.jpg" data-caption="Before (left) and After (right) of Gallery page redesign (mobile)">
+        </div>
         </div>
         <div class="row pro-sidebar">
-             <div class="col s12 m4 process">
-                <h4 class="center-align">About</h4>
-                <img class="materialboxed responsive-img" src="images/case_studies/ccc_fin_sm_mo_about.jpg" data-caption="Before (left) and After (right) of About page redesign (mobile)">
-            </div>
-            <div class="col s12 m4 process">
-               <h4 class="center-align">Contact</h4>
-                <img class="materialboxed responsive-img" src="images/case_studies/ccc_fin_sm_mo_contact.jpg" data-caption="Before (left) and After (right) of Contact page redesign (mobile)">
-            </div>
-            <div class="col s12 m4 process">
-                <h4 class="center-align">Directions</h4>
-                <img class="materialboxed responsive-img" src="images/case_studies/ccc_fin_sm_mo_directions.jpg" data-caption="Before (left) and After (right) of Directions page redesign (mobile)">
-            </div>
+         <div class="col s12 m4 process">
+            <h4 class="center-align">About</h4>
+            <img class="materialboxed responsive-img" src="images/case_studies/ccc_fin_sm_mo_about.jpg" data-caption="Before (left) and After (right) of About page redesign (mobile)">
         </div>
-    </div>
-    <!--end mobile gallery-->
-    <!-- end case study -->
+        <div class="col s12 m4 process">
+           <h4 class="center-align">Contact</h4>
+            <img class="materialboxed responsive-img" src="images/case_studies/ccc_fin_sm_mo_contact.jpg" data-caption="Before (left) and After (right) of Contact page redesign (mobile)">
+        </div>
+        <div class="col s12 m4 process">
+            <h4 class="center-align">Directions</h4>
+            <img class="materialboxed responsive-img" src="images/case_studies/ccc_fin_sm_mo_directions.jpg" data-caption="Before (left) and After (right) of Directions page redesign (mobile)">
+        </div>
+        </div>
+        </div>
+  </div>
+</section>
+<!--end mobile gallery--> 
+<!-- end case study -->
+    
     <!-- begin retro / prospecto -->
-    <div class="container row">
-        <div class="col s12">
-            <hr class="style-eight">
-            <h2>Postscript: Retrospective and Prospective</h2>
-        </div>
-        <div class="col l8 profile">
-            <p><strong>What went well?</strong> Business problems solved. User needs addressed. Technical challenges conquered. Analytics added. Desktop and Mobile testing successful. Project completed on time and on budget. <strong>Results:</strong> Immense client satisfaction!</p>
-            <p><strong>What didn't go so well?</strong> Wait times for images and verbiage content from client were at times lengthy. Some low-resolution content (video, virtual tours, a couple of the gallery images) had to be used as no higher-quality content available.</p>
-            <p><strong>What would I do differently if starting over?</strong> Establish firmer deadlines to receive content and follow up on it. Ensure all content is of sufficient quality and ready to go beforehand.</p>
-            <p class="no-bdr"><strong>How well did the process work?</strong> <a href="https://www.atlassian.com/agile/kanban/" target="_blank">Kanban</a> was a good approach for this project, communication levels were good, iterations went smoothly; overall process was effective with very positive results. </p>
-        </div>
-        <div class="col l4 profile pro-sidebar">
-            <h4>Next Steps:</strong></h4>
-            <p>
-                <ul>
-                    <li>Google Analytics data will be monitored to learn from users and to determine if any changes need to be considered</li>
-                    <li><a class="tooltipped striken" data-position="top" data-delay="50" data-tooltip="Updated video implemented: March, 2016">Video content will be re-exported from newly found DVD source, trimmed, and converted, before upgrading</a></li>
-                    <li>Virtual tours will be revisited with higher-quality imagery if client can locate it (TBD)</li>
-                </ul>
-            </p> 
-        </div>
-    </div>
-    <div class="container row">
-        <div class="col s12 center cta-btn-pos"><br>
-            <a href="http://channelcatcharters.com" target="_blank" class="modal-trigger btn-large waves-effect waves-light light-green darken-1 hoverable">Visit Channel Cat Charters Site</a>
-        </div>
-        <div class="col s12">
-            <hr class="style-fin">
-        </div>
-    </div>
-    <!-- end retro / prospecto -->
-    <!--begin footer-->
-    <footer class="page-footer blue">
-        <div class="container">
+    <ul class="collapsible offset-section" data-collapsible="expandable">
+    <li>
+        <section class="collapsible-header tan taupe-brdr drk-brown-txt">   
+        <div class="container portfolio profile">
             <div class="row">
-                <div class="col s12 l6">
-                <h5 class="white-text"><i class="material-icons">person_pin</i> Quick Bio</h5>
-               <p class="grey-text text-lighten-4">Senior User Experience and User Interface Design, Interaction Design, and Agile Development are my specialties; I'm ready to get to work building great experiences for your users</p>
-                </div>
-                <div class="col s12 l4">
-                    <h5 class="white-text"><i class="material-icons">contact_phone</i> Connect</h5>
-                    <ul id="footerConnect" class="white-text">
-                         <li class="blue darken-4 center waves-effect" onclick="window.open('https://www.linkedin.com/in/jasonriddledotnet');">
-                        <div class="socicon"><h5>j</h5></div>
-                    </li>
-                    <li class="light-green center" onclick="sendEmail();" class="waves-effect">
-                      <div class="socicon"><h5>@</h5></div>
-                    </li>
-                    <li class="grey darken-1 center" onclick="window.open('https://goo.gl/3fQDyr');" class="waves-effect">
-                      <div class="socicon"><h5>c</h5></div>
-                    </li>
-                     <li class="blue lighten-2 center" onclick="skypeMe();" class="waves-effect">
-                      <div class="socicon"><h5>g</h5></div>
-                    </li>
-                    </ul>
-                </div>
-                <div class="col s12 l2">
-                    <h5 class="white-text"><i class="material-icons">menu</i> Menu</h5>
-                    <ul>
-                        <li><a class="white-text" href="index.html">Welcome</a></li>
-                        <li><a class="white-text" href="resume.html">Resume</a></li>
-                        <li><a class="white-text" href="about.html">About</a></li>
-                    </ul>
+                <div class="col s12">
+                    <h3>Postscript: Retrospective and Prospective</h3>
+                    <p class="no-bdr">boing, boing, boing</p>
                 </div>
             </div>
         </div>
+    </section>
+        <section class="collapsible-body lt-tan">   
+        <div class="container row offset-top">
+            <div class="col l8 profile">
+                <p><strong>What went well?</strong> Business problems solved. User needs addressed. Technical challenges conquered. Analytics added. Desktop and Mobile testing successful. Project completed on time and on budget. <strong>Results:</strong> Immense client satisfaction!</p>
+                <p><strong>What didn't go so well?</strong> Wait times for images and verbiage content from client were at times lengthy. Some low-resolution content (video, virtual tours, a couple of the gallery images) had to be used as no higher-quality content available.</p>
+                <p><strong>What would I do differently if starting over?</strong> Establish firmer deadlines to receive content and follow up on it. Ensure all content is of sufficient quality and ready to go beforehand.</p>
+                <p class="no-bdr"><strong>How well did the process work?</strong> <a href="https://www.atlassian.com/agile/kanban/" target="_blank">Kanban</a> was a good approach for this project, communication levels were good, iterations went smoothly; overall process was effective with very positive results. </p>
+            </div>
+            <div class="col l4 profile pro-sidebar drk-grey curvebox">
+                <h4 class="med-grey-txt">Next Steps:</h4>
+                <p>
+                    <ul class="med-grey-txt">
+                        <li>Google Analytics data will be monitored to learn from users and to determine if any changes need to be considered</li>
+                        <li><a class="tooltipped striken" data-position="top" data-delay="50" data-tooltip="Updated video implemented: March, 2016">Video content will be re-exported from newly found DVD source, trimmed, and converted, before upgrading</a></li>
+                        <li>Virtual tours will be revisited with higher-quality imagery if client can locate it (TBD)</li>
+                    </ul>
+                </p> 
+            </div>
+</div>
+        <div class="container row">
+ <!--           <div class="col s12 center cta-btn-pos"><br>
+                <a href="http://channelcatcharters.com" target="_blank" class="modal-trigger btn-large waves-effect waves-light orange curvebox hoverable">Visit Channel Cat Charters Site</a>
+            </div>-->
+            <div class="col s12">
+                <hr class="style-fin">
+            </div>
+        </div>
+    </section>
+    </li>
+</ul>
+
+    <!-- end retro / prospecto -->
+        <!--begin footer-->
+    <footer class="drk-brown offset-section">
         <div class="footer-copyright center">
-           <div class="container">
-                &copy; 2015 <a class="blue-text text-lighten-3" href="http://jasonriddle.net" alt="JasonRiddle.net">Jason Riddle</a>. Built with <a class="blue-text text-lighten-3" href="http://www.w3.org/TR/html5/" target="_blank" alt="HTML5">HTML5</a>, <a class="blue-text text-lighten-3" href="http://www.w3.org/TR/css3-roadmap/" target="_blank" alt="CSS3">CSS3</a>, <a class="blue-text text-lighten-3" href="http://materializecss.com" target="_blank" alt="Materialze">Materialize</a>, <a class="blue-text text-lighten-3" href="http://socicon.com" target="_blank" alt="Socicon">Socicon</a>, and <a class="blue-text text-lighten-3" href="http://brackets.io" target="_blank" alt="Brackets">Brackets</a>.
+            <div class="container">
+                &copy; 2016 <a href="http://jasonriddle.net" alt="JasonRiddle.net">Jason Riddle</a>. Built with <a  href="http://www.w3.org/TR/html5/" target="_blank" alt="HTML5">HTML5</a>, <a href="http://www.w3.org/TR/css3-roadmap/" target="_blank" alt="CSS3">CSS3</a>, <a href="http://materializecss.com" target="_blank" alt="Materialze">Materialize</a>, <a href="https://jquery.com/" target="_blank">jQuery</a>, <a  href="http://socicon.com" target="_blank" alt="Socicon">Socicon</a>, <a href="http://entypo.com" target="_blank">Entypo</a>, <a href="https://www.google.com/fonts" target="_blank">Google Fonts</a>, and <a href="http://brackets.io" target="_blank" alt="Brackets">Brackets</a>.
             </div>
         </div>
     </footer>

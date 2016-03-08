@@ -1,3 +1,4 @@
+/*social icons fonts*/
 @font-face 
 {
     font-family: 'socicon';
@@ -10,6 +11,20 @@
     font-style: normal;
     text-transform: initial;
 }
+.socicon 
+{
+    font-family: 'socicon' !important;
+    speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+/*2016 theme colors*/
 .drk-brown
 {
     background-color: #402D10;
@@ -42,7 +57,7 @@
 {
     color: #6D6E71;
 }
-.dark-grey-brdr
+.drk-grey-brdr
 {
     border-bottom: 5px solid #6D6E71;   
 }
@@ -58,28 +73,43 @@
 {
     border-bottom: 5px solid #D1D3D4;   
 }
-/*.lt-grey-brdr
+.lt-grey
 {
-    border-bottom: 5px solid #D1D3D4;     
-}*/
+    background-color: #F7F8F8;
+}
+.lt-grey-txt
+{
+    color: #F7F8F8;
+}
+.lt-grey-brdr
+{
+    border-bottom: 5px solid #F7F8F8;   
+}
 .taupe
 {
     background-color: #978C7D;
 }
-
-.socicon 
+.taupe-brdr
 {
-    font-family: 'socicon' !important;
-    speak: none;
-	font-style: normal;
-	font-weight: normal;
-	font-variant: normal;
-	text-transform: none;
-	line-height: 1;
-	/* Better Font Rendering =========== */
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
+    border-bottom: 5px solid #978C7D;   
 }
+.tan
+{
+    background-color: #C1BAB1;
+}
+tan-txt
+{
+    color: #C1BAB1;
+}
+.tan-brdr
+{
+    border-bottom: 5px solid #C1BAB1;   
+}
+.lt-tan
+{
+    background-color: #F3F1EF;
+}
+/*Entypo icons*/
 .index-icons
 {
     height: 100px;
@@ -97,7 +127,7 @@
 {
     margin-left: 75px;
 }
-
+/*base html elements*/
 html
 {
     font-size: 14px;
@@ -106,20 +136,12 @@ body
 {
     min-width: 420px; 
 }
-a
-{
-    color: #791f1f;
-    cursor: pointer;
-}
-a:hover
-{
-    color: #CA3434;
-}
 h1,h2,h3,h4 /* h5 is used for social icons */
 {
     font-family: 'Raleway', sans-serif;
     font-weight: 500;
 }
+/*keeps the header nav elements full width */
 .site-header
 {
     width: 100%;   
@@ -134,6 +156,12 @@ h1,h2,h3,h4 /* h5 is used for social icons */
 {
     opacity: 1.0; 
 }
+/*rounds corners to match logo*/
+.curvebox
+{
+    border-radius: 0 25px 0 25px;
+}
+
 /*parallax*/
 .parallax-container h5,
 h1.header,
@@ -260,7 +288,8 @@ nav /*.brand-logo*/
 {
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
-    color: #A7A9AC;
+    font-size: 14px;
+    color: #D1D3D4;
 }
 nav ul li a:hover, 
 nav ul li a.active 
@@ -278,6 +307,10 @@ ul#hdr-links li a
 {
     margin: -15px 0 0 0;
 }*/
+a.dropdown-button
+{
+    cursor: pointer;
+}
 .dropdown-content
 {
     border-radius: 0 25px 0 25px;
@@ -287,7 +320,7 @@ ul#hdr-links li a
 .dropdown-content li>a,
 .dropdown-content li>span 
 {
-    font-size: 1.2rem;
+    font-size: 1.15rem;
     color: #402D10;
     display: block;
     padding: 1rem 1rem;
@@ -296,11 +329,6 @@ ul#hdr-links li a
 {
     color: #6D6E71 !important;
 }
-/*#hdr-links .dropdown-content li:first-child:hover
-{
-    border-radius: 0 25px 0 0;
-}
-*/
 i.mdi-navigation-arrow-drop-down.right
 {
     margin-left: -5px;
@@ -533,7 +561,16 @@ footer.page-footer
 }
 .footer-copyright
 {
+    color: #978C7D;
+    padding: 10px;
+}
+.footer-copyright a
+{
     color: #D1D3D4;
+}
+.footer-copyright a:hover
+{
+    color: #FFF;
 }
 /*pagination customizations*/
 
@@ -659,6 +696,20 @@ footer.page-footer
     font-size: 1.25rem;
     line-height: 1.75rem;   
 }
+
+/*#case-study section a,*/
+.about-me-content a,
+.about-site-content a
+{
+    color: #791f1f;
+    cursor: pointer;
+}
+/*#case-study section a:hover,*/
+.about-me-content a:hover,
+.about-site-content a:hover
+{
+    color: #CA3434;
+}
 .disclaimer
 {
     color: #999;
@@ -690,7 +741,25 @@ background-color: rgba(51,51,51,.75);
     text-decoration: line-through;
     color: cornflowerblue;
 }
-
-
-
+.collapsible
+{
+    margin: -1px 0 0 -1px;
+}
+.collapsible-header
+{
+    height: 85px;
+    overflow: hidden;
+}
+.offset-section
+{
+    margin-top: -15px;
+}
+.final
+{
+    margin-left: 10px;
+}
+.case-study-bg
+{
+    background: linear-gradient(0deg, #F3F1EF 50%, #6D6E71 50%);
+}
 
