@@ -20,7 +20,13 @@
             </ul>
             <ul class="right hide-on-med-and-down" id="hdr-links">
                 <li><a href="index.html">Welcome</a></li>
-                <li class="active"><a href="portfolio.html">Portfolio</a></li>
+                <li><a class="dropdown-button" data-activates="dropdown1">Portfolio<i class="mdi-navigation-arrow-drop-down right"></i></a></li>
+                <li>
+                    <ul id='dropdown1' class='dropdown-content'>
+                        <li><a href="Jason_Riddle_work_samples_2016.pdf" target="_blank">Work Samples</a></li>
+                        <li><a href="case_study_ccc.html" target="_blank">Case Study</a></li>
+                    </ul>
+                </li>
                 <li><a class="dropdown-button" data-activates="dropdown2">Resume<i class="mdi-navigation-arrow-drop-down right"></i></a></li>
               <li><ul id='dropdown2' class='dropdown-content'>
                 <li><a href="Jason_Riddle_resume_2016.pdf" target="_blank">View PDF</a></li>
@@ -31,7 +37,17 @@
             </ul>
             <ul id="nav-mobile" class="side-nav">
                 <li><a href="index.html"><i class="material-icons">room</i> Welcome</a></li>
-                <li class="active"><a href="portfolio.html"><i class="material-icons">work</i> Portfolio</a></li>
+                <ul class="collapsible collapsible-accordion">
+                  <li>
+                    <a class="collapsible-header"><i class="mdi-navigation-arrow-drop-down left"></i>Portfolio</a>
+                    <div class="collapsible-body">
+                      <ul id="zebra">
+                        <li><a href="Jason_Riddle_work_samples_2016.pdf" target="_blank"><i class="material-icons">description</i>Work Samples</a></li>
+                        <li><a href="case_study_ccc.html" target="_blank"><i class="material-icons">description</i>Case Study</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                </ul>
                 <ul class="collapsible collapsible-accordion">
                   <li>
                     <a class="collapsible-header"><i class="mdi-navigation-arrow-drop-down left"></i>Resume</a>
