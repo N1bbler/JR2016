@@ -229,7 +229,7 @@ video
 {
     margin-top: 20px;
 }
-#case-study i.material-icons
+.collapsible-header i.material-icons
 {
     font-size: 3rem;
     margin-right: 30px;

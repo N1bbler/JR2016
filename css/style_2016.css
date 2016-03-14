@@ -331,7 +331,7 @@ a.dropdown-button
 }
 i.mdi-navigation-arrow-drop-down.right
 {
-    margin-left: -5px;
+    margin: 0 -10px 0 -5px;
 }
 #nav-mobile i.mdi-navigation-arrow-drop-down
 {
