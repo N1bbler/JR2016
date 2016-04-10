@@ -1,14 +1,7 @@
-(function ($) {
-  $(function () {
-
-    $('.button-collapse').sideNav();
-    $('.parallax').parallax();
-
-  }); // end of document ready
-})(jQuery); // end of jQuery name space
-
 $(document).ready(function() {
     // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
+    $('.button-collapse').sideNav();
+    $('.parallax').parallax();
     $('.modal-trigger').leanModal();
     // smooth scrolling
     $('a[href^="#"]').on('click',function (e) {
@@ -23,6 +16,14 @@ $(document).ready(function() {
 	});
     // slider
     $('.slider').slider({full_width: true, height:640});
+    // JR's custom scripts
+    $('#index-banner h5').delay(1000).animate({fontSize: '44px'}, 300);
+    $('.icon-block img:eq(0)').delay(3000).animate({height: '150px'}, 300).delay(1000).animate({height: '125px'}, 300);
+    $('.icon-block h5:eq(0)').delay(3000).animate({fontSize: '2rem'}, 300);   
+    $('.icon-block img:eq(1)').delay(5000).animate({height: '150px'}, 300).delay(1000).animate({height: '125px'}, 300);
+    $('.icon-block h5:eq(1)').delay(5000).animate({fontSize: '2rem'}, 300);     
+    $('.icon-block img:eq(2)').delay(7000).animate({height: '150px'}, 300).delay(1000).animate({height: '125px'}, 300);
+    $('.icon-block h5:eq(2)').delay(7000).animate({fontSize: '2rem'}, 300); 
   });
 
 // shrink header on scroll
@@ -31,6 +32,7 @@ $(document).on("scroll", function(){
   ($(document).scrollTop() > 100){
       $("nav").addClass("shrink");
       $("#index-banner").addClass("shrink-lax");
+      $('#index-banner h5').animate({fontSize: '30px'}, 300);
     }
     else
     {
