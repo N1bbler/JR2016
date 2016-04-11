@@ -17,7 +17,7 @@ $(document).ready(function() {
     // slider
     $('.slider').slider({full_width: true, height:640});
     // JR's custom scripts
-    $('#index-banner h5').delay(1000).animate({fontSize: '44px'}, 300);
+    $('#index-banner h5').delay(1000).animate({fontSize: '36px'}, 300);
     $('.icon-block img:eq(0)').delay(3000).animate({height: '150px'}, 300).delay(1000).animate({height: '125px'}, 300);
     $('.icon-block h5:eq(0)').delay(3000).animate({fontSize: '2rem'}, 300);   
     $('.icon-block img:eq(1)').delay(5000).animate({height: '150px'}, 300).delay(1000).animate({height: '125px'}, 300);
@@ -43,7 +43,7 @@ $(document).on("scroll", function(){
   ($(document).scrollTop() > 100){
       $("nav").addClass("shrink");
       $("#index-banner").addClass("shrink-lax");
-      $('#index-banner h5').animate({fontSize: '30px'}, 300);
+      $('#index-banner h5').animate({fontSize: '24px'}, 300);
     }
     else
     {
