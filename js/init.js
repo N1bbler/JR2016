@@ -24,6 +24,17 @@ $(document).ready(function() {
     $('.icon-block h5:eq(1)').delay(5000).animate({fontSize: '2rem'}, 300);     
     $('.icon-block img:eq(2)').delay(7000).animate({height: '150px'}, 300).delay(1000).animate({height: '125px'}, 300);
     $('.icon-block h5:eq(2)').delay(7000).animate({fontSize: '2rem'}, 300); 
+    // img swapper
+    var sourceSwap = function () {
+        var $this = $(this);
+        var newSource = $this.data('alt-src');
+        $this.data('alt-src', $this.attr('src'));
+        $this.attr('src', newSource);
+    }
+
+    $(function () {
+        $('img.swapr').hover(sourceSwap, sourceSwap);
+    });
   });
 
 // shrink header on scroll

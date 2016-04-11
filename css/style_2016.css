@@ -437,18 +437,18 @@ i.mdi-navigation-arrow-drop-down.right
 .process-imgs div:nth-child(4) img
 {
     border: 1px solid #333;
-    border-radius: 0 60px 0 0;
+    border-radius: 0 50px 0 0;
 }
 .process-imgs div:nth-child(5) img
 {
     border: 1px solid #333;
-    border-radius: 0 0 0 60px;
+    border-radius: 0 0 0 50px;
 }
 @media only screen and (max-width : 992px) {
 .process-imgs div:nth-child(2) img
 {
     border: 1px solid #333;
-    border-radius: 0 60px 0 0;
+    border-radius: 0 50px 0 0;
 }
 .process-imgs div:nth-child(4) img,
 .process-imgs div:nth-child(5) img    
@@ -459,7 +459,7 @@ i.mdi-navigation-arrow-drop-down.right
 .process-imgs div:nth-child(7) img
 {
     border: 1px solid #333;
-    border-radius: 0 0 0 60px;
+    border-radius: 0 0 0 50px;
 }
 }
 
