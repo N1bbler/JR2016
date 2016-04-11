@@ -436,7 +436,7 @@ i.mdi-navigation-arrow-drop-down.right
     background-color: #F7F8F8;
 }
 .process-imgs div:nth-child(4) img,
-.tools-imgs div:nth-child(4) img
+.tools-imgs div:nth-child(6) img
 {
     border: 1px solid #333;
     border-radius: 0 50px 0 0;
@@ -446,7 +446,7 @@ i.mdi-navigation-arrow-drop-down.right
     border: 1px solid #333;
     border-radius: 0 0 0 50px;
 }
-.tools-imgs div:nth-child(9) img
+.tools-imgs div:nth-child(7) img
 {
     border: 1px solid #333;
     border-radius: 0 0 0 50px;
@@ -455,21 +455,21 @@ i.mdi-navigation-arrow-drop-down.right
 
 @media only screen and (max-width : 992px) {
 .process-imgs div:nth-child(2) img,
-.tools-imgs div:nth-child(2) img
+.tools-imgs div:nth-child(3) img
 {
     border: 1px solid #333;
     border-radius: 0 50px 0 0;
 }
 .process-imgs div:nth-child(4) img,
-.tools-imgs div:nth-child(4) img,    
+.tools-imgs div:nth-child(6) img,    
 .process-imgs div:nth-child(5) img,
-.tools-imgs div:nth-child(9) img
+.tools-imgs div:nth-child(7) img
 {
     border: 1px solid #333;
     border-radius: 0;
 }
 .process-imgs div:nth-child(7) img,
-.tools-imgs div:nth-child(11) img
+.tools-imgs div:nth-child(10) img
 {
     border: 1px solid #333;
     border-radius: 0 0 0 50px;
