@@ -446,7 +446,7 @@ i.mdi-navigation-arrow-drop-down.right
     border: 1px solid #333;
     border-radius: 0 0 0 50px;
 }
-.tools-imgs div:nth-child(7) img
+.tools-imgs div:nth-child(13) img
 {
     border: 1px solid #333;
     border-radius: 0 0 0 50px;
@@ -463,13 +463,13 @@ i.mdi-navigation-arrow-drop-down.right
 .process-imgs div:nth-child(4) img,
 .tools-imgs div:nth-child(6) img,    
 .process-imgs div:nth-child(5) img,
-.tools-imgs div:nth-child(7) img
+.tools-imgs div:nth-child(13) img
 {
     border: 1px solid #333;
     border-radius: 0;
 }
 .process-imgs div:nth-child(7) img,
-.tools-imgs div:nth-child(10) img
+.tools-imgs div:nth-child(16) img
 {
     border: 1px solid #333;
     border-radius: 0 0 0 50px;
