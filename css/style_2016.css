@@ -434,6 +434,7 @@ i.mdi-navigation-arrow-drop-down.right
     margin: 0 0 15px 0;
     border: 1px solid #333;
     background-color: #F7F8F8;
+    /* background-color: #FBB143; */
 }
 .process-imgs div:nth-child(4) img,
 .tools-imgs div:nth-child(6) img
